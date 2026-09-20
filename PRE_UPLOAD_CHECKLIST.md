@@ -2,14 +2,14 @@
 
 Three items need an author decision or action. Everything else in this folder is ready.
 
-- [ ] **Licence.** `LICENSE` still reads "proposed … to be confirmed". Decide the arrangement (the proposal is
+- [X] **Licence.** `LICENSE` still reads "proposed … to be confirmed". Decide the arrangement (the proposal is
       CC BY 4.0 for data, tables, figures, evaluation outputs and model weights; MIT for the code under `tools/`),
       replace `LICENSE` with the actual licence text, and set the matching field in `CITATION.cff`, `.zenodo.json`
       and the Zenodo web form.
 - [ ] **Publish the record and copy the DOI into the manuscript.** The Data Availability Statement of
       `manuscript/SentiLight_Electronics_v44.docx` still carries `[AUTHORS: supply before submission]` where the
       DOI belongs, and states that the artefacts are not yet public. Both must be updated once the DOI resolves.
-- [ ] **Confirm the corpus redistribution.** `NOTICE_KOTE.txt` reproduces the KOTE MIT notice as that licence
+- [X] **Confirm the corpus redistribution.** `NOTICE_KOTE.txt` reproduces the KOTE MIT notice as that licence
       requires. Confirm the authors are content to redistribute the decontaminated corpus in
       `datasets/pretrain_corpus_clean_v1.tar.gz`; an earlier internal release had withheld the corpus text.
 

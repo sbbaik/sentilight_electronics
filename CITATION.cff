@@ -5,7 +5,7 @@ type: dataset
 authors:
   - family-names: Baik
     given-names: Seongbok
-    affiliation: "Intelligent IoT Department, Daejeon University, Daejeon 34520, Republic of Korea"
+    affiliation: "Department of IoT, Daejeon University, Daejeon 34520, Republic of Korea"
     email: sbbaik@dju.ac.kr
     orcid: "https://orcid.org/0009-0009-4420-4084"
   - family-names: Hong
@@ -13,9 +13,7 @@ authors:
     affiliation: "School of AI Software, Daejeon University, Daejeon 34520, Republic of Korea"
     email: yghong@dju.ac.kr
     orcid: "https://orcid.org/0000-0003-2974-3820"
-# Licence is dual and awaiting author confirmation; see LICENSE.
-# Proposed: CC-BY-4.0 for data, tables, figures, evaluation outputs and model weights;
-#           MIT for code under tools/.
+license: MIT
 keywords:
   - compact language models
   - smart lighting

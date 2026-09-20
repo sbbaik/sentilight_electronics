@@ -1,0 +1,26 @@
+{
+  "title": "Action-Set-Informed Design and System Implementation of a Compact Language Model for Smart-Lighting Control — data and code",
+  "upload_type": "dataset",
+  "description": "Data, code, evaluation outputs, frozen policy catalogue, catalogue-gate implementation and selected compact language model accompanying the Electronics submission.",
+  "creators": [
+    {
+      "name": "Baik, Seongbok",
+      "affiliation": "Department of IoT, Daejeon University",
+      "orcid": "0009-0009-4420-4084"
+    },
+    {
+      "name": "Hong, Yong-Geun",
+      "affiliation": "School of AI Software, Daejeon University",
+      "orcid": "0000-0003-2974-3820"
+    }
+  ],
+  "license": "mit",
+  "keywords": [
+    "compact language models",
+    "smart lighting",
+    "edge-assisted inference",
+    "effective action set",
+    "capacity search",
+    "training exposure"
+  ]
+}
