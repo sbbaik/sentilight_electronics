@@ -1,0 +1,51 @@
+{
+ "label": "prod_mixed4_23M",
+ "checkpoint": "backend/models/compact_llm_q4/checkpoint/sentilight_compactlm_mixed4_inference.pt",
+ "checkpoint_mb": 47.848263,
+ "device": "cpu",
+ "torch_threads": 4,
+ "cpu": "x86_64",
+ "quantization": {
+  "format": "sentilight_compactlm_mixed4_weightonly_v1",
+  "method": "mixed4_weightonly_loadtime_dequant",
+  "source_model_id": "compact_llm",
+  "target_model_id": "compact_llm_q4",
+  "display_name": "CompactLM Q4",
+  "group_size": 64,
+  "bit_params": {
+   "8": 5898240,
+   "4": 7372800,
+   "6": 884736
+  },
+  "retained_params": 18438528,
+  "quantized_params": 14155776,
+  "packing": {
+   "4bit": "packed_nibbles_uint8",
+   "6bit": "uint8_codes",
+   "8bit": "uint8_codes"
+  },
+  "sensitive_policy": {
+   "first_and_last_transformer_blocks": 8,
+   "ffn_down_proj": 8,
+   "attention_o_proj": 6,
+   "embedding_and_lm_head": "fp16_checkpoint_fp32_runtime",
+   "norms": "fp32"
+  },
+  "runtime": "loadtime_dequant_to_existing_pytorch_graph"
+ },
+ "load_time_s": 0.20008047600276768,
+ "rss_before_load_mb": 505.32421875,
+ "rss_after_load_mb": 690.63671875,
+ "peak_rss_mb": 728.421875,
+ "n_timed": 300,
+ "latency_ms": {
+  "median": 101.02524497779086,
+  "p95": 107.63172595761716,
+  "mean": 101.78840947841915,
+  "min": 91.64125303504989,
+  "max": 263.5882400209084
+ },
+ "invalid_json_rate": 0.0033333333333333335,
+ "exact_rate": 0.5733333333333334,
+ "coarse_rate": 0.71
+}

@@ -1,0 +1,6 @@
+Implementation,Precision,Params,File,Load,RSS,Median / p95
+Selected generative,fp32,15.70 M,62.8 MB,0.17 s,788 MB,98.0 / 113.4 ms
+Selected generative,mixed 4/6/8,15.70 M,17.1 MB,0.10 s,665 MB,95.0 / 104.5 ms
+240-class head,fp32,15.79 M,63.2 MB,0.11 s,647 MB,3.4 / 3.8 ms
+Retrained deployed,mixed 4/6/8,23.4 M,47.8 MB,0.20 s,729 MB,101 / 110 ms
+Latency-first generative,mixed 4/6/8,8.6 M,12.3 MB,0.07 s,598 MB,52 / 70 ms

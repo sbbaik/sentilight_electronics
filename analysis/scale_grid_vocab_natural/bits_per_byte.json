@@ -1,0 +1,48 @@
+{
+ "corpus_bytes": 20820357,
+ "note": "bpb = valid_loss_nats * (tokens/byte) / ln2; valid split is a held-out slice of the same corpus, so tokens/byte from the whole corpus is used",
+ "runs": {
+  "orig24k (W384)": {
+   "valid_loss_nats_per_token": 2.6447824060916902,
+   "total_tokens": 5145967,
+   "tokens_per_byte": 0.24716036329252183,
+   "bits_per_byte": 0.9430686564882588
+  },
+  "V2 V4k": {
+   "valid_loss_nats_per_token": 2.3876318991184236,
+   "total_tokens": 5663473,
+   "tokens_per_byte": 0.27201613305670025,
+   "bits_per_byte": 0.9369934908143952
+  },
+  "V2 V8k": {
+   "valid_loss_nats_per_token": 2.6339264452457427,
+   "total_tokens": 5071976,
+   "tokens_per_byte": 0.24360658176994757,
+   "bits_per_byte": 0.92569346879756
+  },
+  "V2 V16k": {
+   "valid_loss_nats_per_token": 2.9568085074424744,
+   "total_tokens": 4538123,
+   "tokens_per_byte": 0.21796566696718986,
+   "bits_per_byte": 0.9297920506555728
+  },
+  "V2 V24k": {
+   "valid_loss_nats_per_token": 3.207274001836777,
+   "total_tokens": 4212985,
+   "tokens_per_byte": 0.20234931610442608,
+   "bits_per_byte": 0.9362942229771519
+  },
+  "B4k (4800)": {
+   "valid_loss_nats_per_token": 2.123599448800087,
+   "total_tokens": 5663473,
+   "tokens_per_byte": 0.27201613305670025,
+   "bits_per_byte": 0.8333775660131718
+  },
+  "B24k (4800)": {
+   "valid_loss_nats_per_token": 2.711799520254135,
+   "total_tokens": 4212985,
+   "tokens_per_byte": 0.20234931610442608,
+   "bits_per_byte": 0.7916511726881058
+  }
+ }
+}

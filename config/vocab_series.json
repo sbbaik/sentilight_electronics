@@ -1,0 +1,213 @@
+{
+  "series": "V",
+  "title": "Vocabulary series: tokenizer size swept at fixed width, depth, and compute",
+  "purpose": "Test whether the embedding term V*d (39% of the deployed 23M model) can be cut without accuracy loss, and separate vocabulary size from tokenizer provenance (V24k retrained on the clean corpus vs the production 24k tokenizer of unknown provenance).",
+  "created": "2026-09-05",
+  "fixed": {
+    "d_model": 384,
+    "n_layer": 8,
+    "n_head": 6,
+    "d_ff": 1024,
+    "block_size": 256,
+    "pretrain_steps": 2400,
+    "pretrain_batch_size": 64,
+    "corpus": "backend/models/compact_llm/datasets/pretrain_runs/20260805_clean_v1/pretrain_corpus.txt (245,258 lines, identical for every tokenizer)",
+    "tokenizer_recipe": "ByteLevel BPE, NFKC, special tokens <pad><unk><bos><eos><|system|><|user|><|assistant|><|sentilight|><|json|><|tasmota|> at ids 0-9; trained by tools/build_vocab_series.py",
+    "sft_train": "backend/models/compact_llm/datasets/keff_series/K240/train_100.jsonl",
+    "sft_val": "backend/models/compact_llm/datasets/keff_series/K240/val.jsonl",
+    "sft_epochs": 4,
+    "eval_dataset": "backend/models/compact_llm/datasets/keff_series/K240/test_rule.jsonl",
+    "seeds": [
+      42,
+      43,
+      44
+    ]
+  },
+  "reference_point": {
+    "name": "V24k-orig = W384 = D8",
+    "tokenizer": "backend/models/compact_llm/tokenizer/tokenizer.json",
+    "tokens_per_line": 20.98,
+    "pretrain_tokens": 5145967,
+    "corpus_epochs_in_2400_steps": 7.6,
+    "exact_tuple_pct": 79.08,
+    "note": "production tokenizer; provenance corpus unknown; 62% more tokens per line than a tokenizer of the same size trained on this corpus"
+  },
+  "scale_configs": {
+    "V4k": {
+      "d_model": 384,
+      "n_layer": 8,
+      "n_head": 6,
+      "d_ff": 1024
+    },
+    "V8k": {
+      "d_model": 384,
+      "n_layer": 8,
+      "n_head": 6,
+      "d_ff": 1024
+    },
+    "V16k": {
+      "d_model": 384,
+      "n_layer": 8,
+      "n_head": 6,
+      "d_ff": 1024
+    },
+    "V24k": {
+      "d_model": 384,
+      "n_layer": 8,
+      "n_head": 6,
+      "d_ff": 1024
+    }
+  },
+  "per_vocab": {
+    "V4k": {
+      "tokenizer": "backend/models/compact_llm/tokenizer_vocab_series/V4k/tokenizer.json",
+      "tokens_npy": "backend/models/compact_llm/tokenizer_vocab_series/V4k/pretrain_tokens.npy",
+      "vocab": 4000,
+      "total": 15698304,
+      "embedding_share": 0.1,
+      "pretrain_tokens": 3925561,
+      "tokens_per_line": 16.01,
+      "corpus_epochs_in_2400_steps": 10.0,
+      "sft_len_p99": 221
+    },
+    "V8k": {
+      "tokenizer": "backend/models/compact_llm/tokenizer_vocab_series/V8k/tokenizer.json",
+      "tokens_npy": "backend/models/compact_llm/tokenizer_vocab_series/V8k/pretrain_tokens.npy",
+      "vocab": 8000,
+      "total": 17234304,
+      "embedding_share": 0.18,
+      "pretrain_tokens": 3562156,
+      "tokens_per_line": 14.52,
+      "corpus_epochs_in_2400_steps": 11.0,
+      "sft_len_p99": 192
+    },
+    "V16k": {
+      "tokenizer": "backend/models/compact_llm/tokenizer_vocab_series/V16k/tokenizer.json",
+      "tokens_npy": "backend/models/compact_llm/tokenizer_vocab_series/V16k/pretrain_tokens.npy",
+      "vocab": 16000,
+      "total": 20306304,
+      "embedding_share": 0.3,
+      "pretrain_tokens": 3300925,
+      "tokens_per_line": 13.46,
+      "corpus_epochs_in_2400_steps": 11.9,
+      "sft_len_p99": 180
+    },
+    "V24k": {
+      "tokenizer": "backend/models/compact_llm/tokenizer_vocab_series/V24k/tokenizer.json",
+      "tokens_npy": "backend/models/compact_llm/tokenizer_vocab_series/V24k/pretrain_tokens.npy",
+      "vocab": 24000,
+      "total": 23378304,
+      "embedding_share": 0.39,
+      "pretrain_tokens": 3175625,
+      "tokens_per_line": 12.95,
+      "corpus_epochs_in_2400_steps": 12.4,
+      "sft_len_p99": 172
+    }
+  },
+  "run_count": {
+    "pretrain": 12,
+    "sft": 12,
+    "eval": 12
+  },
+  "compute_matching_caveat": "Steps are fixed at 2,400 x 64 x 256 positions. Because smaller vocabularies produce more tokens per line, the model sees fewer corpus passes with V4k (10.0 epochs) than with V24k (12.4), and the production tokenizer saw only 7.6. Token positions, not sentences, are what is matched.",
+  "preregistered_predictions": {
+    "status": "V1 launched 2026-09-05 14:29 (sha in scale_grid_vocab/vocab_series.inputs.sha256); P-V1..P-V3 apply to V2_natural_corpus, frozen at its launch (scale_grid_vocab_natural/vocab_series.inputs.sha256)",
+    "P-V1": "Exact tuple match is flat within seed noise from V8k to V24k (no adopted adjacent step), i.e. the embedding term can be cut by two thirds (24k -> 8k, 23.4M -> 17.2M params) at no accuracy cost.",
+    "P-V2": "V4k is not adopted as worse than V8k on exact tuple match either; if any drop appears it is at V4k, where Korean syllables begin to fragment (tokens/line 16.0 vs 14.5).",
+    "P-V3": "V24k (retrained, clean corpus) is at or above V24k-orig (79.08% exact) - the production tokenizer's poor fit (21.0 tokens/line) does not help accuracy; a positive difference is attributed to provenance, not size.",
+    "decision_rule": "Per-seed exact McNemar on the 2,000 paired test rows for adjacent vocabularies (V4k->V8k->V16k->V24k) and for V24k vs V24k-orig, signed z combined by Stouffer, Holm over all; adopt only if Holm p < 0.05 and all three seeds share the sign.",
+    "P-V4": "Every V2 tokenizer (natural-corpus) beats its V1 counterpart of the same size on exact tuple match with all three seeds agreeing; the V1-V2 gap shrinks as vocabulary grows."
+  },
+  "notes": [
+    "Each vocabulary needs its own pretraining because the embedding table changes; nothing is shared with the W/D series except the V24k-orig reference.",
+    "Latency is expected to be flat: the reference decoder runs 96 steps regardless of vocabulary; only the LM-head matmul shrinks.",
+    "2026-09-05: V1 (full-corpus tokenizers) failed as a vocabulary-size test because template over-merging destroyed test-template generalisation; kept as a negative control. V2 retrains the tokenizers on natural lines only. The runner now passes --tokenizer-dir to evaluation (tools/run_scale_grid.py)."
+  ],
+  "variants": {
+    "V1_full_corpus": {
+      "tokenizer_root": "backend/models/compact_llm/tokenizer_vocab_series",
+      "reports": "backend/reports/scale_grid_vocab",
+      "tokenizer_training_text": "whole clean pretraining corpus (245,258 lines, only 60,940 unique; ~36k natural KOTE lines + template repeats)",
+      "outcome": "NEGATIVE CONTROL. BPE over-merges template words: train inputs compress to 6.9-7.6 tokens/line but unseen test-template words fragment to bytes (6-13% fragment tokens vs 2.9% for the production tokenizer). V4k/V8k/V16k reach only 53-71% coarse vs 84.9% for W384. Tokenizer provenance, not vocabulary size, drove the result.",
+      "per_vocab_robustness": {
+        "V4k": {
+          "test_tokens_per_line": 16.45,
+          "test_fragment_share": 0.132,
+          "train_tokens_per_line": 7.6,
+          "train_fragment_share": 0.0755,
+          "test_over_train_ratio": 2.164
+        },
+        "V8k": {
+          "test_tokens_per_line": 14.68,
+          "test_fragment_share": 0.0788,
+          "train_tokens_per_line": 7.24,
+          "train_fragment_share": 0.0511,
+          "test_over_train_ratio": 2.028
+        },
+        "V16k": {
+          "test_tokens_per_line": 13.46,
+          "test_fragment_share": 0.0619,
+          "train_tokens_per_line": 6.98,
+          "train_fragment_share": 0.0353,
+          "test_over_train_ratio": 1.929
+        },
+        "V24k": {
+          "test_tokens_per_line": 12.92,
+          "test_fragment_share": 0.0644,
+          "train_tokens_per_line": 6.85,
+          "train_fragment_share": 0.0359,
+          "test_over_train_ratio": 1.886
+        }
+      }
+    },
+    "V2_natural_corpus": {
+      "tokenizer_root": "backend/models/compact_llm/tokenizer_vocab_series_natural",
+      "reports": "backend/reports/scale_grid_vocab_natural",
+      "tokenizer_training_text": "the 35,977 natural-language (KOTE base_train) lines of the clean corpus; template lines excluded",
+      "rationale": "Reproduces the production tokenizer's near-syllable behaviour: test/train tokens-per-line ratio 1.42-1.55 (production 1.47) and 0.3-3.6% fragment tokens.",
+      "per_vocab_robustness": {
+        "V4k": {
+          "test_tokens_per_line": 20.3,
+          "test_fragment_share": 0.0361,
+          "train_tokens_per_line": 14.26,
+          "train_fragment_share": 0.075,
+          "test_over_train_ratio": 1.423
+        },
+        "V8k": {
+          "test_tokens_per_line": 18.74,
+          "test_fragment_share": 0.0111,
+          "train_tokens_per_line": 12.92,
+          "train_fragment_share": 0.0151,
+          "test_over_train_ratio": 1.451
+        },
+        "V16k": {
+          "test_tokens_per_line": 16.74,
+          "test_fragment_share": 0.0045,
+          "train_tokens_per_line": 10.92,
+          "train_fragment_share": 0.0077,
+          "test_over_train_ratio": 1.534
+        },
+        "V24k": {
+          "test_tokens_per_line": 15.41,
+          "test_fragment_share": 0.0034,
+          "train_tokens_per_line": 9.92,
+          "train_fragment_share": 0.0075,
+          "test_over_train_ratio": 1.554
+        }
+      },
+      "pretrain_tokens": {
+        "V4k": 5663473,
+        "V8k": 5071976,
+        "V16k": 4538123,
+        "V24k": 4212985
+      },
+      "corpus_epochs_in_2400_steps": {
+        "V4k": 6.9,
+        "V8k": 7.8,
+        "V16k": 8.7,
+        "V24k": 9.3
+      }
+    }
+  },
+  "primary_variant": "V2_natural_corpus"
+}

@@ -1,0 +1,119 @@
+[
+ {
+  "contrast": "V2V4k(L8) -> C4kL4",
+  "metric": "strict",
+  "delta_pp": -0.43333333333333324,
+  "z": -0.8782844922590848,
+  "holm_p": 0.6736606377235379,
+  "seeds_same_sign": false,
+  "per_seed": [
+   -2.3,
+   0.8,
+   0.2
+  ]
+ },
+ {
+  "contrast": "V2V4k(L8) -> C4kL4",
+  "metric": "coarse",
+  "delta_pp": -0.8500000000000001,
+  "z": -0.9604469489161777,
+  "holm_p": 0.6736606377235379,
+  "seeds_same_sign": false,
+  "per_seed": [
+   -5.4,
+   1.7000000000000002,
+   1.15
+  ]
+ },
+ {
+  "contrast": "V2V4k(L8) -> C4kL4",
+  "metric": "exact",
+  "delta_pp": -1.1500000000000001,
+  "z": -1.5530685795840002,
+  "holm_p": 0.36122025475292174,
+  "seeds_same_sign": false,
+  "per_seed": [
+   -5.800000000000001,
+   2.0500000000000003,
+   0.3
+  ]
+ },
+ {
+  "contrast": "D4(24k) -> C4kL4",
+  "metric": "strict",
+  "delta_pp": 1.2,
+  "z": 3.207910418981343,
+  "holm_p": 0.005348125494795575,
+  "seeds_same_sign": false,
+  "per_seed": [
+   -0.15,
+   1.95,
+   1.7999999999999998
+  ]
+ },
+ {
+  "contrast": "D4(24k) -> C4kL4",
+  "metric": "coarse",
+  "delta_pp": 1.7999999999999998,
+  "z": 3.994553553501706,
+  "holm_p": 0.0004537138918068173,
+  "seeds_same_sign": false,
+  "per_seed": [
+   -3.3000000000000003,
+   3.6999999999999997,
+   5.0
+  ]
+ },
+ {
+  "contrast": "D4(24k) -> C4kL4",
+  "metric": "exact",
+  "delta_pp": 1.7500000000000002,
+  "z": 3.6340807920342866,
+  "holm_p": 0.0016738406473977285,
+  "seeds_same_sign": false,
+  "per_seed": [
+   -5.35,
+   3.5000000000000004,
+   7.1
+  ]
+ },
+ {
+  "contrast": "W384 -> C4kL4",
+  "metric": "strict",
+  "delta_pp": 1.3333333333333335,
+  "z": 3.4926743867738046,
+  "holm_p": 0.0023910461790310755,
+  "seeds_same_sign": false,
+  "per_seed": [
+   -0.65,
+   2.9000000000000004,
+   1.7500000000000002
+  ]
+ },
+ {
+  "contrast": "W384 -> C4kL4",
+  "metric": "coarse",
+  "delta_pp": 4.516666666666667,
+  "z": 8.631569672668075,
+  "holm_p": 0,
+  "seeds_same_sign": false,
+  "per_seed": [
+   -0.44999999999999996,
+   6.5,
+   7.5
+  ]
+ },
+ {
+  "contrast": "W384 -> C4kL4",
+  "metric": "exact",
+  "delta_pp": 6.583333333333333,
+  "z": 10.044975776503376,
+  "holm_p": 0,
+  "seeds_same_sign": true,
+  "per_seed": [
+   1.7000000000000002,
+   7.8,
+   10.25
+  ]
+ }
+]

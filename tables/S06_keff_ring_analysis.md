@@ -1,0 +1,24 @@
+**S06_keff_ring_analysis.** K series scored by nested ring of the lattice cell (supplementary; exact %, mean ± sample SD over available seeds): R48 = K48 cells (108–473 rows depending on the policy's test set), R240 = K240 \ K48, R480 = K480 \ K240, R960 = K960 \ K480. Under fixed steps the rings shared with smaller policies are answered no better, and descriptively worse, than the newly added rings; the loss from expanding the policy is therefore not confined to newly added actions. Models were evaluated on policy-specific test rows sharing the same action cells, rather than on identical utterances; cross-policy ring comparisons are therefore descriptive (Table S07 repeats the comparison on identical utterances).
+
+| SFT budget | policy | d | seeds | R48 | R240 (K240 \ K48) | R480 (K480 \ K240) | R960 (K960 \ K480) |
+|---|---|---|---|---|---|---|---|
+| fixed steps | K240 | 256 | 5 | 78.9 ± 5.3 | 77.7 ± 4.0 |  |  |
+| fixed steps | K240 | 384 | 5 | 80.6 ± 3.0 | 80.8 ± 3.9 |  |  |
+| fixed steps | K240 | 512 | 5 | 82.8 ± 3.4 | 81.3 ± 5.9 |  |  |
+| fixed steps | K480 | 256 | 5 | 67.7 ± 3.8 | 66.5 ± 5.1 | 73.7 ± 3.4 |  |
+| fixed steps | K480 | 384 | 3 | 81.6 ± 0.4 | 73.6 ± 5.7 | 81.6 ± 4.1 |  |
+| fixed steps | K480 | 512 | 3 | 80.0 ± 4.1 | 76.9 ± 2.2 | 83.0 ± 0.9 |  |
+| fixed steps | K960 | 256 | 5 | 44.8 ± 12.2 | 48.1 ± 14.6 | 59.0 ± 13.5 | 59.1 ± 13.2 |
+| fixed steps | K960 | 384 | 5 | 63.9 ± 13.2 | 64.2 ± 12.3 | 71.6 ± 13.8 | 71.1 ± 13.4 |
+| fixed steps | K960 | 512 | 3 | 68.5 ± 2.8 | 69.0 ± 4.5 | 78.3 ± 1.9 | 78.9 ± 2.5 |
+| matched exposure | K240 | 256 | 5 | 78.9 ± 5.3 | 77.7 ± 4.0 |  |  |
+| matched exposure | K240 | 384 | 5 | 80.6 ± 3.0 | 80.8 ± 3.9 |  |  |
+| matched exposure | K240 | 512 | 5 | 82.8 ± 3.4 | 81.3 ± 5.9 |  |  |
+| matched exposure | K480 | 256 | 3 | 77.9 ± 1.8 | 70.7 ± 5.2 | 82.0 ± 4.7 |  |
+| matched exposure | K480 | 384 | 5 | 85.4 ± 3.2 | 76.7 ± 5.8 | 84.4 ± 5.2 |  |
+| matched exposure | K480 | 512 | 5 | 81.2 ± 3.9 | 75.0 ± 4.9 | 81.8 ± 4.9 |  |
+| matched exposure | K960 | 256 | 3 | 67.3 ± 5.1 | 68.5 ± 11.7 | 78.0 ± 10.8 | 76.4 ± 8.7 |
+| matched exposure | K960 | 384 | 5 | 74.1 ± 8.5 | 77.3 ± 4.8 | 79.3 ± 10.5 | 82.0 ± 8.0 |
+| matched exposure | K960 | 512 | 5 | 76.3 ± 4.4 | 77.1 ± 9.2 | 79.0 ± 9.9 | 80.1 ± 10.9 |
+
+Source: `backend/reports/scale_grid_keff_fs/ring_analysis.json (tools/keff_ring_analysis.py)`

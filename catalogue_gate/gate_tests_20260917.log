@@ -1,0 +1,50 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.20, pytest-9.1.0, pluggy-1.6.0 -- /home/sbbaik/miniconda3/envs/sentilight/bin/python
+cachedir: .pytest_cache
+rootdir: /home/sbbaik/Sentilight_Paper_2/Implement_New_Android_v6/backend
+configfile: pytest.ini
+plugins: anyio-4.12.1
+collecting ... collected 18 items
+
+tests/test_policy_catalogue.py::test_catalogue_matches_the_policy_the_paper_reports PASSED [  5%]
+tests/test_policy_catalogue.py::test_digest_is_verified_on_load PASSED   [ 11%]
+tests/test_policy_catalogue.py::test_declared_count_is_verified_on_load PASSED [ 16%]
+tests/test_policy_catalogue.py::test_missing_catalogue_raises_rather_than_passing_everything PASSED [ 22%]
+tests/test_policy_catalogue.py::test_in_policy_tuple_is_executed_unchanged PASSED [ 27%]
+tests/test_policy_catalogue.py::test_reject_withholds_a_schema_valid_but_unexecutable_tuple PASSED [ 33%]
+tests/test_policy_catalogue.py::test_snap_substitutes_a_catalogue_member PASSED [ 38%]
+tests/test_policy_catalogue.py::test_hue_distance_wraps_around_the_circle PASSED [ 44%]
+tests/test_policy_catalogue.py::test_unknown_mode_is_rejected PASSED     [ 50%]
+tests/test_policy_catalogue.py::test_configured_mode_defaults_and_ignores_garbage PASSED [ 55%]
+tests/test_policy_catalogue.py::test_gate_result_serialises_for_the_api_response PASSED [ 61%]
+tests/test_policy_gate_service_path.py::test_in_policy_tuple_passes_and_reaches_the_command_step PASSED [ 66%]
+tests/test_policy_gate_service_path.py::test_off_policy_tuple_is_withheld_and_sends_no_command 
+-------------------------------- live log call ---------------------------------
+WARNING  sentilight.policy_gate:model_registry.py:231 policy gate withheld {'H': 0, 'S': 46, 'B': 65, 'Dimmer': 52, 'CT': 318} (mode=reject): tuple is not one of the 240 executable commands in policy K240 (production)
+PASSED                                                                   [ 72%]
+tests/test_policy_gate_service_path.py::test_unparseable_output_sends_no_command PASSED [ 77%]
+tests/test_policy_gate_service_path.py::test_digest_mismatch_withholds_every_tuple 
+-------------------------------- live log call ---------------------------------
+ERROR    sentilight.policy_gate:model_registry.py:220 policy gate unavailable, withholding {'H': 0, 'S': 46, 'B': 58, 'Dimmer': 52, 'CT': 318}: catalogue digest mismatch at /tmp/pytest-of-sbbaik/pytest-89/test_digest_mismatch_withholds0/tampered.json: file records 7c187ab5af2c3f8a, contents hash to 08cf5b1c4ad1f4e0
+PASSED                                                                   [ 83%]
+tests/test_policy_gate_service_path.py::test_missing_catalogue_withholds_every_tuple 
+-------------------------------- live log call ---------------------------------
+ERROR    sentilight.policy_gate:model_registry.py:220 policy gate unavailable, withholding {'H': 0, 'S': 46, 'B': 58, 'Dimmer': 52, 'CT': 318}: catalogue not readable at /tmp/pytest-of-sbbaik/pytest-89/test_missing_catalogue_withhol0/absent.json: [Errno 2] No such file or directory: '/tmp/pytest-of-sbbaik/pytest-89/test_missing_catalogue_withhol0/absent.json'
+PASSED                                                                   [ 88%]
+tests/test_policy_gate_service_path.py::test_snap_acts_only_when_explicitly_selected 
+-------------------------------- live log call ---------------------------------
+WARNING  sentilight.policy_gate:model_registry.py:231 policy gate withheld {'H': 0, 'S': 46, 'B': 65, 'Dimmer': 52, 'CT': 318} (mode=reject): tuple is not one of the 240 executable commands in policy K240 (production)
+WARNING  sentilight.policy_gate:model_registry.py:228 policy gate substituted {'H': 0, 'S': 46, 'B': 65, 'Dimmer': 52, 'CT': 318} -> {'H': 0, 'S': 46, 'B': 58, 'Dimmer': 52, 'CT': 318} (mode=snap, distance=0.0700)
+PASSED                                                                   [ 94%]
+tests/test_policy_gate_service_path.py::test_every_gate_decision_is_logged 
+-------------------------------- live log call ---------------------------------
+WARNING  sentilight.policy_gate:model_registry.py:231 policy gate withheld {'H': 0, 'S': 46, 'B': 65, 'Dimmer': 52, 'CT': 318} (mode=reject): tuple is not one of the 240 executable commands in policy K240 (production)
+PASSED                                                                   [100%]
+
+=============================== warnings summary ===============================
+../../../miniconda3/envs/sentilight/lib/python3.10/site-packages/fastapi/testclient.py:1
+  /home/sbbaik/miniconda3/envs/sentilight/lib/python3.10/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 18 passed, 1 warning in 0.22s =========================

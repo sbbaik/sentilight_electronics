@@ -1,0 +1,8 @@
+model,seeds,output formulation,parameters,model file,development test exact %,unseen-frame hold-out exact %,paraphrase stress-set exact %,"CPU median latency, ms (4 threads)",invalid outputs
+TF-IDF character 2–4-grams + logistic regression,1 (descriptive only),240-class,"3,650 × 240 weights",7.1 MB,66.7,31.8,—,0.6,impossible by construction
+frozen multilingual MiniLM-L12 embeddings + logistic regression,1 (descriptive only),240-class,118 M encoder (frozen) + 0.09 M head,471 MB encoder,30.8,17.4,9.8,7.8,impossible by construction
+"frozen multilingual MiniLM-L12, nearest class centroid",1 (descriptive only),240-class,"118 M encoder (frozen), no head",471 MB encoder,19.9,18.2,—,7.7,impossible by construction
+multilingual MiniLM-L12 fine-tuned end to end + 240-class head,**1 (descriptive only)**,240-class,118 M,471 MB,87.7,69.6,22.2,5.1,impossible by construction
+CompactLM backbone (same pretrained checkpoints) + 240-class head,5,240-class,15.8 M,63 MB fp32,87.2 ± 0.7,58.3 ± 2.3,10.3 ± 0.6,3.5,impossible by construction
+"CompactLM, deployed architecture (d 384, L 8, 24k)",5,generative JSON,23.4 M,93.5 MB fp32,80.8 ± 3.6,57.4 ± 2.4,6.6 ± 0.3,101,0.0 %
+"CompactLM, selected model (d 384, L 8, 4k natural)",5,generative JSON,15.7 M,62.8 MB fp32; 17.1 MB mixed-bit,86.5 ± 1.8,58.7 ± 1.7,7.9 ± 0.6,95,0.0 %

@@ -1,0 +1,4 @@
+a9d0f88cb1a1a37881b22f20d357bfd5554cf50d046aec4e531f04197e067920  config/width_series.json
+d281bd67b1505e47211944147cc7e5938a4fd146ef3c4e20069d736c9bc57a5c  backend/models/compact_llm/datasets/keff_series/K48/train_100.jsonl
+2612484cc0999e5219381397684588c07b3611bd78e5660afc1081d74d033dc5  backend/models/compact_llm/datasets/keff_series/K48/val.jsonl
+453c80fd3deb9ad3ed2336d9096bfc87fc9549eabbb2c3de9ee82806eb23119a  backend/models/compact_llm/datasets/keff_series/K48/test_rule.jsonl

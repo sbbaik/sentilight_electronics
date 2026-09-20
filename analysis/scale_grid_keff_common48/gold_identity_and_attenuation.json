@@ -1,0 +1,94 @@
+{
+ "gold_identity": {
+  "K48": {
+   "rows": 2000,
+   "conflicts_vs_stored_reference": 0
+  },
+  "K240": {
+   "rows": 2000,
+   "conflicts_vs_stored_reference": 0
+  },
+  "K480": {
+   "rows": 2000,
+   "conflicts_vs_stored_reference": 0
+  },
+  "K960": {
+   "rows": 2000,
+   "conflicts_vs_stored_reference": 0
+  }
+ },
+ "delta_attenuation": {
+  "d384/K240": {
+   "per_seed": [
+    3.7,
+    0.0,
+    6.9
+   ],
+   "mean": 3.5,
+   "ci90": [
+    -2.2,
+    9.3
+   ]
+  },
+  "d384/K480": {
+   "per_seed": [
+    -0.3,
+    -0.2,
+    12.7
+   ],
+   "mean": 4.0,
+   "ci90": [
+    -8.5,
+    16.6
+   ]
+  },
+  "d384/K960": {
+   "per_seed": [
+    2.5,
+    15.6,
+    19.1
+   ],
+   "mean": 12.4,
+   "ci90": [
+    -2.4,
+    27.2
+   ]
+  },
+  "d256/K240": {
+   "per_seed": [
+    14.1,
+    13.2,
+    17.2
+   ],
+   "mean": 14.8,
+   "ci90": [
+    11.3,
+    18.3
+   ]
+  },
+  "d256/K480": {
+   "per_seed": [
+    22.9,
+    16.0,
+    29.9
+   ],
+   "mean": 22.9,
+   "ci90": [
+    11.2,
+    34.6
+   ]
+  },
+  "d256/K960": {
+   "per_seed": [
+    54.7,
+    28.2,
+    49.0
+   ],
+   "mean": 44.0,
+   "ci90": [
+    20.5,
+    67.4
+   ]
+  }
+ }
+}

@@ -1,0 +1,131 @@
+{
+ "cross_tab": {
+  "all|<=25": {
+   "exact_pct": 77.89473684210526,
+   "rows_per_seed": 19
+  },
+  "all|26-45": {
+   "exact_pct": 27.6,
+   "rows_per_seed": 50
+  },
+  "all|46-65": {
+   "exact_pct": 11.666666666666666,
+   "rows_per_seed": 24
+  },
+  "all|>=66": {
+   "exact_pct": 0.0,
+   "rows_per_seed": 2
+  },
+  "partial|<=25": {
+   "exact_pct": 25.882352941176475,
+   "rows_per_seed": 119
+  },
+  "partial|26-45": {
+   "exact_pct": 8.205128205128204,
+   "rows_per_seed": 546
+  },
+  "partial|46-65": {
+   "exact_pct": 3.9700374531835205,
+   "rows_per_seed": 267
+  },
+  "partial|>=66": {
+   "exact_pct": 1.5151515151515151,
+   "rows_per_seed": 66
+  },
+  "none|<=25": {
+   "exact_pct": 11.12781954887218,
+   "rows_per_seed": 133
+  },
+  "none|26-45": {
+   "exact_pct": 4.053537284894838,
+   "rows_per_seed": 523
+  },
+  "none|46-65": {
+   "exact_pct": 1.0572687224669604,
+   "rows_per_seed": 227
+  },
+  "none|>=66": {
+   "exact_pct": 2.5,
+   "rows_per_seed": 24
+  }
+ },
+ "association": {
+  "model": "logistic regression of row-level correctness on lexical band, centred utterance length in units of 10 characters, and their interaction; standard errors clustered by action tuple; rows pooled over the five seeds",
+  "n_rows": 10000,
+  "clusters": 240,
+  "coefficients": {
+   "Intercept": {
+    "coef": -3.4674767944760485,
+    "odds_ratio": 0.031195644462394388,
+    "p": 1.9633017886028274e-87,
+    "ci90": [
+     0.023395131454875474,
+     0.04159704061937692
+    ]
+   },
+   "C(lex)[T.partial]": {
+    "coef": 0.8869064495849641,
+    "odds_ratio": 2.4276080951015686,
+    "p": 6.528449904788596e-06,
+    "ci90": [
+     1.7565183314656692,
+     3.3550922628204005
+    ]
+   },
+   "C(lex)[T.all]": {
+    "coef": 2.3258791832012764,
+    "odds_ratio": 10.235675164708988,
+    "p": 4.2690541739671757e-19,
+    "ci90": [
+     6.668898604415688,
+     15.710097317729419
+    ]
+   },
+   "len_c": {
+    "coef": -0.6141258391482907,
+    "odds_ratio": 0.5411137090423481,
+    "p": 1.6077849513773469e-07,
+    "ci90": [
+     0.4462345639162909,
+     0.6561662179276954
+    ]
+   },
+   "C(lex)[T.partial]:len_c": {
+    "coef": -0.07211616325119251,
+    "odds_ratio": 0.930422808595016,
+    "p": 0.5957307336217565,
+    "ci90": [
+     0.7440131857950036,
+     1.1635366405889997
+    ]
+   },
+   "C(lex)[T.all]:len_c": {
+    "coef": -0.3356319877572127,
+    "odds_ratio": 0.7148861442656925,
+    "p": 0.1172057812318116,
+    "ci90": [
+     0.5025667213179522,
+     1.0169041792557165
+    ]
+   }
+  }
+ },
+ "quantization": {
+  "per_seed_delta_pp": [
+   -0.5,
+   -0.04999999999999982,
+   0.09999999999999964,
+   -0.15000000000000036,
+   0.0
+  ],
+  "mean_pp": -0.1200000000000001,
+  "ci90": [
+   -0.34000410944333276,
+   0.10000410944333255
+  ],
+  "tost_margin_pp": 3.0,
+  "tost_p": 4.903905359121552e-06,
+  "equivalence": true,
+  "margin_provenance": "the +-3 pp margin used throughout the prospective register (P-C1, P-D3, P-X1) and in the earlier quantization tests"
+ }
+}

@@ -1,0 +1,7 @@
+configuration,drop (pp),hold-out coarse %,hold-out strict %,valid output %
+"selected: d 384, L 8, 4k natural tokenizer",−27.8,70.6,44.7,100.0
+"deployed architecture: d 384, L 8, 24k production tokenizer",−23.4,70.5,45.3,100.0
+"d 320, L 8, 4k natural tokenizer",−25.7,70.5,44.9,100.0
+"d 384, L 4, 4k natural tokenizer",−27.0,67.6,42.9,100.0
+"d 384, L 4, 24k production tokenizer",−29.6,65.6,42.7,100.0
+"selected, mixed 4/6/8-bit export (17.1 MB)",−27.9,,,

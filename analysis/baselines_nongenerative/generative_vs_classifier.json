@@ -1,0 +1,143 @@
+{
+ "seeds": [
+  42,
+  43,
+  44,
+  45,
+  46
+ ],
+ "sets": {
+  "frame": {
+   "generative": {
+    "per_seed": [
+     58.4,
+     56.65,
+     61.45,
+     58.599999999999994,
+     58.35
+    ],
+    "mean": 58.69,
+    "sd": 1.731112359149459
+   },
+   "classifier": {
+    "per_seed": [
+     55.1,
+     59.25,
+     56.599999999999994,
+     59.85,
+     60.6
+    ],
+    "mean": 58.28,
+    "sd": 2.3303969618929745
+   },
+   "difference_pp": {
+    "per_seed": [
+     -3.299999999999997,
+     2.6000000000000014,
+     -4.8500000000000085,
+     1.250000000000007,
+     2.25
+    ],
+    "mean": -0.4099999999999994,
+    "ci90": [
+     -3.676563934139921,
+     2.8565639341399227
+    ],
+    "bootstrap_ci90": [
+     -3.01,
+     1.95
+    ],
+    "mcnemar_stouffer_z": -0.688048313040874,
+    "mcnemar_p": 0.49142235767907394,
+    "seeds_favouring_head": 3,
+    "verdict": "inconclusive: the interval includes zero"
+   },
+   "coarse": {
+    "generative": 70.63,
+    "classifier": 69.11
+   },
+   "attribute_accuracy": {
+    "generative": {
+     "colour": 90.9,
+     "emotion": 69.28,
+     "intensity": 83.71
+    },
+    "classifier": {
+     "colour": 92.34,
+     "emotion": 86.74,
+     "intensity": 68.79
+    }
+   },
+   "valid_output_pct": {
+    "generative": 100.0,
+    "classifier": 100.0
+   }
+  },
+  "paraphrase": {
+   "generative": {
+    "per_seed": [
+     8.1,
+     7.000000000000001,
+     7.7,
+     8.55,
+     8.05
+    ],
+    "mean": 7.880000000000001,
+    "sd": 0.5772780958948641
+   },
+   "classifier": {
+    "per_seed": [
+     10.5,
+     10.5,
+     11.15,
+     9.8,
+     9.75
+    ],
+    "mean": 10.34,
+    "sd": 0.5803016456981661
+   },
+   "difference_pp": {
+    "per_seed": [
+     2.4000000000000004,
+     3.499999999999999,
+     3.45,
+     1.25,
+     1.6999999999999993
+    ],
+    "mean": 2.46,
+    "ci90": [
+     1.4939416852859044,
+     3.4260583147140955
+    ],
+    "bootstrap_ci90": [
+     1.6095000000000002,
+     3.3105
+    ],
+    "mcnemar_stouffer_z": 7.136331622654474,
+    "mcnemar_p": 9.585665594613602e-13,
+    "seeds_favouring_head": 5,
+    "verdict": "the head is higher and the interval excludes zero"
+   },
+   "coarse": {
+    "generative": 21.962186093046522,
+    "classifier": 23.77
+   },
+   "attribute_accuracy": {
+    "generative": {
+     "colour": 38.64,
+     "emotion": 31.11,
+     "intensity": 47.99
+    },
+    "classifier": {
+     "colour": 44.35,
+     "emotion": 46.82,
+     "intensity": 45.89
+    }
+   },
+   "valid_output_pct": {
+    "generative": 99.99,
+    "classifier": 100.0
+   }
+  }
+ }
+}

@@ -1,0 +1,66 @@
+{
+  "series": "X",
+  "title": "Closing experiment: width sweep under the final tokenizer (V = 4k natural, L = 8)",
+  "created": "2026-09-06",
+  "status": "LAUNCHED 2026-09-06",
+  "purpose": "The action-space analysis located the width knee at d ~ 224-256 (K_eff = 240) with the 24k production tokenizer, but the final model was chosen at d = 384 with the 4k natural tokenizer. This series tests whether the K_eff-informed knee survives the change of input representation: if d = 256 / V4k matches d = 384 / V4k, the final model can be the predicted-knee model (~7.3M); if not, the knee depends on input representation (a stated condition).",
+  "fixed": {
+    "vocab": "tokenizer_vocab_series_natural/V4k",
+    "n_layer": 8,
+    "pretrain_steps": 2400,
+    "sft": "keff_series/K240, 4 epochs",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "reference": "V2 V4k d=384 (5 seeds, 86.5 ± 1.6 exact)"
+  },
+  "scale_configs": {
+    "X224": {
+      "d_model": 224,
+      "n_layer": 8,
+      "n_head": 4,
+      "d_ff": 608
+    },
+    "X256": {
+      "d_model": 256,
+      "n_layer": 8,
+      "n_head": 4,
+      "d_ff": 672
+    },
+    "X320": {
+      "d_model": 320,
+      "n_layer": 8,
+      "n_head": 5,
+      "d_ff": 864
+    }
+  },
+  "expected_parameters": {
+    "X224": {
+      "total": 5774048,
+      "embedding_share": 0.16
+    },
+    "X256": {
+      "total": 7254272,
+      "embedding_share": 0.14
+    },
+    "X320": {
+      "total": 11197760,
+      "embedding_share": 0.11
+    }
+  },
+  "run_count": {
+    "pretrain": 15,
+    "sft": 15,
+    "eval": 15
+  },
+  "preregistered_predictions": {
+    "status": "FROZEN at launch (sha256 in backend/reports/scale_grid_width_v4k/inputs.sha256)",
+    "P-X1": "X256 is within 3 pp exact of V2 V4k (d=384) with the all-seeds sign rule not rejecting either direction; X224 is below X256 by an adopted margin (the knee is between 224 and 256 as with the 24k tokenizer).",
+    "P-X2": "Seed SD at X256 is not larger than 2x the SD at d=384 (knee-edge instability is the risk).",
+    "decision_rule": "Row-level McNemar per seed, Stouffer, Holm over adjacent steps and X256-vs-384; sign rule; plus seed-level t CI and hierarchical bootstrap as in seed_level_stats.py."
+  }
+}

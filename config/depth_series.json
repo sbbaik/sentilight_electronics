@@ -1,0 +1,118 @@
+{
+  "series": "D",
+  "title": "Depth series: layer count L swept at fixed width, vocabulary, and compute",
+  "purpose": "Test the a-priori depth heuristic 'one to two layers per attribute the mapping must read' (A = 3 attributes: colour, emotion, intensity -> L in 3..6, paper used 6..12). Only n_layer varies; d_model, d_ff, heads, vocab, tokenizer, pretraining steps, SFT recipe, seeds and the evaluation split are frozen to the W series.",
+  "created": "2026-09-05",
+  "fixed": {
+    "d_model": 384,
+    "d_ff": 1024,
+    "n_head": 6,
+    "vocab_size": 24000,
+    "block_size": 256,
+    "pretrain_steps": 2400,
+    "pretrain_tokens": "backend/models/compact_llm/datasets/pretrain_runs/20260805_clean_v1/pretrain_tokens.npy",
+    "tokenizer": "backend/models/compact_llm/tokenizer/tokenizer.json (frozen)",
+    "sft_train": "backend/models/compact_llm/datasets/keff_series/K240/train_100.jsonl (49,093 rows, policy-only + coverage_fill)",
+    "sft_val": "backend/models/compact_llm/datasets/keff_series/K240/val.jsonl",
+    "sft_epochs": 4,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "fractions": [
+      100
+    ],
+    "eval_dataset": "backend/models/compact_llm/datasets/keff_series/K240/test_rule.jsonl",
+    "eval_segment": "rule (2,000 rows)"
+  },
+  "k_eff": 240,
+  "attributes_read_by_policy": 3,
+  "scale_configs": {
+    "D2": {
+      "d_model": 384,
+      "n_layer": 2,
+      "n_head": 6,
+      "d_ff": 1024
+    },
+    "D4": {
+      "d_model": 384,
+      "n_layer": 4,
+      "n_head": 6,
+      "d_ff": 1024
+    },
+    "D6": {
+      "d_model": 384,
+      "n_layer": 6,
+      "n_head": 6,
+      "d_ff": 1024
+    },
+    "D8": {
+      "d_model": 384,
+      "n_layer": 8,
+      "n_head": 6,
+      "d_ff": 1024
+    },
+    "D12": {
+      "d_model": 384,
+      "n_layer": 12,
+      "n_head": 6,
+      "d_ff": 1024
+    },
+    "D16": {
+      "d_model": 384,
+      "n_layer": 16,
+      "n_head": 6,
+      "d_ff": 1024
+    }
+  },
+  "expected_parameters": {
+    "D2": {
+      "total": 12756864,
+      "embedding_share": 0.72,
+      "layers_per_attribute": 0.67
+    },
+    "D4": {
+      "total": 16297344,
+      "embedding_share": 0.57,
+      "layers_per_attribute": 1.33
+    },
+    "D6": {
+      "total": 19837824,
+      "embedding_share": 0.46,
+      "layers_per_attribute": 2.0
+    },
+    "D8": {
+      "total": 23378304,
+      "embedding_share": 0.39,
+      "layers_per_attribute": 2.67
+    },
+    "D12": {
+      "total": 30459264,
+      "embedding_share": 0.3,
+      "layers_per_attribute": 4.0
+    },
+    "D16": {
+      "total": 37540224,
+      "embedding_share": 0.25,
+      "layers_per_attribute": 5.33
+    }
+  },
+  "run_count": {
+    "pretrain": 18,
+    "sft": 18,
+    "eval": 18
+  },
+  "preregistered_predictions": {
+    "status": "FROZEN at first launch: sha256 recorded in backend/reports/scale_grid_depth/depth_series.inputs.sha256",
+    "P-D1": "Exact tuple match rises from D2 to D4 and from D4 to D6 (both adopted), i.e. at least ~A = 3 layers are needed before the curve flattens.",
+    "P-D2": "No adjacent step above D8 (D8->D12, D12->D16) is adopted as a positive gain on exact or coarse; depth beyond ~2 layers per attribute does not help at fixed compute.",
+    "P-D3": "D8 reproduces W384 (same configuration, same data, same seeds) within seed noise: |Δ| < 3 pp on exact tuple match. Reproducibility check, not a result.",
+    "decision_rule": "Per-seed exact McNemar on the 2,000 paired test rows for adjacent depths, signed z combined by Stouffer, Holm over 5 steps x 3 metrics; adopt only if Holm p < 0.05 and all three seeds share the sign."
+  },
+  "notes": [
+    "Shallow models (D2, D4) have the embedding term dominating (72% / 57%); block parameters are 3.5M and 7.1M.",
+    "Pretraining steps are fixed at 2,400 regardless of depth (compute-matched by steps, as in the W series).",
+    "D8 is a fresh replicate of W384, not a copy of its checkpoints; it measures run-to-run noise at identical settings."
+  ]
+}

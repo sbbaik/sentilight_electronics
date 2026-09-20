@@ -1,0 +1,46 @@
+{
+ "classes": 240,
+ "train_rows": 49093,
+ "results": {
+  "tfidf_char_logreg": {
+   "val_acc": 97.43024963289281,
+   "C": 16.0,
+   "dev_exact": 66.7,
+   "holdout_exact": 31.8,
+   "file_mb": 7.095096,
+   "n_features": 3650,
+   "cpu_median_ms": 0.6054054829291999,
+   "cpu_p95_ms": 0.8763926161918789,
+   "holdout_by_source": {
+    "holdout_mixed": 21.448467966573816,
+    "holdout_color_only": 83.203125,
+    "holdout_emotion_only": 39.111111111111114,
+    "holdout_fallback": 32.53012048192771
+   }
+  },
+  "sbert_logreg": {
+   "val_acc": 90.23494860499267,
+   "C": 16.0,
+   "dev_exact": 32.800000000000004,
+   "holdout_exact": 20.549999999999997,
+   "encoder_params_M": 117.65376,
+   "encoder_file_mb": NaN,
+   "head_params_M": 0.09216,
+   "cpu_median_ms": 7.799206534400582,
+   "cpu_p95_ms": 8.79053981625475,
+   "holdout_by_source": {
+    "holdout_mixed": 20.821727019498606,
+    "holdout_color_only": 8.984375,
+    "holdout_emotion_only": 29.777777777777775,
+    "holdout_fallback": 26.506024096385545
+   }
+  },
+  "sbert_nearest_centroid": {
+   "dev_exact": 19.85,
+   "holdout_exact": 18.2,
+   "encoder_params_M": 117.65376,
+   "cpu_median_ms": 7.670751481782645,
+   "cpu_p95_ms": 8.686147833941504
+  }
+ }
+}

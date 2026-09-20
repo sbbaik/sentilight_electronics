@@ -1,0 +1,6 @@
+Configuration,Parameters,Exact (%),Interpretation
+d384 L8 V24k,23.4 M,80.8 ± 3.6,retrained reference
+d384 L4 V24k,16.3 M,81.7 ± 4.9,difference uncertain
+d384 L8 V4k,15.7 M,86.5 ± 1.8,"selected: highest mean, lowest SD"
+d384 L4 V4k,8.6 M,82.0 ± 6.4,largest SD; two low seeds
+d320 L8 V4k,11.2 M,83.8 ± 3.4,parameter-efficient alternative

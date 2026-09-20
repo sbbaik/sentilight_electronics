@@ -1,0 +1,97 @@
+{
+ "diagnostics": {
+  "dataset": {
+   "train_rows": 49093,
+   "classes_in_train": 240,
+   "reachable_tuples": 240,
+   "classes_missing_from_train": 0,
+   "rows_per_class_min": 18,
+   "rows_per_class_median": 234,
+   "rows_per_class_max": 340,
+   "imbalance_max_over_min": 18.89,
+   "dev_classes_unseen_in_train": 0,
+   "holdout_classes_unseen_in_train": 0,
+   "label_alignment_check": "classes sorted once; cid maps tuple->index; predictions decoded via classes[i]"
+  },
+  "frozen_sbert": {
+   "embedding_dim": 384,
+   "norm_mean": 1.0,
+   "distinct_train_embeddings": 24063,
+   "note": "vectors are L2-normalised (norm 1.0); distinct-embedding count shows how many training utterances the frozen encoder separates at all"
+  }
+ },
+ "results": {
+  "sbert_frozen_logreg": {
+   "C": 64.0,
+   "train_exact": 98.19526205365327,
+   "val_exact": 95.44787077826726,
+   "dev_exact": 30.75,
+   "holdout_exact": 17.4,
+   "paraphrase_exact": 9.85,
+   "holdout_by_source": {
+    "color_only": 7.0,
+    "emotion_only": 30.2,
+    "fallback": 25.3,
+    "mixed": 16.8
+   },
+   "distinct_predicted_classes_dev": 198,
+   "top_class_share_dev": 3.2,
+   "encoder_params_M": 117.65376
+  },
+  "sbert_deployed_finetuned_logreg": {
+   "C": 64.0,
+   "train_exact": 24.977084309372007,
+   "val_exact": 21.953010279001468,
+   "dev_exact": 5.0,
+   "holdout_exact": 3.0,
+   "paraphrase_exact": 0.95,
+   "holdout_by_source": {
+    "color_only": 3.1,
+    "emotion_only": 0.0,
+    "fallback": 0.0,
+    "mixed": 3.6
+   },
+   "encoder_params_M": 117.65376,
+   "note": "encoder fine-tuned for the deployed similarity objective, head trained here",
+   "cpu_median_ms": 6.0,
+   "cpu_p95_ms": 6.7
+  },
+  "sbert_deployed_adapter_prototype": {
+   "profiles": 218,
+   "prototype_examples": 2153,
+   "profile_tuples_within_240": 218,
+   "unreachable_tuples": 22,
+   "dev_exact": 2.3,
+   "holdout_exact": 1.7999999999999998,
+   "holdout_by_source": {
+    "color_only": 1.6,
+    "emotion_only": 0.0,
+    "fallback": 0.0,
+    "mixed": 2.2
+   },
+   "note": "the deployed SBERT condition: fine-tuned encoder, nearest prototype example, profile's lighting tuple",
+   "cpu_median_ms": 6.0,
+   "cpu_p95_ms": 6.7
+  },
+  "encoder_finetuned_240class": {
+   "epochs": 3,
+   "lr": 3e-05,
+   "train_exact": 98.59043040759376,
+   "val_exact": 98.31130690161527,
+   "dev_exact": 87.7,
+   "holdout_exact": 69.6,
+   "paraphrase_exact": 22.2,
+   "holdout_by_source": {
+    "color_only": 66.0,
+    "emotion_only": 44.9,
+    "fallback": 60.2,
+    "mixed": 74.7
+   },
+   "params_M": 117.74616,
+   "file_mb": 471.073106,
+   "distinct_predicted_classes_holdout": 230,
+   "cpu_median_ms": 5.1,
+   "cpu_p95_ms": 5.7
+  }
+ }
+}

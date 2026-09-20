@@ -1,0 +1,132 @@
+{
+  "series": "W",
+  "title": "Width series: hidden size d swept at fixed depth, vocabulary, and compute",
+  "purpose": "Test the a-priori sizing heuristic d >~ K_eff (K_eff = 240 reachable policy actions). Only d_model varies; n_layer, vocab, tokenizer, pretraining steps, SFT recipe, seeds, and the evaluation split are frozen to the clean grid used in the companion IoTJ paper.",
+  "created": "2026-09-04",
+  "fixed": {
+    "n_layer": 8,
+    "vocab_size": 24000,
+    "block_size": 256,
+    "d_ff_rule": "round(8/3 * d_model / 32) * 32 (SwiGLU; matches d=384 -> 1024 exactly)",
+    "n_head_rule": "d_model / 64 (head_dim 64); d=224 uses 4 heads (head_dim 56, even as RoPE requires)",
+    "pretrain_steps": 2400,
+    "pretrain_tokens": "backend/models/compact_llm/datasets/pretrain_runs/20260805_clean_v1/pretrain_tokens.npy",
+    "tokenizer": "backend/models/compact_llm/tokenizer/tokenizer.json (frozen)",
+    "sft_train": "backend/models/compact_llm/datasets/keff_series/K240/train_100.jsonl (policy-only + coverage_fill, 49,093 rows; no teacher-labelled natural rows)",
+    "sft_val": "backend/models/compact_llm/datasets/keff_series/K240/val.jsonl (2,724 rows)",
+    "sft_epochs": 4,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "fractions": [
+      100
+    ],
+    "eval_dataset": "backend/models/compact_llm/datasets/keff_series/K240/test_rule.jsonl",
+    "eval_segment": "rule (2,000 rows, every one of the 240 reachable tuples covered >= 2x, no input with conflicting gold tuples)"
+  },
+  "k_eff": 240,
+  "scale_configs": {
+    "W128": {
+      "d_model": 128,
+      "n_layer": 8,
+      "n_head": 2,
+      "d_ff": 352
+    },
+    "W192": {
+      "d_model": 192,
+      "n_layer": 8,
+      "n_head": 3,
+      "d_ff": 512
+    },
+    "W224": {
+      "d_model": 224,
+      "n_layer": 8,
+      "n_head": 4,
+      "d_ff": 608
+    },
+    "W256": {
+      "d_model": 256,
+      "n_layer": 8,
+      "n_head": 4,
+      "d_ff": 672
+    },
+    "W320": {
+      "d_model": 320,
+      "n_layer": 8,
+      "n_head": 5,
+      "d_ff": 864
+    },
+    "W384": {
+      "d_model": 384,
+      "n_layer": 8,
+      "n_head": 6,
+      "d_ff": 1024
+    },
+    "W512": {
+      "d_model": 512,
+      "n_layer": 8,
+      "n_head": 8,
+      "d_ff": 1376
+    }
+  },
+  "expected_parameters": {
+    "W128": {
+      "total": 4679808,
+      "embedding_share": 0.66,
+      "d_vs_k_eff": "below"
+    },
+    "W192": {
+      "total": 8150208,
+      "embedding_share": 0.57,
+      "d_vs_k_eff": "below",
+      "note": "identical to clean-grid 8M"
+    },
+    "W224": {
+      "total": 10254048,
+      "embedding_share": 0.52,
+      "d_vs_k_eff": "below (closest under 240)"
+    },
+    "W256": {
+      "total": 12374272,
+      "embedding_share": 0.5,
+      "d_vs_k_eff": "above (closest over 240)"
+    },
+    "W320": {
+      "total": 17597760,
+      "embedding_share": 0.44,
+      "d_vs_k_eff": "above"
+    },
+    "W384": {
+      "total": 23378304,
+      "embedding_share": 0.39,
+      "d_vs_k_eff": "above",
+      "note": "identical to clean-grid 23M and to the deployed CompactLM"
+    },
+    "W512": {
+      "total": 37593600,
+      "embedding_share": 0.33,
+      "d_vs_k_eff": "above"
+    }
+  },
+  "run_count": {
+    "pretrain": 21,
+    "sft": 21,
+    "eval": 21
+  },
+  "preregistered_predictions": {
+    "status": "FROZEN at first launch: sha256 recorded in backend/reports/scale_grid_width/width_series.inputs.sha256",
+    "P-W1": "Rule-segment coarse compliance rises steeply from W128 to W256 and the largest single step lies at the d crossing of K_eff (W224 -> W256).",
+    "P-W2": "From W256 upward, each additional step gains less than the W224 -> W256 step on coarse compliance (diminishing returns above K_eff).",
+    "P-W3": "W192 and W384 share backbone config with the IoTJ clean-grid 8M and 23M cells but are fine-tuned on policy-only + coverage-fill data instead of the train_100 mixture; their rule-segment scores are expected to be at or above the IoTJ Gen-Policy 23M value (49.3% strict / 78.8% coarse for W384). This is a plausibility check, not a confirmatory prediction.",
+    "decision_rule": "Per-seed exact McNemar on the 2,000 paired test rows for adjacent widths, signed z combined by Stouffer, Holm over the 6 adjacent contrasts x 2 metrics; adopt only if Holm p < 0.05 and all three seeds share the sign."
+  },
+  "notes": [
+    "Depth and d_ff ratio are held constant so this series isolates width; compare with the companion depth series (config/depth_series.json, to be written).",
+    "Pretraining steps are compute-matched by step count, not by tokens seen per parameter; wider models are therefore not trained to convergence. Report loss curves in the appendix.",
+    "Scale names must not contain '_' (tools/summarize_scale_grid.py parses compactlm_<scale>_f<fraction>_s<seed>).",
+    "Changed 2026-09-04 before launch: SFT data switched from scale_grid_subsets/train_100 to keff_series/K240 so that W and K series form one grid."
+  ],
+  "role_in_k_series": "This series is the K_eff = 240 column of the K series (config/keff_policies.json); K48/K480/K960 reuse its pretrain checkpoints and its d grid subset {128,192,256,384,512}."
+}

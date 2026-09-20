@@ -1,0 +1,45 @@
+condition,k_eff,d_model,exact_mean,exact_sd,n_seeds
+fixed step budget,48,128,67.55,5.22,5
+fixed step budget,48,192,80.98,3.7,5
+fixed step budget,48,256,82.92,5.38,3
+fixed step budget,48,384,89.02,2.07,3
+fixed step budget,48,512,86.02,3.71,3
+fixed step budget,240,128,49.46,4.83,5
+fixed step budget,240,192,70.56,5.38,5
+fixed step budget,240,256,78.02,3.97,5
+fixed step budget,240,384,80.75,3.61,5
+fixed step budget,240,512,81.63,5.27,5
+fixed step budget,480,128,6.55,1.13,3
+fixed step budget,480,192,54.64,6.48,5
+fixed step budget,480,256,69.62,2.88,5
+fixed step budget,480,384,78.2,4.13,3
+fixed step budget,480,512,79.9,0.98,3
+fixed step budget,960,128,0.22,0.08,3
+fixed step budget,960,192,19.08,1.49,3
+fixed step budget,960,256,56.02,13.35,5
+fixed step budget,960,384,69.39,13.16,5
+fixed step budget,960,512,76.12,2.15,3
+fixed epochs,48,128,0.0,0.0,3
+fixed epochs,48,192,30.67,7.03,3
+fixed epochs,48,256,68.12,6.12,3
+fixed epochs,48,384,85.48,1.46,3
+fixed epochs,48,512,83.28,8.44,3
+fixed epochs,240,128,49.46,4.83,5
+fixed epochs,240,192,70.56,5.38,5
+fixed epochs,240,256,78.02,3.97,5
+fixed epochs,240,384,80.75,3.61,5
+fixed epochs,240,512,81.63,5.27,5
+fixed epochs,480,128,47.48,9.75,3
+fixed epochs,480,192,71.0,6.32,3
+fixed epochs,480,256,76.52,4.19,3
+fixed epochs,480,384,81.34,4.25,5
+fixed epochs,480,512,78.82,4.03,5
+fixed epochs,960,128,51.27,9.21,3
+fixed epochs,960,192,68.25,3.65,3
+fixed epochs,960,256,74.67,9.54,3
+fixed epochs,960,384,79.89,7.85,5
+fixed epochs,960,512,79.03,9.72,5
+knee60,48,128,,,3
+knee60,240,192,,,3
+knee60,480,256,,,3
+knee60,960,384,,,3

@@ -1,0 +1,11 @@
+model,seed,fp32_exact,mixed_bit_exact,delta_pp
+selected model d384 L8 V4k (15.7M),42,85.2,85.4,0.2
+selected model d384 L8 V4k (15.7M),43,86.65,86.05,-0.6
+selected model d384 L8 V4k (15.7M),44,88.6,88.7,0.1
+selected model d384 L8 V4k (15.7M),45,84.3,83.85,-0.45
+selected model d384 L8 V4k (15.7M),46,87.95,87.75,-0.2
+d384 L4 V4k (8.6M),42,79.4,77.8,-1.6
+d384 L4 V4k (8.6M),43,88.7,88.1,-0.6
+d384 L4 V4k (8.6M),44,88.9,88.35,-0.55
+d384 L4 V4k (8.6M),45,77.25,77.35,0.1
+d384 L4 V4k (8.6M),46,75.6,76.15,0.55

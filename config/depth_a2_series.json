@@ -1,0 +1,38 @@
+{
+  "series": "A",
+  "title": "Attribute-count control for the depth heuristic: depth sweep at A = 2 (colour, emotion; intensity fixed neutral), K_eff = 192",
+  "created": "2026-09-06",
+  "status": "PREPARED",
+  "purpose": "The depth series (A = 3, K_eff = 240) found L = 4 to be the shallowest depth without consistent loss. If depth tracks the number of attributes the policy reads (heuristic L = A + 1), a two-attribute policy should reach its no-loss depth at L = 3 or shallower; if the depth curve has the same shape as at A = 3, attribute count does not govern depth in this range.",
+  "fixed": {
+    "d_model": 384,
+    "n_head": 6,
+    "d_ff": 1024,
+    "vocab": "24k production tokenizer (matches the D series)",
+    "pretrain": "reused D-series checkpoints (d 384, 2,400 steps, per depth)",
+    "sft": "keff_series/A2K192 (policy-only + coverage fill), 4 epochs",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "eval": "A2K192 test_rule (2,000 rows, all 192 tuples covered)"
+  },
+  "scales": [
+    "D2",
+    "D4",
+    "D6",
+    "D8"
+  ],
+  "run_count": {
+    "sft": 12,
+    "eval": 12
+  },
+  "comparison": "D series at A = 3 (scale_grid_depth, same widths/depths/seeds/tokenizer/budget)",
+  "preregistered_predictions": {
+    "status": "FROZEN at launch (sha256 in backend/reports/scale_grid_depth_a2/inputs.sha256)",
+    "P-A1 (depth tracks attributes)": "At A = 2 the shallowest depth within 3 pp exact of L = 8 is L = 2 (D2 - D8 > -3 pp with seeds agreeing), whereas at A = 3 it was L = 4 (D2 - D8 = -1.7 pp mean at three seeds but D2 -> D4 was an adopted +6.5 pp rise).",
+    "P-A2 (alternative: depth independent of A)": "The D2 -> D4 step at A = 2 is a rise of similar size to A = 3 (+6.5 pp) and adopted; then attribute count does not determine the no-loss depth in this range and L = A + 1 is not supported.",
+    "decision_rule": "Row-level McNemar per seed for D2->D4, D4->D6, D6->D8 at A = 2; Stouffer; Holm over 3 steps x 3 metrics; sign rule; plus seed-level t CIs. Interpret jointly with the A = 3 series."
+  }
+}

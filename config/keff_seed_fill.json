@@ -1,0 +1,13 @@
+{
+  "series": "K-fill",
+  "title": "Seed fill (45, 46) for the K_eff series decision cells: threshold-crossing widths under fixed steps and the larger widths under matched exposure",
+  "created": "2026-09-07",
+  "purpose": "Not a new hypothesis test. The K series was screened at three seeds. To report the threshold-crossing widths and the exposure-matched attenuation as confirmatory (five-seed) results, seeds 45 and 46 are added to the cells those statements rest on.",
+  "cells": {
+    "width_series_K240 (pretrain+SFT+eval; also supplies d128/d512 pretrain for the other policies)": ["W128", "W512"],
+    "fixed_epochs (4 epochs; scale_grid_keff)": {"K480": ["W384", "W512"], "K960": ["W384", "W512"]},
+    "fixed_steps (K48 21 ep, K480 2 ep, K960 1 ep; scale_grid_keff_fs)": {"K48": ["W128", "W192"], "K480": ["W192", "W256"], "K960": ["W256", "W384"]}
+  },
+  "runs": {"pretrain": 4, "sft": 24, "eval": 24},
+  "analysis_rule": "Re-run tools/analyze_keff_series.py for both budgets and tools/keff_common_subset.py; report d-hat_60 per policy with five seeds where available; any change from the three-seed values is reported explicitly; cells not reinforced remain three-seed and are marked hollow."
+}

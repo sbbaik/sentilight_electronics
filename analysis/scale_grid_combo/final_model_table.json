@@ -1,0 +1,137 @@
+{
+ "rows": [
+  {
+   "family": "W384 (deployed cfg: d384 L8 V24k-prod)",
+   "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+   ],
+   "n_seeds": 5,
+   "params": 23378304,
+   "fp32_weights_mb": 93.513216,
+   "exact_mean": 80.75,
+   "exact_sd": 3.6109209351632128,
+   "coarse_mean": 85.79,
+   "coarse_sd": 2.6710016847617317,
+   "strict_mean": 49.32,
+   "strict_sd": 1.3890644333507352,
+   "invalid_json_pct": 0.0,
+   "latency_mean_ms": 216.11,
+   "latency_p95_ms": 233.692
+  },
+  {
+   "family": "D4 (d384 L4 V24k-prod)",
+   "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+   ],
+   "n_seeds": 5,
+   "params": 16297344,
+   "fp32_weights_mb": 65.189376,
+   "exact_mean": 81.67,
+   "exact_sd": 4.8908843781058655,
+   "coarse_mean": 86.11999999999999,
+   "coarse_sd": 3.281501180862198,
+   "strict_mean": 48.75,
+   "strict_sd": 1.1656543226874787,
+   "invalid_json_pct": 0.0,
+   "latency_mean_ms": 117.902,
+   "latency_p95_ms": 127.492
+  },
+  {
+   "family": "V2 V4k (d384 L8 V4k-natural)",
+   "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+   ],
+   "n_seeds": 5,
+   "params": 15698304,
+   "fp32_weights_mb": 62.793216,
+   "exact_mean": 86.54,
+   "exact_sd": 1.806723553839933,
+   "coarse_mean": 90.39,
+   "coarse_sd": 1.0962435860701771,
+   "strict_mean": 51.39,
+   "strict_sd": 0.6338375186118294,
+   "invalid_json_pct": 0.0,
+   "latency_mean_ms": 202.822,
+   "latency_p95_ms": 224.572
+  },
+  {
+   "family": "C4kL4 (d384 L4 V4k-natural)",
+   "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+   ],
+   "n_seeds": 5,
+   "params": 8617344,
+   "fp32_weights_mb": 34.469376,
+   "exact_mean": 81.97,
+   "exact_sd": 6.379224090749599,
+   "coarse_mean": 86.75999999999999,
+   "coarse_sd": 4.818376282525063,
+   "strict_mean": 49.25,
+   "strict_sd": 2.340672980149083,
+   "invalid_json_pct": 0.01,
+   "latency_mean_ms": 106.712,
+   "latency_p95_ms": 114.134
+  },
+  {
+   "family": "V2 V4k mixed-4/6/8-bit (KV-cache eval runtime)",
+   "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+   ],
+   "n_seeds": 5,
+   "params": 15698304,
+   "fp32_weights_mb": 62.793216,
+   "exact_mean": 86.35,
+   "exact_sd": 1.9186583854349915,
+   "coarse_mean": 90.32,
+   "coarse_sd": 1.2925749494710146,
+   "strict_mean": 51.279999999999994,
+   "strict_sd": 0.7513321502504736,
+   "invalid_json_pct": 0.0,
+   "latency_mean_ms": 107.882,
+   "latency_p95_ms": 121.366
+  },
+  {
+   "family": "C4kL4 mixed-4/6/8-bit (KV-cache eval runtime)",
+   "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+   ],
+   "n_seeds": 5,
+   "params": 8617344,
+   "fp32_weights_mb": 34.469376,
+   "exact_mean": 81.55,
+   "exact_sd": 6.123826418180055,
+   "coarse_mean": 86.48,
+   "coarse_sd": 4.73782650589909,
+   "strict_mean": 49.11,
+   "strict_sd": 2.216810772258199,
+   "invalid_json_pct": 0.01,
+   "latency_mean_ms": 57.788,
+   "latency_p95_ms": 63.134
+  }
+ ],
+ "mixed4_export_mb": 12.251499
+}

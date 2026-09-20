@@ -1,0 +1,24 @@
+{
+ "label": "W384_fp32_s42",
+ "checkpoint": "backend/models/compact_llm/scale_grid_runs_width/W384/seed_42/f100/sft/compactlm_from_scratch_best.pt",
+ "checkpoint_mb": 280.639751,
+ "device": "cpu",
+ "torch_threads": 4,
+ "cpu": "x86_64",
+ "quantization": null,
+ "load_time_s": 0.2881259759888053,
+ "rss_before_load_mb": 505.28125,
+ "rss_after_load_mb": 674.27734375,
+ "peak_rss_mb": 903.65625,
+ "n_timed": 300,
+ "latency_ms": {
+  "median": 104.34783203527331,
+  "p95": 121.86735298018903,
+  "mean": 106.94779209928431,
+  "min": 92.78117801295593,
+  "max": 129.724197962787
+ },
+ "invalid_json_rate": 0.0,
+ "exact_rate": 0.7633333333333333,
+ "coarse_rate": 0.86
+}

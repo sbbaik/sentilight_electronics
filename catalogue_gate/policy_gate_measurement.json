@@ -1,0 +1,59 @@
+{
+ "catalogue": {
+  "count": 240,
+  "sha256": "7c187ab5af2c3f8aa17a7e16f3f30048ce0ac27c9ebf7e8a0e7a0aac52eba1e1"
+ },
+ "sets": {
+  "development test": {
+   "seeds": 5,
+   "rows_per_seed": 2000,
+   "rejected_pct": [
+    1.38,
+    0.72
+   ],
+   "false_rejections": 0,
+   "errors_caught_pct": [
+    9.9,
+    4.21
+   ],
+   "errors_missed_pct_of_all_rows": [
+    12.08,
+    1.25
+   ]
+  },
+  "unseen-frame hold-out": {
+   "seeds": 5,
+   "rows_per_seed": 2000,
+   "rejected_pct": [
+    3.85,
+    1.46
+   ],
+   "false_rejections": 0,
+   "errors_caught_pct": [
+    9.24,
+    3.28
+   ],
+   "errors_missed_pct_of_all_rows": [
+    37.46,
+    1.2
+   ]
+  },
+  "machine-paraphrase stress set": {
+   "seeds": 5,
+   "rows_per_seed": 2000,
+   "rejected_pct": [
+    12.18,
+    3.12
+   ],
+   "false_rejections": 0,
+   "errors_caught_pct": [
+    13.22,
+    3.37
+   ],
+   "errors_missed_pct_of_all_rows": [
+    79.94,
+    2.97
+   ]
+  }
+ }
+}

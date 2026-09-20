@@ -1,0 +1,8 @@
+model,parameters,model file,"CPU median latency, ms (4 threads)",invalid outputs
+TF-IDF character 2–4-grams + logistic regression,"3,650 × 240 weights",7.1 MB,0.6,impossible by construction
+frozen multilingual MiniLM-L12 embeddings + logistic regression,118 M encoder (frozen) + 0.09 M head,471 MB encoder,7.8,impossible by construction
+"frozen multilingual MiniLM-L12, nearest class centroid","118 M encoder (frozen), no head",471 MB encoder,7.7,impossible by construction
+multilingual MiniLM-L12 fine-tuned end to end + 240-class head,118 M,471 MB,5.1,impossible by construction
+CompactLM backbone (same pretrained checkpoints) + 240-class head,15.8 M,63 MB fp32,3.5,impossible by construction
+"CompactLM, deployed architecture (d 384, L 8, 24k)",23.4 M,93.5 MB fp32,101,0.0 %
+"CompactLM, selected model (d 384, L 8, 4k natural)",15.7 M,62.8 MB fp32; 17.1 MB mixed-bit,95,0.0 %

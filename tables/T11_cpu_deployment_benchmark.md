@@ -1,0 +1,14 @@
+**T11_cpu_deployment_benchmark.** CPU deployment benchmark, one seed per row, one model per process on a shared Intel Core Ultra 9 285K workstation: 4 torch threads and the same deterministic 300-prompt subset of the development test set after 20 warm-up prompts. Generative rows run through the production runtime with load-time dequantization and KV-cache greedy decoding; the last row is the 240-class head under the identical protocol, and it cannot emit an out-of-schema output. fp32 sizes are weights only. Compare file sizes only between rows of the same precision: no quantized export of the 240-class head was produced, so its quantized size is not measured. Accuracy is on the 300-prompt development subset and is not comparable to any hold-out or stress-set figure.
+
+| model | output formulation | precision | parameters | seeds | file MB | load s | RSS after load MB | peak RSS MB | median ms | p95 ms | invalid JSON % | exact % (300-prompt development subset) |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| deployed 23.4M (production lineage) | generative JSON | fp32 | 23,378,304 | 1 | 93.5 | 0.21 | 638 | 724 | 107 | 126 | 0.3 | 58.0 |
+| deployed 23.4M (production lineage) | generative JSON | mixed 4/6/8-bit | 23,378,304 | 1 | 47.8 | 0.20 | 691 | 728 | 101 | 108 | 0.3 | 57.3 |
+| d384 L8 V24k | generative JSON | fp32 | 23,378,304 | 1 | 93.5 | 0.29 | 674 | 904 | 104 | 122 | 0.0 | 76.3 |
+| d384 L8 V24k | generative JSON | mixed 4/6/8-bit | 23,378,304 | 1 | 47.8 | 0.20 | 691 | 729 | 101 | 110 | 0.0 | 77.0 |
+| d384 L8 V4k (selected) | generative JSON | fp32 | 15,698,304 | 1 | 62.8 | 0.17 | 632 | 788 | 98 | 113 | 0.0 | 85.3 |
+| d384 L8 V4k (selected) | generative JSON | mixed 4/6/8-bit | 15,698,304 | 1 | 17.1 | 0.10 | 658 | 665 | 95 | 105 | 0.0 | 86.0 |
+| d384 L4 V4k | generative JSON | mixed 4/6/8-bit | 8,617,344 | 1 | 12.3 | 0.07 | 590 | 598 | 52 | 70 | 0.0 | 79.3 |
+| d384 L8 V4k backbone + 240-class head | 240-class | fp32 (no quantized export: not measured) | 15,790,704 | 1 | 63.2 | 0.11 | 638 | 647 | 3.4 | 3.8 | 0.0 | 86.3 |
+
+Source: `backend/reports/deploy_benchmark_t4/*.json`

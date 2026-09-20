@@ -1,0 +1,7 @@
+configuration,strict %,invalid JSON %,fp32 weights MB,latency mean / p95 ms
+W384 (deployed cfg: d384 L8 V24k-prod),49.3 ± 1.4,0.00,93.5,216 / 234
+D4 (d384 L4 V24k-prod),48.8 ± 1.2,0.00,65.2,118 / 127
+V2 V4k (d384 L8 V4k-natural),51.4 ± 0.6,0.00,62.8,203 / 225
+C4kL4 (d384 L4 V4k-natural),49.2 ± 2.3,0.01,34.5,107 / 114
+V2 V4k mixed-4/6/8-bit (KV-cache eval runtime),51.3 ± 0.8,0.00,62.8,108 / 121
+C4kL4 mixed-4/6/8-bit (KV-cache eval runtime),49.1 ± 2.2,0.01,34.5,58 / 63

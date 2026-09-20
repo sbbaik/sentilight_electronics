@@ -1,0 +1,10 @@
+condition,K_eff,smallest d ≥ 60 % exact
+"fixed steps (≈3,100)",48,128
+"fixed steps (≈3,100)",240,192
+"fixed steps (≈3,100)",480,256
+"fixed steps (≈3,100)",960,384
+fixed epochs (4),48,
+fixed epochs (4),240,
+fixed epochs (4),480,
+fixed epochs (4),960,
+fixed steps: log d* vs log K_eff slope,,50%: 0.22; 60%: 0.35 (R² 0.96); 70%: 0.33

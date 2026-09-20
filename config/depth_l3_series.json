@@ -1,0 +1,26 @@
+{
+  "series": "A-L3",
+  "title": "Direct test of the depth heuristic L = A + 1: n_layer = 3 at A = 3 (K240) and A = 2 (A2K192), five seeds",
+  "created": "2026-09-06",
+  "status": "PREPARED",
+  "purpose": "The even-depth grid {2,4,6,8} cannot separate 'L = A + 1' from 'L = 4 regardless of A': both predict L2 insufficient and L4 sufficient for A = 2 and A = 3. L = 3 is the only depth on which the two hypotheses disagree: L = A + 1 predicts that L = 3 already reaches the L = 4 level at A = 2 but not at A = 3.",
+  "fixed": {
+    "d_model": 384, "n_head": 6, "d_ff": 1024, "vocab": "24k production tokenizer",
+    "pretrain": "2,400 steps, clean corpus, batch 64 (new D3 checkpoints, one per seed; shared by both policies)",
+    "sft": "4 epochs, batch 64, lr 1e-4 (K240 for A = 3; A2K192 for A = 2)",
+    "seeds": [42, 43, 44, 45, 46],
+    "eval": "test_rule of each policy (2,000 rows)",
+    "note": "D2/D4 neighbours exist at seeds 42-44 only; D3 is run at five seeds so that its own level is estimated at confirmatory precision."
+  },
+  "scale_configs": {
+    "D3": {"d_model": 384, "n_layer": 3, "n_head": 6, "d_ff": 1024}
+  },
+  "run_count": {"pretrain": 5, "sft": 10, "eval": 10},
+  "preregistered_predictions": {
+    "status": "FROZEN at launch (sha256 in backend/reports/scale_grid_depth_l3/inputs.sha256)",
+    "P-L3-1 (L = A + 1 holds)": "At A = 2, D3 sits at the D4 level: D2 -> D3 is an adopted rise and D3 -> D4 is not adopted (|mean| < 3 pp). At A = 3, D3 does not reach the D4 level: D3 -> D4 is an adopted rise. Formally the interaction (D4 - D3)_A3 - (D4 - D3)_A2 is positive with a 90% CI excluding 0.",
+    "P-L3-2 (depth requirement not attribute-linked in this range)": "D3 occupies the same position relative to D2 and D4 in both policies (both intermediate, or both at the D4 level); the interaction CI includes 0.",
+    "P-L3-3 (L = 3 already sufficient for both)": "D3 -> D4 not adopted in either policy; then the no-gain depth is L = 3, not 4, for both, and the L = 4 statement in the depth series is revised.",
+    "decision_rule": "Row-level McNemar per seed (42-44, paired with existing D2/D4 rows) for D2->D3 and D3->D4 in each policy; Stouffer across seeds; Holm over 2 steps x 2 policies x 3 metrics; all-seeds sign rule. Seed-level: D3 five-seed mean with t CI (df 4); D3 vs D4 Welch (5 vs 3 seeds); interaction CI by Welch on per-seed (D4 - D3) differences using seeds 42-44. Equivalence claims only via TOST with +-3 pp; otherwise report 'no reliable gain observed'."
+  }
+}

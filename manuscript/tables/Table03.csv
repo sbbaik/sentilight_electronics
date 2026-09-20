@@ -1,0 +1,4 @@
+Evaluation set,Withheld (% of requests),Correct answers withheld,Wrong answers withheld (% of all wrong answers),Wrong answers passed by the gate (% of requests)
+Development test,1.4 ± 0.7,0,9.9 ± 4.2,12.1 ± 1.2
+Unseen-frame hold-out,3.9 ± 1.5,0,9.2 ± 3.3,37.5 ± 1.2
+Machine-paraphrase stress set,12.2 ± 3.1,0,13.2 ± 3.4,79.9 ± 3.0

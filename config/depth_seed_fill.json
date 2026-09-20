@@ -1,0 +1,9 @@
+{
+  "series": "A-fill",
+  "title": "Seed fill for the depth comparison L in {2,3,4}: seeds 45, 46 added to A=3 L2, A=2 L2 and A=2 L4",
+  "created": "2026-09-06",
+  "purpose": "Not a new hypothesis test. After the L = 3 addition (five seeds) the neighbouring cells were at three seeds (A = 3 L2; A = 2 L2, L4). Adding seeds 45 and 46 puts L2, L3 and L4 of both policies on five common seeds so that contrasts, the policy x depth interaction and SDs are computed on one seed set.",
+  "runs": {"pretrain": "D2 seeds 45, 46 (d 384, L 2, 24k, 2,400 steps; shared by both policies)", "sft_eval_A3": "K240 D2 seeds 45, 46", "sft_eval_A2": "A2K192 D2 and D4 seeds 45, 46 (D4 pretrain reused from the A = 3 root)", "total": 14},
+  "analysis_rule": "Re-run tools/analyze_depth_l3.py: all row-level contrasts pair seeds 42-46; P-L3 verdicts recomputed under the frozen rules of config/depth_l3_series.json and any change from the three-seed verdicts is reported explicitly.",
+  "pre_fill_reference": "backend/reports/scale_grid_depth_l3/depth_l3_analysis.json as of 2026-09-06 22:40 (three paired seeds)"
+}

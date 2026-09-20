@@ -1,0 +1,24 @@
+{
+ "label": "V4k_fp32_s42",
+ "checkpoint": "backend/models/compact_llm/scale_grid_runs_vocab_natural/V4k/V4k/seed_42/f100/sft/compactlm_from_scratch_best.pt",
+ "checkpoint_mb": 188.479815,
+ "device": "cpu",
+ "torch_threads": 4,
+ "cpu": "x86_64",
+ "quantization": null,
+ "load_time_s": 0.17437885701656342,
+ "rss_before_load_mb": 505.33984375,
+ "rss_after_load_mb": 632.15234375,
+ "peak_rss_mb": 787.84765625,
+ "n_timed": 300,
+ "latency_ms": {
+  "median": 97.97968697967008,
+  "p95": 113.41278697364032,
+  "mean": 100.06013303160823,
+  "min": 85.60559502802789,
+  "max": 125.51799701759592
+ },
+ "invalid_json_rate": 0.0,
+ "exact_rate": 0.8533333333333334,
+ "coarse_rate": 0.91
+}

@@ -1,0 +1,38 @@
+{
+ "K48": {
+  "n": 48,
+  "any_clamped": 11,
+  "B_at_100": 2,
+  "coarse_cells": 16,
+  "max_tuples_per_cell": 20,
+  "tuples_with_strict_neighbor": 46,
+  "max_strict_neighbors": 10
+ },
+ "K240": {
+  "n": 240,
+  "any_clamped": 29,
+  "B_at_100": 15,
+  "coarse_cells": 39,
+  "max_tuples_per_cell": 45,
+  "tuples_with_strict_neighbor": 238,
+  "max_strict_neighbors": 28
+ },
+ "K480": {
+  "n": 480,
+  "any_clamped": 69,
+  "B_at_100": 37,
+  "coarse_cells": 44,
+  "max_tuples_per_cell": 65,
+  "tuples_with_strict_neighbor": 478,
+  "max_strict_neighbors": 37
+ },
+ "K960": {
+  "n": 960,
+  "any_clamped": 117,
+  "B_at_100": 72,
+  "coarse_cells": 54,
+  "max_tuples_per_cell": 93,
+  "tuples_with_strict_neighbor": 959,
+  "max_strict_neighbors": 64
+ }
+}

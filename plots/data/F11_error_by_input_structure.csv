@@ -1,0 +1,9 @@
+input_structure,rows_per_seed,deployed_exact,selected_exact
+colour + emotion + intensity,1260,83.8,92.5
+colour + emotion,326,68.6,83.1
+colour + no-emotion + intensity,106,80.5,70.4
+colour + no-emotion,31,71.0,58.1
+no-colour + emotion + intensity,76,58.3,66.2
+no-colour + emotion,18,31.5,37.0
+no-colour + no-emotion + intensity,144,85.6,93.1
+no-colour + no-emotion,39,56.4,41.9

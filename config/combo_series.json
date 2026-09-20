@@ -1,0 +1,62 @@
+{
+  "series": "C",
+  "title": "Combined configuration: the fourth cell of the depth x vocabulary factorial",
+  "created": "2026-09-05",
+  "factorial": {
+    "L8_V24k_orig": {
+      "source": "W384 / D8",
+      "exact": 79.08,
+      "params": 23378304
+    },
+    "L4_V24k_orig": {
+      "source": "D4",
+      "exact": 83.92,
+      "params": 16297344
+    },
+    "L8_V4k_natural": {
+      "source": "V2 V4k",
+      "exact": 86.8,
+      "params": 15698304
+    },
+    "L4_V4k_natural": {
+      "source": "THIS RUN (C4kL4)",
+      "params": 8617344
+    }
+  },
+  "fixed": {
+    "d_model": 384,
+    "n_head": 6,
+    "d_ff": 1024,
+    "pretrain_steps": 2400,
+    "sft_epochs": 4,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "tokenizer": "backend/models/compact_llm/tokenizer_vocab_series_natural/V4k/tokenizer.json",
+    "tokens_npy": "backend/models/compact_llm/tokenizer_vocab_series_natural/V4k/pretrain_tokens.npy",
+    "sft_data": "backend/models/compact_llm/datasets/keff_series/K240 (train_100 / val / test_rule)"
+  },
+  "scale_configs": {
+    "C4kL4": {
+      "d_model": 384,
+      "n_layer": 4,
+      "n_head": 6,
+      "d_ff": 1024
+    }
+  },
+  "expected_parameters": {
+    "C4kL4": {
+      "total": 8617344,
+      "embedding_share": 0.18
+    }
+  },
+  "preregistered_predictions": {
+    "status": "FROZEN at launch (sha256 in backend/reports/scale_grid_combo/combo.inputs.sha256)",
+    "P-C1": "C4kL4 exact tuple match is within seed noise of V2 V4k (86.8%): |delta| < 3 pp, i.e. depth 4 costs nothing at V=4k just as it cost nothing at V=24k.",
+    "P-C2": "Latency is about half of V2 V4k (L8) - ~110-120 ms vs ~210 ms in the reference decoder.",
+    "P-C3": "The two factors are additive: C4kL4 - D4 (vocab effect at L4) is within 3 pp of V2V4k - W384 (vocab effect at L8, +7.7 pp).",
+    "decision_rule": "Per-seed exact McNemar C4kL4 vs V2 V4k and vs D4 on the 2,000 paired rows, Stouffer, Holm; adopt only with Holm p<0.05 and consistent seed signs."
+  }
+}

@@ -1,0 +1,10 @@
+tokenizer,vocab,parameters,seeds,exact tuple %
+natural-corpus (V2),4000,"15,698,304",5,86.5 ± 1.8
+"template-corpus (V1, negative control)",4000,"15,698,304",3,53.3 ± 5.5
+natural-corpus (V2),8000,"17,234,304",3,82.1 ± 4.1
+"template-corpus (V1, negative control)",8000,"17,234,304",3,52.8 ± 2.9
+natural-corpus (V2),16000,"20,306,304",3,70.9 ± 2.0
+"template-corpus (V1, negative control)",16000,"20,306,304",3,46.1 ± 5.0
+natural-corpus (V2),24000,"23,378,304",3,68.2 ± 7.5
+"template-corpus (V1, negative control)",24000,"23,378,304",3,58.5 ± 4.3
+production 24k (reference),24000,"23,378,304",5,80.8 ± 3.6

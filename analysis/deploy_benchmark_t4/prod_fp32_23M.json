@@ -1,0 +1,24 @@
+{
+ "label": "prod_fp32_23M",
+ "checkpoint": "backend/models/compact_llm/checkpoint/sentilight_compactlm_final.pt",
+ "checkpoint_mb": 93.543541,
+ "device": "cpu",
+ "torch_threads": 4,
+ "cpu": "x86_64",
+ "quantization": null,
+ "load_time_s": 0.20653622801182792,
+ "rss_before_load_mb": 505.31640625,
+ "rss_after_load_mb": 637.9140625,
+ "peak_rss_mb": 724.203125,
+ "n_timed": 300,
+ "latency_ms": {
+  "median": 107.23654797766358,
+  "p95": 126.49155099643394,
+  "mean": 108.51834096266732,
+  "min": 90.874886023812,
+  "max": 323.1495179934427
+ },
+ "invalid_json_rate": 0.0033333333333333335,
+ "exact_rate": 0.58,
+ "coarse_rate": 0.7233333333333334
+}

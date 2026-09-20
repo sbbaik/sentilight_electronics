@@ -1,0 +1,10 @@
+quantity,value,how obtained
+effective action space K_eff,240,"enumerated from the executable policy: (7+1)(5+1)×5, 0 collisions"
+attributes read by the policy A,3,"colour, emotion, intensity"
+nominal actuator space,≈1.3×10^11,|H|·|S|·|B|·|D|·|CT| = 361·101·101·101·348; not used for sizing
+width prior,d ≈ 256–384 (search starting region); band computed over d 256–512,"d near K_eff, rounded to multiples of 64 (a search starting region, not a bound); the band below deliberately extends one step above the region"
+depth prior,L ≈ 6–12 (original heuristic); L = 4 adopted after the depth series,"one to two layers per attribute was the original heuristic; its direct test (L = 3 at A = 2 and A = 3, five seeds) found no support, and where the L = 2 → 4 gain lies is unresolved (interactions imprecise); depth in this range is a seed-sensitive effect to be swept with ≥ 5 seeds"
+vocabulary,V = 24k (original); 4k natural-corpus (revised by the vocabulary series),input-side choice; embedding term V·d
+parameter band N ≈ V·d + 12·L·d²,≈1×10^7 – 6×10^7,"minimum V 20k, d 256, L 6 → 9.8M; maximum V 50k, d 512, L 12 → 63M. With the narrower width region d 256–384 and V 24k the band would be 10.9M–30.5M"
+deployed configuration,"23.4M (d 384, L 8, V 24k)",inside the band
+selected configuration,"15.7M (d 384, L 8, V 4k natural)",inside the band; chosen by the series experiments

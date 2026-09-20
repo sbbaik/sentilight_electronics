@@ -1,0 +1,407 @@
+{
+ "dev_source": {
+  "selected_V4k_L8": "T10",
+  "deployed_W384_L8_V24k": "T10",
+  "C4kL4": "T10",
+  "X320_V4k": "T08",
+  "D4_V24k": "T10"
+ },
+ "configs": {
+  "selected_V4k_L8": {
+   "name": "selected: d 384, L 8, 4k natural tokenizer",
+   "params": 15698304,
+   "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+   ],
+   "acc": [
+    58.4,
+    56.65,
+    61.45,
+    58.599999999999994,
+    58.35
+   ],
+   "mean": 58.69,
+   "sd": 1.731112359149459,
+   "boot_mean": 58.6514875741345,
+   "boot_ci90": [
+    55.85949643502969,
+    61.39052190934642
+   ],
+   "boot_ci90_family_resampled": [
+    56.0383224352756,
+    66.63448153603807
+   ],
+   "family_macro_mean": 60.600721328188925,
+   "dev_mean": 86.5,
+   "dev_sd": 1.8,
+   "dev_source": "T10",
+   "coarse": 70.63,
+   "strict": 44.73,
+   "valid_pct": 100.0,
+   "by_source_mean": {
+    "mixed": 55.041782729805014,
+    "color_only": 74.609375,
+    "emotion_only": 58.13333333333333,
+    "fallback": 74.21686746987952
+   },
+   "by_family_mean": {
+    "mixed": 55.041782729805014,
+    "color_only": 74.609375,
+    "emotion_only_intensity": 58.764044943820224,
+    "fallback_intensity": 79.44444444444444,
+    "emotion_only_neutral": 55.744680851063826,
+    "fallback_neutral": 40.0
+   },
+   "attr_err_pct_of_wrong": {
+    "colour_wrong": 12.748786355875058,
+    "emotion_wrong": 65.0467541226807,
+    "intensity_wrong": 30.132774522267415,
+    "not_a_policy_tuple": 9.244815148678905
+   }
+  },
+  "deployed_W384_L8_V24k": {
+   "name": "deployed architecture: d 384, L 8, 24k production tokenizer",
+   "params": 23378304,
+   "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+   ],
+   "acc": [
+    53.65,
+    56.89999999999999,
+    57.95,
+    59.9,
+    58.85
+   ],
+   "mean": 57.449999999999996,
+   "sd": 2.3955688259784993,
+   "boot_mean": 57.40742957721778,
+   "boot_ci90": [
+    54.37494162907757,
+    60.219879441979415
+   ],
+   "boot_ci90_family_resampled": [
+    54.766239611528434,
+    67.72372227803999
+   ],
+   "family_macro_mean": 62.527568348834194,
+   "dev_mean": 80.8,
+   "dev_sd": 3.6,
+   "dev_source": "T10",
+   "coarse": 70.55,
+   "strict": 45.31,
+   "valid_pct": 100.0,
+   "by_source_mean": {
+    "mixed": 52.1866295264624,
+    "color_only": 75.234375,
+    "emotion_only": 64.88888888888889,
+    "fallback": 73.49397590361446
+   },
+   "by_family_mean": {
+    "mixed": 52.1866295264624,
+    "color_only": 75.234375,
+    "emotion_only_intensity": 68.98876404494382,
+    "fallback_intensity": 76.66666666666667,
+    "emotion_only_neutral": 49.361702127659576,
+    "fallback_neutral": 52.72727272727273
+   },
+   "attr_err_pct_of_wrong": {
+    "colour_wrong": 10.505852865091516,
+    "emotion_wrong": 73.7379870366091,
+    "intensity_wrong": 31.002125947496364,
+    "not_a_policy_tuple": 2.8512982520651855
+   }
+  },
+  "X320_V4k": {
+   "name": "d 320, L 8, 4k natural tokenizer",
+   "params": 11197760,
+   "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+   ],
+   "acc": [
+    60.45,
+    59.95,
+    56.699999999999996,
+    56.45,
+    57.15
+   ],
+   "mean": 58.14,
+   "sd": 1.9053870997778921,
+   "boot_mean": 58.09347470729187,
+   "boot_ci90": [
+    54.87877191628736,
+    61.00355779338129
+   ],
+   "boot_ci90_family_resampled": [
+    55.47036182322677,
+    66.29421012114727
+   ],
+   "family_macro_mean": 63.84126537323065,
+   "dev_mean": 83.8,
+   "dev_sd": 3.4,
+   "dev_source": "T08",
+   "coarse": 70.46,
+   "strict": 44.85,
+   "valid_pct": 99.99,
+   "by_source_mean": {
+    "mixed": 54.47075208913649,
+    "color_only": 71.5625,
+    "emotion_only": 60.71111111111111,
+    "fallback": 73.25301204819277
+   },
+   "by_family_mean": {
+    "mixed": 54.47075208913649,
+    "color_only": 71.5625,
+    "emotion_only_intensity": 62.80898876404494,
+    "fallback_intensity": 74.16666666666667,
+    "emotion_only_neutral": 52.76595744680851,
+    "fallback_neutral": 67.27272727272728
+   },
+   "attr_err_pct_of_wrong": {
+    "colour_wrong": 10.289688355725104,
+    "emotion_wrong": 63.97946927780635,
+    "intensity_wrong": 31.89487632104431,
+    "not_a_policy_tuple": 11.734451965931646
+   }
+  },
+  "C4kL4": {
+   "name": "d 384, L 4, 4k natural tokenizer",
+   "params": 8617344,
+   "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+   ],
+   "acc": [
+    52.75,
+    61.150000000000006,
+    55.15,
+    55.60000000000001,
+    50.55
+   ],
+   "mean": 55.04,
+   "sd": 3.9705793028221996,
+   "boot_mean": 55.01206487306756,
+   "boot_ci90": [
+    51.50954909426474,
+    58.56303079374926
+   ],
+   "boot_ci90_family_resampled": [
+    51.7761878334678,
+    63.14089164055711
+   ],
+   "family_macro_mean": 60.12366893557382,
+   "dev_mean": 82.0,
+   "dev_sd": 6.4,
+   "dev_source": "T10",
+   "coarse": 67.63,
+   "strict": 42.92,
+   "valid_pct": 99.97,
+   "by_source_mean": {
+    "mixed": 52.089136490250695,
+    "color_only": 65.703125,
+    "emotion_only": 53.24444444444444,
+    "fallback": 78.07228915662651
+   },
+   "by_family_mean": {
+    "mixed": 52.089136490250695,
+    "color_only": 65.703125,
+    "emotion_only_intensity": 53.70786516853933,
+    "fallback_intensity": 81.38888888888889,
+    "emotion_only_neutral": 51.48936170212766,
+    "fallback_neutral": 56.36363636363636
+   },
+   "attr_err_pct_of_wrong": {
+    "not_a_policy_tuple": 8.631166828335687,
+    "colour_wrong": 12.914508559604617,
+    "emotion_wrong": 67.1420157532392,
+    "intensity_wrong": 29.47323487667269
+   }
+  },
+  "D4_V24k": {
+   "name": "d 384, L 4, 24k production tokenizer",
+   "params": 16297344,
+   "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+   ],
+   "acc": [
+    58.699999999999996,
+    51.0,
+    48.85,
+    50.24999999999999,
+    51.55
+   ],
+   "mean": 52.07,
+   "sd": 3.842297489783943,
+   "boot_mean": 52.04316521512165,
+   "boot_ci90": [
+    48.38187738032032,
+    55.68025089254144
+   ],
+   "boot_ci90_family_resampled": [
+    48.657484398405515,
+    60.06675455441183
+   ],
+   "family_macro_mean": 51.66840433243378,
+   "dev_mean": 81.7,
+   "dev_sd": 4.9,
+   "dev_source": "T10",
+   "coarse": 65.6,
+   "strict": 42.69,
+   "valid_pct": 100.0,
+   "by_source_mean": {
+    "mixed": 48.6908077994429,
+    "color_only": 59.765625,
+    "emotion_only": 62.84444444444445,
+    "fallback": 57.59036144578314
+   },
+   "by_family_mean": {
+    "mixed": 48.6908077994429,
+    "color_only": 59.765625,
+    "emotion_only_intensity": 66.62921348314606,
+    "fallback_intensity": 62.77777777777778,
+    "emotion_only_neutral": 48.51063829787234,
+    "fallback_neutral": 23.636363636363637
+   },
+   "attr_err_pct_of_wrong": {
+    "colour_wrong": 18.15502168009757,
+    "emotion_wrong": 69.49496546826455,
+    "intensity_wrong": 32.72691788647961,
+    "not_a_policy_tuple": 3.7323362641894287
+   }
+  }
+ },
+ "quantized": {
+  "seeds": [
+   42,
+   43,
+   44,
+   45,
+   46
+  ],
+  "acc": [
+   57.8,
+   56.89999999999999,
+   61.4,
+   57.65,
+   58.199999999999996
+  ],
+  "mean": 58.38999999999999,
+  "sd": 1.7472836060582742,
+  "boot_ci90": [
+   55.50589721085464,
+   61.12540422729427
+  ],
+  "dev_mean": 86.3,
+  "dev_sd": 1.9,
+  "delta_vs_fp32": {
+   "d": [
+    -0.6000000000000014,
+    0.2499999999999929,
+    -0.05000000000000426,
+    -0.9499999999999957,
+    -0.15000000000000568
+   ],
+   "mean": -0.3000000000000028,
+   "ci90": [
+    -0.7522329957186955,
+    0.1522329957186898
+   ]
+  }
+ },
+ "paired": {
+  "selected_minus_deployed": {
+   "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+   ],
+   "d": [
+    4.75,
+    -0.2499999999999929,
+    3.5,
+    -1.3000000000000043,
+    -0.5
+   ],
+   "mean": 1.2400000000000007,
+   "ci90": [
+    -1.3326983574862954,
+    3.8126983574862967
+   ],
+   "superiority_p": 0.1811246815777181,
+   "noninferiority_margin_pp": -3.0,
+   "noninferiority_p": 0.012297621094261801,
+   "noninferiority_conclusion": "non-inferiority supported at the −3 pp margin",
+   "tost_p": 0.10923983778516816,
+   "tost_conclusion": "equivalence within ±3 pp NOT established",
+   "prespecified": false,
+   "note": "the ±3 pp margin recurs in the prospective register (P-C1, P-D3, P-X1) but its application to this comparison was decided after the hold-out results were seen; exploratory"
+  },
+  "row_level_discordant": {
+   "selected_only": 1282,
+   "deployed_only": 1158
+  }
+ },
+ "frames": {
+  "selected_model_per_frame": {
+   "mixed#12": 62.2,
+   "mixed#10": 63.0,
+   "mixed#1": 58.7,
+   "mixed#9": 62.1,
+   "mixed#5": 34.7,
+   "mixed#6": 59.6,
+   "mixed#3": 54.0,
+   "mixed#4": 65.1,
+   "color_only#2": 83.4,
+   "mixed#11": 54.5,
+   "emotion_only_intensity#1": 26.1,
+   "mixed#8": 54.5,
+   "mixed#2": 24.1,
+   "fallback_intensity#3": 91.9,
+   "emotion_only_intensity#3": 78.5,
+   "color_only#4": 88.4,
+   "mixed#7": 69.6,
+   "color_only#6": 73.3,
+   "color_only#5": 74.1,
+   "fallback_intensity#1": 80.0,
+   "emotion_only_neutral#4": 64.3,
+   "emotion_only_intensity#4": 52.7,
+   "color_only#1": 88.8,
+   "color_only#3": 45.0,
+   "emotion_only_intensity#2": 87.0,
+   "emotion_only_neutral#3": 81.7,
+   "fallback_neutral#2": 36.0,
+   "fallback_intensity#2": 62.0,
+   "fallback_neutral#1": 33.3,
+   "emotion_only_neutral#1": 38.2,
+   "emotion_only_neutral#2": 32.0,
+   "fallback_neutral#3": 53.3
+  },
+  "n_frames": 32,
+  "worst": "mixed#2",
+  "worst_acc": 24.1,
+  "best": "fallback_intensity#3",
+  "best_acc": 91.9,
+  "spread_pp": 67.8,
+  "unmatched_rows": 0
+ }
+}

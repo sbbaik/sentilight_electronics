@@ -1,0 +1,58 @@
+{
+  "series": "B",
+  "title": "Pretraining-budget robustness of the vocabulary result: V2 V4k and V2 V24k at 2x steps",
+  "created": "2026-09-05",
+  "status": "PREPARED, NOT LAUNCHED",
+  "purpose": "The V2 result (smaller natural-corpus vocabulary is better) is tied to a 2,400-step pretraining budget; the rare-token mechanism predicts that a larger budget narrows the gap. Rerun the two ends of the V2 series with 4,800 steps.",
+  "fixed": {
+    "d_model": 384,
+    "n_layer": 8,
+    "n_head": 6,
+    "d_ff": 1024,
+    "pretrain_steps": 4800,
+    "sft_epochs": 4,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "sft_data": "keff_series/K240"
+  },
+  "scale_configs": {
+    "B4k": {
+      "d_model": 384,
+      "n_layer": 8,
+      "n_head": 6,
+      "d_ff": 1024
+    },
+    "B24k": {
+      "d_model": 384,
+      "n_layer": 8,
+      "n_head": 6,
+      "d_ff": 1024
+    }
+  },
+  "per_vocab": {
+    "B4k": {
+      "tokenizer": "backend/models/compact_llm/tokenizer_vocab_series_natural/V4k/tokenizer.json",
+      "tokens_npy": "backend/models/compact_llm/tokenizer_vocab_series_natural/V4k/pretrain_tokens.npy",
+      "reference_2400_exact": 86.8
+    },
+    "B24k": {
+      "tokenizer": "backend/models/compact_llm/tokenizer_vocab_series_natural/V24k/tokenizer.json",
+      "tokens_npy": "backend/models/compact_llm/tokenizer_vocab_series_natural/V24k/pretrain_tokens.npy",
+      "reference_2400_exact": 68.2
+    }
+  },
+  "run_count": {
+    "pretrain": 6,
+    "sft": 6,
+    "eval": 6
+  },
+  "preregistered_predictions": {
+    "status": "freeze at launch (sha256 in backend/reports/scale_grid_budget/budget.inputs.sha256)",
+    "P-B1": "V24k gains more from doubling the budget than V4k (rare-token starvation eases): (B24k - V2 V24k) exceeds (B4k - V2 V4k) by at least 3 pp exact.",
+    "P-B2": "V4k still beats V24k at 4,800 steps (gap > 5 pp exact, adopted): the vocabulary conclusion is robust to a 2x budget.",
+    "decision_rule": "Per-seed exact McNemar B4k vs B24k, and each vs its 2,400-step counterpart; Stouffer; Holm over 4 contrasts x 3 metrics; sign rule."
+  }
+}

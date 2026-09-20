@@ -1,0 +1,3 @@
+evaluation set,seed → row bootstrap 90 % CI,"McNemar (Stouffer z, p)",seeds favouring the head,generative coarse %,head coarse %,generative valid output %,head valid output %
+frame,"[-3.0, +1.9]","z = -0.69, p = 0.491",3/5,70.6,69.1,100.0,100.0 (by construction)
+paraphrase,"[+1.6, +3.3]","z = +7.14, p = 0.000",5/5,22.0,23.8,100.0,100.0 (by construction)

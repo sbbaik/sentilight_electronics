@@ -1,0 +1,6 @@
+Proposed licensing (to be confirmed by the authors before upload):
+
+- Data, tables, figures, evaluation outputs, model weights: Creative Commons Attribution 4.0 International (CC BY 4.0).
+- Code (tools/, tables/make_tables.py, figures/make_figures.py): MIT License, Copyright (c) 2026 Seongbok Baik and Yong-Geun Hong.
+
+MIT License text: https://opensource.org/license/mit ; CC BY 4.0: https://creativecommons.org/licenses/by/4.0/

@@ -1,0 +1,155 @@
+{
+  "runs_loaded": 12,
+  "expected_seeds": [
+    42,
+    43,
+    44
+  ],
+  "summaries": [
+    {
+      "scale": "D2",
+      "fraction": 100,
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "missing_seeds": [],
+      "runs": 3,
+      "parameter_count": 12756864,
+      "rows_total": 6000,
+      "strict": {
+        "mean": 0.7113333333333333,
+        "std": 0.02517108129050745,
+        "pooled_successes": 4268,
+        "pooled_ci95": [
+          0.6997351070832414,
+          0.7226611232959224
+        ]
+      },
+      "coarse": {
+        "mean": 0.8275,
+        "std": 0.043031964863343146,
+        "pooled_successes": 4965,
+        "pooled_ci95": [
+          0.817731367718385,
+          0.836849541347117
+        ]
+      },
+      "mean_latency_ms": {
+        "mean": 68.39333333333333,
+        "std": 2.6533249581107388
+      }
+    },
+    {
+      "scale": "D4",
+      "fraction": 100,
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "missing_seeds": [],
+      "runs": 3,
+      "parameter_count": 16297344,
+      "rows_total": 6000,
+      "strict": {
+        "mean": 0.7535,
+        "std": 0.026514147167125666,
+        "pooled_successes": 4521,
+        "pooled_ci95": [
+          0.7424351630570322,
+          0.7642404413646616
+        ]
+      },
+      "coarse": {
+        "mean": 0.8761666666666666,
+        "std": 0.05139390365922141,
+        "pooled_successes": 5257,
+        "pooled_ci95": [
+          0.8675905767468612,
+          0.8842613885258299
+        ]
+      },
+      "mean_latency_ms": {
+        "mean": 115.54,
+        "std": 1.3236691429507603
+      }
+    },
+    {
+      "scale": "D6",
+      "fraction": 100,
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "missing_seeds": [],
+      "runs": 3,
+      "parameter_count": 19837824,
+      "rows_total": 6000,
+      "strict": {
+        "mean": 0.7361666666666666,
+        "std": 0.02318584338197196,
+        "pooled_successes": 4417,
+        "pooled_ci95": [
+          0.7248668065648791,
+          0.7471643120843912
+        ]
+      },
+      "coarse": {
+        "mean": 0.8666666666666667,
+        "std": 0.027506059938372362,
+        "pooled_successes": 5200,
+        "pooled_ci95": [
+          0.8578302383443154,
+          0.8750338837646437
+        ]
+      },
+      "mean_latency_ms": {
+        "mean": 164.54666666666665,
+        "std": 4.522193420601705
+      }
+    },
+    {
+      "scale": "D8",
+      "fraction": 100,
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "missing_seeds": [],
+      "runs": 3,
+      "parameter_count": 23378304,
+      "rows_total": 6000,
+      "strict": {
+        "mean": 0.7678333333333334,
+        "std": 0.009169696468985985,
+        "pooled_successes": 4607,
+        "pooled_ci95": [
+          0.7569806969083408,
+          0.7783432322867034
+        ]
+      },
+      "coarse": {
+        "mean": 0.9010000000000001,
+        "std": 0.011357816691600558,
+        "pooled_successes": 5406,
+        "pooled_ci95": [
+          0.8931844362899656,
+          0.9083024172528323
+        ]
+      },
+      "mean_latency_ms": {
+        "mean": 209.23000000000002,
+        "std": 3.211090157563312
+      }
+    }
+  ],
+  "prediction_1_decision_rule": {
+    "support": "8M->23M improvement < 3.5%p and 23M->60M improvement < 3.5%p",
+    "reject_or_reduce": "23M->60M improvement >= 3.5%p with statistical support",
+    "lower_plateau": "3M->8M improves substantially but later increments are < 3.5%p"
+  }
+}

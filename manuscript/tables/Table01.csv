@@ -1,0 +1,6 @@
+Policy,Colours (+none),Emotions (+none),Intensity levels,K_eff,Role
+K48,4,4,3,48,small nested policy
+K240,8,6,5,240,production policy
+K480,12,8,5,480,expanded policy
+K960,16,12,5,960,largest policy
+A2K192,16,12,1,192,two-attribute depth control

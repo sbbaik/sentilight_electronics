@@ -1,0 +1,3 @@
+evaluation set,seeds per model,generative exact % (mean ± SD),240-class head exact % (mean ± SD),"difference (head − generative), pp",90 % t CI
+frame,5,58.7 ± 1.7,58.3 ± 2.3,-0.4,"[-3.7, +2.9]"
+paraphrase,5,7.9 ± 0.6,10.3 ± 0.6,+2.5,"[+1.5, +3.4]"

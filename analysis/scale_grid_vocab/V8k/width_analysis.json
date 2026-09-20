@@ -1,0 +1,39 @@
+{
+ "table": [
+  {
+   "scale": "V8k",
+   "d_model": 384,
+   "params": 17234304,
+   "seeds": [
+    42,
+    43,
+    44
+   ],
+   "strict_mean": 39.11666666666667,
+   "strict_sd": 1.46315868357924,
+   "coarse_mean": 64.28333333333333,
+   "coarse_sd": 0.20207259421637158,
+   "exact_mean": 52.83333333333333,
+   "exact_sd": 2.905311228308136,
+   "latency_ms": 202.3,
+   "per_seed": {
+    "42": {
+     "strict": 40.35,
+     "coarse": 64.25,
+     "exact": 50.4
+    },
+    "43": {
+     "strict": 37.5,
+     "coarse": 64.5,
+     "exact": 56.05
+    },
+    "44": {
+     "strict": 39.5,
+     "coarse": 64.1,
+     "exact": 52.05
+    }
+   }
+  }
+ ],
+ "contrasts": []
+}

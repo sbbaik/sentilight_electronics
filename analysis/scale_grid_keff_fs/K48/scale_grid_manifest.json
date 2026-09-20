@@ -1,0 +1,103 @@
+{
+  "created_at": "2026-09-07T17:49:10+0900",
+  "scale_configs": {
+    "W128": {
+      "d_model": 128,
+      "n_layer": 8,
+      "n_head": 2,
+      "d_ff": 352
+    },
+    "W192": {
+      "d_model": 192,
+      "n_layer": 8,
+      "n_head": 3,
+      "d_ff": 512
+    },
+    "W224": {
+      "d_model": 224,
+      "n_layer": 8,
+      "n_head": 4,
+      "d_ff": 608
+    },
+    "W256": {
+      "d_model": 256,
+      "n_layer": 8,
+      "n_head": 4,
+      "d_ff": 672
+    },
+    "W320": {
+      "d_model": 320,
+      "n_layer": 8,
+      "n_head": 5,
+      "d_ff": 864
+    },
+    "W384": {
+      "d_model": 384,
+      "n_layer": 8,
+      "n_head": 6,
+      "d_ff": 1024
+    },
+    "W512": {
+      "d_model": 512,
+      "n_layer": 8,
+      "n_head": 8,
+      "d_ff": 1376
+    }
+  },
+  "scale_config_path": "config/width_series.json",
+  "args": {
+    "python": "/home/sbbaik/miniconda3/envs/sentilight/bin/python",
+    "run_root": "backend/models/compact_llm/scale_grid_runs_keff_fs/K48",
+    "report_root": "backend/reports/scale_grid_keff_fs/K48",
+    "subset_dir": "backend/models/compact_llm/datasets/keff_series/K48",
+    "tokens_npy": "backend/models/compact_llm/datasets/pretrain_runs/20260805_clean_v1/pretrain_tokens.npy",
+    "tokenizer_path": "backend/models/compact_llm/tokenizer/tokenizer.json",
+    "val_jsonl": "backend/models/compact_llm/datasets/keff_series/K48/val.jsonl",
+    "dataset": "backend/models/compact_llm/datasets/keff_series/K48/test_rule.jsonl",
+    "seeds": [
+      45,
+      46
+    ],
+    "fractions": [
+      100
+    ],
+    "scales": [
+      "W128",
+      "W192"
+    ],
+    "scale_config": "config/width_series.json",
+    "gpus": [
+      1,
+      0
+    ],
+    "max_parallel": 2,
+    "min_free_mb": 24000,
+    "disable_memory_check": false,
+    "poll_seconds": 15,
+    "retry_failed": 1,
+    "force": false,
+    "dry_run": false,
+    "pretrain_steps": 2400,
+    "pretrain_batch_size": 64,
+    "pretrain_lr": 0.0003,
+    "pretrain_min_lr": 3e-05,
+    "pretrain_warmup_steps": 120,
+    "sft_epochs": 21,
+    "sft_batch_size": 64,
+    "sft_lr": 0.0001,
+    "sft_max_train_rows": null,
+    "sft_max_val_rows": null,
+    "block_size": 256,
+    "eval_max_rows": null,
+    "eval_progress_every": 50,
+    "phases": [
+      "sft",
+      "eval"
+    ]
+  },
+  "task_counts": {
+    "pretrain": 4,
+    "sft": 4,
+    "eval": 4
+  }
+}

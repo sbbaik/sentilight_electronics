@@ -1,0 +1,34 @@
+{
+  "output_checkpoint": "/home/sbbaik/Sentilight_Paper_2/Implement_New_Android_v6/backend/models/compact_llm/scale_grid_runs_vocab_natural_q4/V4k_s44_mixed4.pt",
+  "output_size_bytes": 17125048,
+  "source_checkpoint": "/home/sbbaik/Sentilight_Paper_2/Implement_New_Android_v6/backend/models/compact_llm/scale_grid_runs_vocab_natural/V4k/V4k/seed_44/f100/sft/compactlm_from_scratch_best.pt",
+  "source_checkpoint_sha256": "b094dc1180712557c7990311af4343204b68d798bb6595c9ff02902178d17f13",
+  "quantization": {
+    "format": "sentilight_compactlm_mixed4_weightonly_v1",
+    "method": "mixed4_weightonly_loadtime_dequant",
+    "source_model_id": "compact_llm",
+    "target_model_id": "compact_llm_q4",
+    "display_name": "CompactLM Q4",
+    "group_size": 64,
+    "bit_params": {
+      "8": 5898240,
+      "4": 7372800,
+      "6": 884736
+    },
+    "retained_params": 3078528,
+    "quantized_params": 14155776,
+    "packing": {
+      "4bit": "packed_nibbles_uint8",
+      "6bit": "uint8_codes",
+      "8bit": "uint8_codes"
+    },
+    "sensitive_policy": {
+      "first_and_last_transformer_blocks": 8,
+      "ffn_down_proj": 8,
+      "attention_o_proj": 6,
+      "embedding_and_lm_head": "fp16_checkpoint_fp32_runtime",
+      "norms": "fp32"
+    },
+    "runtime": "loadtime_dequant_to_existing_pytorch_graph"
+  }
+}

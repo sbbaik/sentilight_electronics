@@ -1,0 +1,5 @@
+policy,collisions,hue snaps fired,coarse-bin cells occupied,tuples with a strict-box neighbour,note
+K48,0,0,16,46,nested extension
+K240,0,0,39,238,production policy
+K480,0,0,44,478,nested extension
+K960,0,0,54,959,nested extension

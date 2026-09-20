@@ -1,0 +1,8 @@
+model,seeds,output formulation,development test exact %,unseen-frame hold-out exact %,paraphrase stress-set exact %
+TF-IDF character 2–4-grams + logistic regression,1 (descriptive only),240-class,66.7,31.8,—
+frozen multilingual MiniLM-L12 embeddings + logistic regression,1 (descriptive only),240-class,30.8,17.4,9.8
+"frozen multilingual MiniLM-L12, nearest class centroid",1 (descriptive only),240-class,19.9,18.2,—
+multilingual MiniLM-L12 fine-tuned end to end + 240-class head,**1 (descriptive only)**,240-class,87.7,69.6,22.2
+CompactLM backbone (same pretrained checkpoints) + 240-class head,5,240-class,87.2 ± 0.7,58.3 ± 2.3,10.3 ± 0.6
+"CompactLM, deployed architecture (d 384, L 8, 24k)",5,generative JSON,80.8 ± 3.6,57.4 ± 2.4,6.6 ± 0.3
+"CompactLM, selected model (d 384, L 8, 4k natural)",5,generative JSON,86.5 ± 1.8,58.7 ± 1.7,7.9 ± 0.6

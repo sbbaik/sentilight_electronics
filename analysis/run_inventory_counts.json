@@ -1,0 +1,76 @@
+{
+ "series": {
+  "W width (24k)": {
+   "pretrain": 33,
+   "sft": 33,
+   "eval_fp32": 33,
+   "eval_quant": 0
+  },
+  "K K_eff, matched exposure (fixed epochs)": {
+   "pretrain": 0,
+   "sft": 53,
+   "eval_fp32": 53,
+   "eval_quant": 0
+  },
+  "K K_eff, fixed steps": {
+   "pretrain": 0,
+   "sft": 57,
+   "eval_fp32": 57,
+   "eval_quant": 0
+  },
+  "D depth (A = 3), incl. L = 3": {
+   "pretrain": 27,
+   "sft": 27,
+   "eval_fp32": 27,
+   "eval_quant": 0
+  },
+  "A depth at A = 2, incl. L = 3": {
+   "pretrain": 0,
+   "sft": 21,
+   "eval_fp32": 21,
+   "eval_quant": 0
+  },
+  "V vocabulary, template corpus": {
+   "pretrain": 12,
+   "sft": 12,
+   "eval_fp32": 12,
+   "eval_quant": 0
+  },
+  "V vocabulary, natural corpus": {
+   "pretrain": 14,
+   "sft": 14,
+   "eval_fp32": 14,
+   "eval_quant": 5
+  },
+  "C combined": {
+   "pretrain": 5,
+   "sft": 5,
+   "eval_fp32": 5,
+   "eval_quant": 5
+  },
+  "B budget": {
+   "pretrain": 6,
+   "sft": 6,
+   "eval_fp32": 6,
+   "eval_quant": 0
+  },
+  "X width under V4k": {
+   "pretrain": 15,
+   "sft": 15,
+   "eval_fp32": 15,
+   "eval_quant": 0
+  },
+  "K common-test-set evaluations (existing checkpoints on the K48 test)": {
+   "pretrain": 0,
+   "sft": 0,
+   "eval_fp32": 56,
+   "eval_quant": 0
+  }
+ },
+ "total": {
+  "pretrain": 112,
+  "sft": 243,
+  "eval_fp32": 299,
+  "eval_quant": 10
+ }
+}

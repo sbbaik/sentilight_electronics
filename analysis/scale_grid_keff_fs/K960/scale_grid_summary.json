@@ -1,0 +1,190 @@
+{
+  "runs_loaded": 15,
+  "expected_seeds": [
+    42,
+    43,
+    44
+  ],
+  "summaries": [
+    {
+      "scale": "W128",
+      "fraction": 100,
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "missing_seeds": [],
+      "runs": 3,
+      "parameter_count": 4679808,
+      "rows_total": 6000,
+      "strict": {
+        "mean": 0.6075,
+        "std": 0.03459768778401236,
+        "pooled_successes": 3645,
+        "pooled_ci95": [
+          0.5950793343522048,
+          0.6197831014479219
+        ]
+      },
+      "coarse": {
+        "mean": 0.5038333333333334,
+        "std": 0.04324735059322515,
+        "pooled_successes": 3023,
+        "pooled_ci95": [
+          0.49118378706056715,
+          0.5164779742160266
+        ]
+      },
+      "mean_latency_ms": {
+        "mean": 196.65333333333334,
+        "std": 0.640650710866174
+      }
+    },
+    {
+      "scale": "W192",
+      "fraction": 100,
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "missing_seeds": [],
+      "runs": 3,
+      "parameter_count": 8150208,
+      "rows_total": 6000,
+      "strict": {
+        "mean": 0.648,
+        "std": 0.03527392804891453,
+        "pooled_successes": 3888,
+        "pooled_ci95": [
+          0.6358242274385312,
+          0.6599863818490851
+        ]
+      },
+      "coarse": {
+        "mean": 0.6286666666666667,
+        "std": 0.03623649173600189,
+        "pooled_successes": 3772,
+        "pooled_ci95": [
+          0.6163625316196206,
+          0.6408061512295233
+        ]
+      },
+      "mean_latency_ms": {
+        "mean": 207.35666666666665,
+        "std": 3.379561115490193
+      }
+    },
+    {
+      "scale": "W256",
+      "fraction": 100,
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "missing_seeds": [],
+      "runs": 3,
+      "parameter_count": 12374272,
+      "rows_total": 6000,
+      "strict": {
+        "mean": 0.6781666666666667,
+        "std": 0.028785123472608788,
+        "pooled_successes": 4069,
+        "pooled_ci95": [
+          0.6662348483022229,
+          0.6898704910316305
+        ]
+      },
+      "coarse": {
+        "mean": 0.762,
+        "std": 0.08499852939904312,
+        "pooled_successes": 4572,
+        "pooled_ci95": [
+          0.7510589823573411,
+          0.7726057448950604
+        ]
+      },
+      "mean_latency_ms": {
+        "mean": 203.17666666666665,
+        "std": 3.4546393926621826
+      }
+    },
+    {
+      "scale": "W384",
+      "fraction": 100,
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "missing_seeds": [],
+      "runs": 3,
+      "parameter_count": 23378304,
+      "rows_total": 6000,
+      "strict": {
+        "mean": 0.6918333333333333,
+        "std": 0.056241295622819126,
+        "pooled_successes": 4151,
+        "pooled_ci95": [
+          0.6800303715991578,
+          0.7033908122860293
+        ]
+      },
+      "coarse": {
+        "mean": 0.802,
+        "std": 0.08972597171388008,
+        "pooled_successes": 4812,
+        "pooled_ci95": [
+          0.7917250870815837,
+          0.8118884534917954
+        ]
+      },
+      "mean_latency_ms": {
+        "mean": 211.99333333333334,
+        "std": 2.4540239064306797
+      }
+    },
+    {
+      "scale": "W512",
+      "fraction": 100,
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "missing_seeds": [],
+      "runs": 3,
+      "parameter_count": 37593600,
+      "rows_total": 6000,
+      "strict": {
+        "mean": 0.7195,
+        "std": 0.005766281297335432,
+        "pooled_successes": 4317,
+        "pooled_ci95": [
+          0.7079951050048641,
+          0.7307240080939992
+        ]
+      },
+      "coarse": {
+        "mean": 0.8544999999999999,
+        "std": 0.010688779163216016,
+        "pooled_successes": 5127,
+        "pooled_ci95": [
+          0.8453511957663921,
+          0.8631951622907698
+        ]
+      },
+      "mean_latency_ms": {
+        "mean": 207.65333333333334,
+        "std": 6.514877844851224
+      }
+    }
+  ],
+  "prediction_1_decision_rule": {
+    "support": "8M->23M improvement < 3.5%p and 23M->60M improvement < 3.5%p",
+    "reject_or_reduce": "23M->60M improvement >= 3.5%p with statistical support",
+    "lower_plateau": "3M->8M improves substantially but later increments are < 3.5%p"
+  }
+}

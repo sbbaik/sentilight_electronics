@@ -1,0 +1,18 @@
+**S03_run_inventory.** Run inventory (supplementary), counted from artefacts on disk with one unit per column: independent pretraining runs (2,400 steps unless stated; 'linked' = checkpoints reused from another series), SFT-trained checkpoints (one per policy × configuration × seed; SFT 4 epochs unless stated), fp32 evaluation executions (2,000 rows each) and quantized evaluation executions. Seed reinforcement added after screening is included in the per-series counts.
+
+| series | grid | seeds | pretraining runs | SFT checkpoints | fp32 evaluations | quantized evaluations |
+|---|---|---|---|---|---|---|
+| W width (24k) | d ∈ {128,192,224,256,320,384,512}, L 8 | 3 (5 at 128/192/224/256/384/512) | 33 | 33 | 33 |  |
+| K K_eff, matched exposure (fixed epochs) | K48/K480/K960 × d ∈ {128,192,256,384,512}; K240 = W series | 3 (5 at K480/K960 d384, d512) | linked | 53 | 53 |  |
+| K K_eff, fixed steps | K48/K480/K960 × d ∈ {128,192,256,384,512}; K240 = W series | 3 (5 at threshold cells K48 d128/192, K480 d192/256, K960 d256/384) | linked | 57 | 57 |  |
+| D depth (A = 3), incl. L = 3 | L ∈ {2,3,4,6,8,12,16}, d 384 | 3 (5 at L = 2, 3, 4) | 27 | 27 | 27 |  |
+| A depth at A = 2, incl. L = 3 | L ∈ {2,3,4,6,8}, d 384; pretrain linked from D | 3 (5 at L = 2, 3, 4) | linked | 21 | 21 |  |
+| V vocabulary, template corpus | V ∈ {4k,8k,16k,24k} (negative control) | 3 | 12 | 12 | 12 |  |
+| V vocabulary, natural corpus | V ∈ {4k,8k,16k,24k} | 3 (5 at 4k) | 14 | 14 | 14 | 5 |
+| C combined | d 384, L 4, V 4k | 5 | 5 | 5 | 5 | 5 |
+| B budget | 4k / 24k natural at 4,800 steps | 3 | 6 | 6 | 6 |  |
+| X width under V4k | d ∈ {224,256,320}, L 8, V 4k | 5 | 15 | 15 | 15 |  |
+| K common-test-set evaluations (existing checkpoints on the K48 test) | K48/K240/K480/K960 × d ∈ {256,384} × both budgets on the K48 test_rule | all available | — | — | 56 |  |
+| total (this paper's series; IoTJ clean-grid reruns excluded) |  |  | 112 | 243 | 299 | 10 |
+
+Source: `backend/reports/run_inventory_counts.json (tools/keff_ring_analysis.py)`

@@ -1,0 +1,9 @@
+model,precision,seeds,file MB,median ms,p95 ms
+deployed 23.4M (production lineage),fp32,1,93.5,107,126
+deployed 23.4M (production lineage),mixed 4/6/8-bit,1,47.8,101,108
+d384 L8 V24k,fp32,1,93.5,104,122
+d384 L8 V24k,mixed 4/6/8-bit,1,47.8,101,110
+d384 L8 V4k (selected),fp32,1,62.8,98,113
+d384 L8 V4k (selected),mixed 4/6/8-bit,1,17.1,95,105
+d384 L4 V4k,mixed 4/6/8-bit,1,12.3,52,70
+d384 L8 V4k backbone + 240-class head,fp32 (no quantized export: not measured),1,63.2,3.4,3.8

@@ -1,0 +1,97 @@
+{
+ "frozen_source": "backend/reports/baselines_nongenerative/compactlm_classifier.json",
+ "seeds": {
+  "42": {
+   "params": 15790704,
+   "reproduced": {
+    "dev_exact": 86.6,
+    "holdout_exact": 55.1,
+    "paraphrase_exact": 10.5,
+    "train": 99.0202,
+    "val": 98.348
+   },
+   "frozen": {
+    "dev_exact": 86.59999966621399,
+    "holdout_exact": 55.09999990463257,
+    "paraphrase_exact": 10.499999672174454,
+    "train": 99.0202248096466,
+    "val": 98.3480155467987
+   },
+   "max_abs_diff_pp": 0.0
+  },
+  "43": {
+   "params": 15790704,
+   "reproduced": {
+    "dev_exact": 87.05,
+    "holdout_exact": 59.25,
+    "paraphrase_exact": 10.5,
+    "train": 99.0019,
+    "val": 98.605
+   },
+   "frozen": {
+    "dev_exact": 87.05000281333923,
+    "holdout_exact": 59.24999713897705,
+    "paraphrase_exact": 10.499999672174454,
+    "train": 99.00189638137817,
+    "val": 98.60499501228333
+   },
+   "max_abs_diff_pp": 0.0
+  },
+  "44": {
+   "params": 15790704,
+   "reproduced": {
+    "dev_exact": 86.45,
+    "holdout_exact": 56.6,
+    "paraphrase_exact": 11.15,
+    "train": 99.0162,
+    "val": 98.5683
+   },
+   "frozen": {
+    "dev_exact": 86.44999861717224,
+    "holdout_exact": 56.599998474121094,
+    "paraphrase_exact": 11.150000244379044,
+    "train": 99.01615381240845,
+    "val": 98.56828451156616
+   },
+   "max_abs_diff_pp": 0.0
+  },
+  "45": {
+   "params": 15790704,
+   "reproduced": {
+    "dev_exact": 87.85,
+    "holdout_exact": 59.85,
+    "paraphrase_exact": 9.8,
+    "train": 99.0182,
+    "val": 98.4214
+   },
+   "frozen": {
+    "dev_exact": 87.8499984741211,
+    "holdout_exact": 59.85000133514404,
+    "paraphrase_exact": 9.799999743700027,
+    "train": 99.01819229125977,
+    "val": 98.42143654823303
+   },
+   "max_abs_diff_pp": 0.0
+  },
+  "46": {
+   "params": 15790704,
+   "reproduced": {
+    "dev_exact": 87.9,
+    "holdout_exact": 60.6,
+    "paraphrase_exact": 9.75,
+    "train": 98.9978,
+    "val": 98.4949
+   },
+   "frozen": {
+    "dev_exact": 87.90000081062317,
+    "holdout_exact": 60.600000619888306,
+    "paraphrase_exact": 9.749999642372131,
+    "train": 98.99781942367554,
+    "val": 98.49485754966736
+   },
+   "max_abs_diff_pp": 0.0
+  }
+ },
+ "max_abs_diff_pp_overall": 0.0,
+ "verdict": "exact reproduction"
+}

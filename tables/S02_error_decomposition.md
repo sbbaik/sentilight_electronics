@@ -1,0 +1,17 @@
+**S02_error_decomposition.** Exact tuple match by test-set source layer and by input structure (whether the utterance names a colour, an emotion and a non-neutral intensity), pooled over seeds 42–44.
+
+| grouping | group | rows per seed | deployed d384 L8 V24k | selected d384 L8 V4k | d384 L4 V24k | d384 L4 V4k |
+|---|---|---|---|---|---|---|
+| source layer | color_emotion_intensity_combinations | 1420 | 78.0 | 89.3 | 85.5 | 87.7 |
+| source layer | conflict_and_color_adjective_cases | 400 | 82.8 | 80.3 | 83.0 | 82.3 |
+| source layer | ambiguous_fallback_cases | 180 | 79.3 | 81.9 | 73.7 | 77.0 |
+| input structure | colour + emotion | 326 | 68.6 | 83.1 | 72.1 | 81.2 |
+| input structure | colour + emotion + intensity | 1260 | 83.8 | 92.5 | 91.7 | 91.2 |
+| input structure | colour + no-emotion | 31 | 71.0 | 58.1 | 64.5 | 67.7 |
+| input structure | colour + no-emotion + intensity | 106 | 80.5 | 70.4 | 72.6 | 72.6 |
+| input structure | no-colour + emotion | 18 | 31.5 | 37.0 | 24.1 | 27.8 |
+| input structure | no-colour + emotion + intensity | 76 | 58.3 | 66.2 | 68.9 | 72.8 |
+| input structure | no-colour + no-emotion | 39 | 56.4 | 41.9 | 25.6 | 32.5 |
+| input structure | no-colour + no-emotion + intensity | 144 | 85.6 | 93.1 | 86.3 | 89.1 |
+
+Source: `backend/reports/scale_grid_combo/error_decomposition.json`

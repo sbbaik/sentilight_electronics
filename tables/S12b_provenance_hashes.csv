@@ -1,0 +1,31 @@
+evaluation,checkpoint sha256 (16),tokenizer sha256 (16),hold-out sha256 (16),development-test value and frozen source,quantization provenance
+C4kL4_s42,3812f3e785d3ed6a,d26ca0d1cfd20fc4,b5b7ee711e749eed,T10: 82.0 ± 6.4,—
+C4kL4_s43,c1cdef2e65470fab,d26ca0d1cfd20fc4,b5b7ee711e749eed,T10: 82.0 ± 6.4,—
+C4kL4_s44,51fd6fa3df164464,d26ca0d1cfd20fc4,b5b7ee711e749eed,T10: 82.0 ± 6.4,—
+C4kL4_s45,7a19aefb879b3e35,d26ca0d1cfd20fc4,b5b7ee711e749eed,T10: 82.0 ± 6.4,—
+C4kL4_s46,3b653ce049041ee5,d26ca0d1cfd20fc4,b5b7ee711e749eed,T10: 82.0 ± 6.4,—
+D4_V24k_s42,e59e8a92a37a7766,a3703c40d6dd472a,b5b7ee711e749eed,T10: 81.7 ± 4.9,—
+D4_V24k_s43,8f9797750aa0d87f,a3703c40d6dd472a,b5b7ee711e749eed,T10: 81.7 ± 4.9,—
+D4_V24k_s44,a7718e5e37827a65,a3703c40d6dd472a,b5b7ee711e749eed,T10: 81.7 ± 4.9,—
+D4_V24k_s45,d493f0d8acaca19b,a3703c40d6dd472a,b5b7ee711e749eed,T10: 81.7 ± 4.9,—
+D4_V24k_s46,be641920355c85b7,a3703c40d6dd472a,b5b7ee711e749eed,T10: 81.7 ± 4.9,—
+X320_V4k_s42,ce834567cf3f6419,d26ca0d1cfd20fc4,b5b7ee711e749eed,T08: 83.8 ± 3.4,—
+X320_V4k_s43,3a644ef346d3493d,d26ca0d1cfd20fc4,b5b7ee711e749eed,T08: 83.8 ± 3.4,—
+X320_V4k_s44,c4f4920b89dce32b,d26ca0d1cfd20fc4,b5b7ee711e749eed,T08: 83.8 ± 3.4,—
+X320_V4k_s45,f291955a725977e7,d26ca0d1cfd20fc4,b5b7ee711e749eed,T08: 83.8 ± 3.4,—
+X320_V4k_s46,856c3acd82049c23,d26ca0d1cfd20fc4,b5b7ee711e749eed,T08: 83.8 ± 3.4,—
+deployed_W384_L8_V24k_s42,bbbfe0c22ea7c2ae,a3703c40d6dd472a,b5b7ee711e749eed,T10: 80.8 ± 3.6,—
+deployed_W384_L8_V24k_s43,0f17405f28cdac21,a3703c40d6dd472a,b5b7ee711e749eed,T10: 80.8 ± 3.6,—
+deployed_W384_L8_V24k_s44,c44bfacd94135c15,a3703c40d6dd472a,b5b7ee711e749eed,T10: 80.8 ± 3.6,—
+deployed_W384_L8_V24k_s45,ee9ca2d40bf340f7,a3703c40d6dd472a,b5b7ee711e749eed,T10: 80.8 ± 3.6,—
+deployed_W384_L8_V24k_s46,e2787f585cbc5953,a3703c40d6dd472a,b5b7ee711e749eed,T10: 80.8 ± 3.6,—
+selected_V4k_L8_mixed4_s42,7c544b7883e5af7a,d26ca0d1cfd20fc4,b5b7ee711e749eed,T10: 86.3 ± 1.9,source fp32 sha 55f1c14d99e6d6f5 (matches); …
+selected_V4k_L8_mixed4_s43,9ef1ee056a297c9f,d26ca0d1cfd20fc4,b5b7ee711e749eed,T10: 86.3 ± 1.9,source fp32 sha 5d96582e5e3db86c (matches); …
+selected_V4k_L8_mixed4_s44,6bfdc4956fab002c,d26ca0d1cfd20fc4,b5b7ee711e749eed,T10: 86.3 ± 1.9,source fp32 sha b094dc1180712557 (matches); …
+selected_V4k_L8_mixed4_s45,9c607374ca801ca0,d26ca0d1cfd20fc4,b5b7ee711e749eed,T10: 86.3 ± 1.9,source fp32 sha 4b51efe7881eccb6 (matches); …
+selected_V4k_L8_mixed4_s46,b3d2ce7ce95e1ddc,d26ca0d1cfd20fc4,b5b7ee711e749eed,T10: 86.3 ± 1.9,source fp32 sha 32f477c75c5153fb (matches); …
+selected_V4k_L8_s42,55f1c14d99e6d6f5,d26ca0d1cfd20fc4,b5b7ee711e749eed,T10: 86.5 ± 1.8,—
+selected_V4k_L8_s43,5d96582e5e3db86c,d26ca0d1cfd20fc4,b5b7ee711e749eed,T10: 86.5 ± 1.8,—
+selected_V4k_L8_s44,b094dc1180712557,d26ca0d1cfd20fc4,b5b7ee711e749eed,T10: 86.5 ± 1.8,—
+selected_V4k_L8_s45,4b51efe7881eccb6,d26ca0d1cfd20fc4,b5b7ee711e749eed,T10: 86.5 ± 1.8,—
+selected_V4k_L8_s46,32f477c75c5153fb,d26ca0d1cfd20fc4,b5b7ee711e749eed,T10: 86.5 ± 1.8,—

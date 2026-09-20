@@ -1,0 +1,86 @@
+{
+  "created_at": "2026-09-05T14:49:40+0900",
+  "scale_configs": {
+    "V4k": {
+      "d_model": 384,
+      "n_layer": 8,
+      "n_head": 6,
+      "d_ff": 1024
+    },
+    "V8k": {
+      "d_model": 384,
+      "n_layer": 8,
+      "n_head": 6,
+      "d_ff": 1024
+    },
+    "V16k": {
+      "d_model": 384,
+      "n_layer": 8,
+      "n_head": 6,
+      "d_ff": 1024
+    },
+    "V24k": {
+      "d_model": 384,
+      "n_layer": 8,
+      "n_head": 6,
+      "d_ff": 1024
+    }
+  },
+  "scale_config_path": "config/vocab_series.json",
+  "args": {
+    "python": "/home/sbbaik/miniconda3/envs/sentilight/bin/python",
+    "run_root": "backend/models/compact_llm/scale_grid_runs_vocab/V8k",
+    "report_root": "backend/reports/scale_grid_vocab/V8k",
+    "subset_dir": "backend/models/compact_llm/datasets/keff_series/K240",
+    "tokens_npy": "backend/models/compact_llm/tokenizer_vocab_series/V8k/pretrain_tokens.npy",
+    "tokenizer_path": "backend/models/compact_llm/tokenizer_vocab_series/V8k/tokenizer.json",
+    "val_jsonl": "backend/models/compact_llm/datasets/keff_series/K240/val.jsonl",
+    "dataset": "backend/models/compact_llm/datasets/keff_series/K240/test_rule.jsonl",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "fractions": [
+      100
+    ],
+    "scales": [
+      "V8k"
+    ],
+    "scale_config": "config/vocab_series.json",
+    "gpus": [
+      1,
+      0
+    ],
+    "max_parallel": 2,
+    "min_free_mb": 24000,
+    "disable_memory_check": false,
+    "poll_seconds": 15,
+    "retry_failed": 1,
+    "force": false,
+    "dry_run": false,
+    "pretrain_steps": 2400,
+    "pretrain_batch_size": 64,
+    "pretrain_lr": 0.0003,
+    "pretrain_min_lr": 3e-05,
+    "pretrain_warmup_steps": 120,
+    "sft_epochs": 4,
+    "sft_batch_size": 64,
+    "sft_lr": 0.0001,
+    "sft_max_train_rows": null,
+    "sft_max_val_rows": null,
+    "block_size": 256,
+    "eval_max_rows": null,
+    "eval_progress_every": 50,
+    "phases": [
+      "pretrain",
+      "sft",
+      "eval"
+    ]
+  },
+  "task_counts": {
+    "pretrain": 3,
+    "sft": 3,
+    "eval": 3
+  }
+}

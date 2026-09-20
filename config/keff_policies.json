@@ -1,0 +1,731 @@
+{
+  "series": "K",
+  "title": "K_eff modulation: nested lighting policies with 48 / 240 / 480 / 960 reachable actions",
+  "created": "2026-09-04",
+  "design_rules": [
+    "K_eff = (colors + 1) * (emotions + 1) * intensities; the +1 is the 'none' state, the fallback tuple is the (none, none) cell.",
+    "Policies are nested: every item of K48 is in K240 (the production policy), every item of K240 is in K480, every item of K480 is in K960.",
+    "Composition order is unchanged from resolve_case_output(): colour target -> + emotion adjust -> + intensity adjust -> normalise (hue mod 360, S/B/Dimmer clamp 0..100, CT clamp 153..500) -> snap hue to anchor if circular distance > 18.",
+    "|emotion dH| <= 4 and |intensity dH| <= 3 everywhere, so the 18-degree snap can never fire (max drift 7 degrees), exactly as in the production policy.",
+    "Colour CT follows the warm/cool convention of the production anchors (red 255 ... blue 410): warm hues low mired, cool hues high mired.",
+    "New emotion phrase lists avoid words already used by production emotions (e.g. 설레/신나 belong to happiness, 무서워 to anxiety, 외로워 to sadness)."
+  ],
+  "safe_fallback": {
+    "H": 45,
+    "S": 20,
+    "B": 56,
+    "Dimmer": 56,
+    "CT": 300
+  },
+  "catalog": {
+    "colors": {
+      "red": {
+        "origin": "production",
+        "label": "빨간색",
+        "anchor_h": 0,
+        "target": {
+          "H": 0,
+          "S": 92,
+          "B": 74,
+          "Dimmer": 72,
+          "CT": 255
+        }
+      },
+      "yellow": {
+        "origin": "production",
+        "label": "노란색",
+        "anchor_h": 55,
+        "target": {
+          "H": 55,
+          "S": 88,
+          "B": 82,
+          "Dimmer": 80,
+          "CT": 240
+        }
+      },
+      "blue": {
+        "origin": "production",
+        "label": "파란색",
+        "anchor_h": 220,
+        "target": {
+          "H": 220,
+          "S": 78,
+          "B": 64,
+          "Dimmer": 62,
+          "CT": 410
+        }
+      },
+      "green": {
+        "origin": "production",
+        "label": "초록색",
+        "anchor_h": 120,
+        "target": {
+          "H": 120,
+          "S": 74,
+          "B": 68,
+          "Dimmer": 66,
+          "CT": 320
+        }
+      },
+      "purple": {
+        "origin": "production",
+        "label": "보라색",
+        "anchor_h": 285,
+        "target": {
+          "H": 285,
+          "S": 76,
+          "B": 62,
+          "Dimmer": 60,
+          "CT": 340
+        }
+      },
+      "orange": {
+        "origin": "production",
+        "label": "주황색",
+        "anchor_h": 28,
+        "target": {
+          "H": 28,
+          "S": 90,
+          "B": 78,
+          "Dimmer": 76,
+          "CT": 250
+        }
+      },
+      "white": {
+        "origin": "production",
+        "label": "흰색",
+        "anchor_h": 45,
+        "target": {
+          "H": 45,
+          "S": 6,
+          "B": 84,
+          "Dimmer": 84,
+          "CT": 285
+        }
+      },
+      "lime": {
+        "origin": "K480",
+        "label": "연두색",
+        "anchor_h": 85,
+        "target": {
+          "H": 85,
+          "S": 78,
+          "B": 76,
+          "Dimmer": 74,
+          "CT": 300
+        },
+        "phrases": [
+          "연두색",
+          "연둣빛",
+          "연두 느낌",
+          "풀빛",
+          "연두 계열"
+        ]
+      },
+      "teal": {
+        "origin": "K480",
+        "label": "청록색",
+        "anchor_h": 170,
+        "target": {
+          "H": 170,
+          "S": 72,
+          "B": 62,
+          "Dimmer": 60,
+          "CT": 360
+        },
+        "phrases": [
+          "청록색",
+          "청록빛",
+          "청록 느낌",
+          "에메랄드빛",
+          "청록 계열"
+        ]
+      },
+      "indigo": {
+        "origin": "K480",
+        "label": "남색",
+        "anchor_h": 250,
+        "target": {
+          "H": 250,
+          "S": 80,
+          "B": 50,
+          "Dimmer": 48,
+          "CT": 440
+        },
+        "phrases": [
+          "남색",
+          "남빛",
+          "짙은 남색",
+          "남색 느낌",
+          "인디고 빛"
+        ]
+      },
+      "pink": {
+        "origin": "K480",
+        "label": "분홍색",
+        "anchor_h": 340,
+        "target": {
+          "H": 340,
+          "S": 56,
+          "B": 80,
+          "Dimmer": 78,
+          "CT": 270
+        },
+        "phrases": [
+          "분홍색",
+          "분홍빛",
+          "핑크색",
+          "핑크빛",
+          "분홍 느낌"
+        ]
+      },
+      "sky": {
+        "origin": "K960",
+        "label": "하늘색",
+        "anchor_h": 200,
+        "target": {
+          "H": 200,
+          "S": 52,
+          "B": 82,
+          "Dimmer": 80,
+          "CT": 390
+        },
+        "phrases": [
+          "하늘색",
+          "하늘빛 색",
+          "옅은 하늘색",
+          "스카이블루",
+          "하늘색 느낌"
+        ]
+      },
+      "mint": {
+        "origin": "K960",
+        "label": "민트색",
+        "anchor_h": 150,
+        "target": {
+          "H": 150,
+          "S": 46,
+          "B": 80,
+          "Dimmer": 78,
+          "CT": 330
+        },
+        "phrases": [
+          "민트색",
+          "민트빛",
+          "민트 느낌",
+          "박하색",
+          "민트 계열"
+        ]
+      },
+      "lavender": {
+        "origin": "K960",
+        "label": "라벤더색",
+        "anchor_h": 265,
+        "target": {
+          "H": 265,
+          "S": 40,
+          "B": 74,
+          "Dimmer": 72,
+          "CT": 350
+        },
+        "phrases": [
+          "라벤더색",
+          "라벤더빛",
+          "연한 라벤더",
+          "라벤더 느낌",
+          "라일락빛"
+        ]
+      },
+      "apricot": {
+        "origin": "K960",
+        "label": "살구색",
+        "anchor_h": 35,
+        "target": {
+          "H": 35,
+          "S": 46,
+          "B": 90,
+          "Dimmer": 88,
+          "CT": 260
+        },
+        "phrases": [
+          "살구색",
+          "살구빛",
+          "살구 느낌",
+          "복숭아빛",
+          "피치색"
+        ]
+      }
+    },
+    "emotions": {
+      "sadness": {
+        "origin": "production",
+        "label": "슬픔",
+        "target": {
+          "H": 220,
+          "S": 36,
+          "B": 24,
+          "Dimmer": 22,
+          "CT": 410
+        },
+        "adjust": {
+          "H": -4,
+          "S": -28,
+          "B": -36,
+          "Dimmer": -38,
+          "CT": 90
+        }
+      },
+      "happiness": {
+        "origin": "production",
+        "label": "행복",
+        "target": {
+          "H": 38,
+          "S": 78,
+          "B": 88,
+          "Dimmer": 86,
+          "CT": 235
+        },
+        "adjust": {
+          "H": 2,
+          "S": 6,
+          "B": 14,
+          "Dimmer": 14,
+          "CT": -25
+        }
+      },
+      "anger": {
+        "origin": "production",
+        "label": "분노",
+        "target": {
+          "H": 12,
+          "S": 92,
+          "B": 72,
+          "Dimmer": 76,
+          "CT": 255
+        },
+        "adjust": {
+          "H": 0,
+          "S": 12,
+          "B": 10,
+          "Dimmer": 12,
+          "CT": -20
+        }
+      },
+      "calm": {
+        "origin": "production",
+        "label": "평온",
+        "target": {
+          "H": 185,
+          "S": 42,
+          "B": 58,
+          "Dimmer": 60,
+          "CT": 315
+        },
+        "adjust": {
+          "H": 3,
+          "S": -22,
+          "B": -8,
+          "Dimmer": -8,
+          "CT": 45
+        }
+      },
+      "anxiety": {
+        "origin": "production",
+        "label": "불안",
+        "target": {
+          "H": 210,
+          "S": 30,
+          "B": 30,
+          "Dimmer": 28,
+          "CT": 395
+        },
+        "adjust": {
+          "H": -2,
+          "S": -30,
+          "B": -30,
+          "Dimmer": -32,
+          "CT": 65
+        }
+      },
+      "surprise": {
+        "origin": "K480",
+        "label": "놀람",
+        "circumplex": "high arousal, neutral valence",
+        "target": {
+          "H": 60,
+          "S": 70,
+          "B": 92,
+          "Dimmer": 90,
+          "CT": 220
+        },
+        "adjust": {
+          "H": 1,
+          "S": 4,
+          "B": 18,
+          "Dimmer": 18,
+          "CT": -30
+        },
+        "phrases": [
+          "놀라워",
+          "깜짝 놀랐어",
+          "어머 세상에",
+          "믿기지 않아",
+          "예상 못 했어",
+          "헐 진짜"
+        ]
+      },
+      "fatigue": {
+        "origin": "K480",
+        "label": "피로",
+        "circumplex": "low arousal, mildly negative",
+        "target": {
+          "H": 30,
+          "S": 30,
+          "B": 34,
+          "Dimmer": 32,
+          "CT": 380
+        },
+        "adjust": {
+          "H": -1,
+          "S": -20,
+          "B": -26,
+          "Dimmer": -28,
+          "CT": 70
+        },
+        "phrases": [
+          "피곤해",
+          "지쳤어",
+          "너무 힘들어",
+          "기진맥진이야",
+          "녹초가 됐어",
+          "눕고 싶어"
+        ]
+      },
+      "boredom": {
+        "origin": "K960",
+        "label": "지루함",
+        "circumplex": "low arousal, neutral valence",
+        "target": {
+          "H": 90,
+          "S": 22,
+          "B": 48,
+          "Dimmer": 46,
+          "CT": 330
+        },
+        "adjust": {
+          "H": 0,
+          "S": -26,
+          "B": -14,
+          "Dimmer": -14,
+          "CT": 30
+        },
+        "phrases": [
+          "지루해",
+          "심심해",
+          "따분해",
+          "할 게 없어",
+          "시간이 안 가",
+          "무료해"
+        ]
+      },
+      "gratitude": {
+        "origin": "K960",
+        "label": "감사",
+        "circumplex": "mid arousal, positive valence",
+        "target": {
+          "H": 45,
+          "S": 62,
+          "B": 76,
+          "Dimmer": 74,
+          "CT": 260
+        },
+        "adjust": {
+          "H": 2,
+          "S": -4,
+          "B": 6,
+          "Dimmer": 6,
+          "CT": -12
+        },
+        "phrases": [
+          "고마워",
+          "감사해",
+          "정말 감사한 마음이야",
+          "덕분이야",
+          "고맙다는 말밖에",
+          "감사할 따름이야"
+        ]
+      },
+      "disgust": {
+        "origin": "K960",
+        "label": "혐오",
+        "circumplex": "mid arousal, negative valence",
+        "target": {
+          "H": 100,
+          "S": 66,
+          "B": 44,
+          "Dimmer": 42,
+          "CT": 360
+        },
+        "adjust": {
+          "H": -3,
+          "S": 8,
+          "B": -18,
+          "Dimmer": -18,
+          "CT": 40
+        },
+        "phrases": [
+          "역겨워",
+          "징그러워",
+          "혐오스러워",
+          "꼴도 보기 싫어",
+          "속이 뒤집혀",
+          "정말 불쾌해"
+        ]
+      },
+      "nostalgia": {
+        "origin": "K960",
+        "label": "그리움",
+        "circumplex": "low arousal, bittersweet",
+        "target": {
+          "H": 35,
+          "S": 48,
+          "B": 52,
+          "Dimmer": 50,
+          "CT": 345
+        },
+        "adjust": {
+          "H": 1,
+          "S": -14,
+          "B": -16,
+          "Dimmer": -16,
+          "CT": 55
+        },
+        "phrases": [
+          "그리워",
+          "보고 싶어",
+          "옛날 생각이 나",
+          "추억이 떠올라",
+          "아련해",
+          "그때가 그립다"
+        ]
+      }
+    },
+    "intensities": {
+      "neutral": {
+        "origin": "production",
+        "label": "",
+        "adjust": {
+          "H": 0,
+          "S": 0,
+          "B": 0,
+          "Dimmer": 0,
+          "CT": 0
+        }
+      },
+      "soft": {
+        "origin": "production",
+        "label": "은은한",
+        "adjust": {
+          "H": -3,
+          "S": -24,
+          "B": -8,
+          "Dimmer": -12,
+          "CT": 18
+        }
+      },
+      "strong": {
+        "origin": "production",
+        "label": "강한",
+        "adjust": {
+          "H": 2,
+          "S": 10,
+          "B": 8,
+          "Dimmer": 8,
+          "CT": -10
+        }
+      },
+      "bright": {
+        "origin": "production",
+        "label": "밝은",
+        "adjust": {
+          "H": 1,
+          "S": 4,
+          "B": 16,
+          "Dimmer": 16,
+          "CT": -8
+        }
+      },
+      "dark": {
+        "origin": "production",
+        "label": "어두운",
+        "adjust": {
+          "H": -2,
+          "S": -8,
+          "B": -30,
+          "Dimmer": -32,
+          "CT": 38
+        }
+      }
+    }
+  },
+  "policies": {
+    "K48": {
+      "k_eff_target": 48,
+      "colors": [
+        "red",
+        "yellow",
+        "blue"
+      ],
+      "emotions": [
+        "sadness",
+        "happiness",
+        "anger"
+      ],
+      "intensities": [
+        "neutral",
+        "soft",
+        "strong"
+      ],
+      "rationale": "Three maximally separated hues (0/55/220), the three basic emotions with the widest valence-arousal spread, and the three intensities that do not move brightness by more than 8."
+    },
+    "K240": {
+      "k_eff_target": 240,
+      "colors": [
+        "red",
+        "yellow",
+        "blue",
+        "green",
+        "purple",
+        "orange",
+        "white"
+      ],
+      "emotions": [
+        "sadness",
+        "happiness",
+        "anger",
+        "calm",
+        "anxiety"
+      ],
+      "intensities": [
+        "neutral",
+        "soft",
+        "strong",
+        "bright",
+        "dark"
+      ],
+      "rationale": "Production policy; must reproduce backend/models/compact_llm/training_data.py exactly."
+    },
+    "K480": {
+      "k_eff_target": 480,
+      "colors": [
+        "red",
+        "yellow",
+        "blue",
+        "green",
+        "purple",
+        "orange",
+        "white",
+        "lime",
+        "teal",
+        "indigo",
+        "pink"
+      ],
+      "emotions": [
+        "sadness",
+        "happiness",
+        "anger",
+        "calm",
+        "anxiety",
+        "surprise",
+        "fatigue"
+      ],
+      "intensities": [
+        "neutral",
+        "soft",
+        "strong",
+        "bright",
+        "dark"
+      ],
+      "rationale": "Four hues inserted into the largest anchor gaps (85, 170, 250, 340) and two emotions filling empty circumplex quadrants (high-arousal neutral, low-arousal negative)."
+    },
+    "K960": {
+      "k_eff_target": 960,
+      "colors": [
+        "red",
+        "yellow",
+        "blue",
+        "green",
+        "purple",
+        "orange",
+        "white",
+        "lime",
+        "teal",
+        "indigo",
+        "pink",
+        "sky",
+        "mint",
+        "lavender",
+        "apricot"
+      ],
+      "emotions": [
+        "sadness",
+        "happiness",
+        "anger",
+        "calm",
+        "anxiety",
+        "surprise",
+        "fatigue",
+        "boredom",
+        "gratitude",
+        "disgust",
+        "nostalgia"
+      ],
+      "intensities": [
+        "neutral",
+        "soft",
+        "strong",
+        "bright",
+        "dark"
+      ],
+      "rationale": "Four pastel hues that differ from their neighbours mainly in saturation/brightness (a harder discrimination) and four further emotions with distinct Korean vocabulary."
+    },
+    "A2K192": {
+      "k_eff_target": 192,
+      "colors": [
+        "red",
+        "yellow",
+        "blue",
+        "green",
+        "purple",
+        "orange",
+        "white",
+        "lime",
+        "teal",
+        "indigo",
+        "pink",
+        "sky",
+        "mint",
+        "lavender",
+        "apricot"
+      ],
+      "emotions": [
+        "sadness",
+        "happiness",
+        "anger",
+        "calm",
+        "anxiety",
+        "surprise",
+        "fatigue",
+        "boredom",
+        "gratitude",
+        "disgust",
+        "nostalgia"
+      ],
+      "intensities": [
+        "neutral"
+      ],
+      "rationale": "Attribute-count control for the depth heuristic: two attributes (colour, emotion) with intensity fixed at neutral, using the K960 catalogue so that K_eff = 16 x 12 x 1 = 192 stays close to the production policy's 240. Compares the depth curve at A = 2 with the D series at A = 3.",
+      "control": true
+    }
+  }
+}

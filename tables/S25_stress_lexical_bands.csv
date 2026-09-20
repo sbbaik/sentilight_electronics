@@ -1,0 +1,5 @@
+configuration,rows using catalogue wording for every named attribute,partial,rows using catalogue wording for none
+"selected: d 384, L 8, 4k natural tokenizer (15.7 M)",33.1,8.7,4.3
+"deployed architecture: d 384, L 8, 24k tokenizer (23.4 M)",34.5,6.3,3.9
+"d 320, L 8, 4k natural tokenizer (11.2 M)",33.9,9.3,4.7
+"selected, mixed 4/6/8-bit export (17.1 MB)",33.5,8.6,4.1

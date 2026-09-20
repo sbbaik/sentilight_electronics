@@ -1,0 +1,20 @@
+{
+ "corpus_file": "pretrain_corpus.txt",
+ "corpus_lines": 245258,
+ "checked_after_the_fact": {
+  "unseen-frame hold-out": {
+   "rows": 2000,
+   "exact": 0,
+   "normalized_only": 0,
+   "near_dup_ge_0.8": 0,
+   "max_jaccard": 0.5556
+  },
+  "machine-paraphrase stress set": {
+   "rows": 2000,
+   "exact": 0,
+   "normalized_only": 0,
+   "near_dup_ge_0.8": 0,
+   "max_jaccard": 0.6667
+  }
+ }
+}

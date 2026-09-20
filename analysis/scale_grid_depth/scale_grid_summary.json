@@ -1,0 +1,225 @@
+{
+  "runs_loaded": 18,
+  "expected_seeds": [
+    42,
+    43,
+    44
+  ],
+  "summaries": [
+    {
+      "scale": "D12",
+      "fraction": 100,
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "missing_seeds": [],
+      "runs": 3,
+      "parameter_count": 30459264,
+      "rows_total": 6000,
+      "strict": {
+        "mean": 0.4835,
+        "std": 0.012854960132182453,
+        "pooled_successes": 2901,
+        "pooled_ci95": [
+          0.4708699762241972,
+          0.4961511382808996
+        ]
+      },
+      "coarse": {
+        "mean": 0.8476666666666667,
+        "std": 0.021571586249817934,
+        "pooled_successes": 5086,
+        "pooled_ci95": [
+          0.8383519227472891,
+          0.8565365130342057
+        ]
+      },
+      "mean_latency_ms": {
+        "mean": 314.06666666666666,
+        "std": 3.1356232766921135
+      }
+    },
+    {
+      "scale": "D16",
+      "fraction": 100,
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "missing_seeds": [],
+      "runs": 3,
+      "parameter_count": 37540224,
+      "rows_total": 6000,
+      "strict": {
+        "mean": 0.4693333333333333,
+        "std": 0.037189828358481725,
+        "pooled_successes": 2816,
+        "pooled_ci95": [
+          0.45672928549433994,
+          0.4819766242929106
+        ]
+      },
+      "coarse": {
+        "mean": 0.8103333333333333,
+        "std": 0.07756502648316015,
+        "pooled_successes": 4862,
+        "pooled_ci95": [
+          0.8002162285778728,
+          0.8200533147707098
+        ]
+      },
+      "mean_latency_ms": {
+        "mean": 419.53000000000003,
+        "std": 1.8959694090359216
+      }
+    },
+    {
+      "scale": "D2",
+      "fraction": 100,
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "missing_seeds": [],
+      "runs": 3,
+      "parameter_count": 12756864,
+      "rows_total": 6000,
+      "strict": {
+        "mean": 0.4666666666666666,
+        "std": 0.014631586835792378,
+        "pooled_successes": 2800,
+        "pooled_ci95": [
+          0.4540686481621432,
+          0.4793073407370423
+        ]
+      },
+      "coarse": {
+        "mean": 0.8378333333333333,
+        "std": 0.01782086791750993,
+        "pooled_successes": 5027,
+        "pooled_ci95": [
+          0.8282908678205707,
+          0.8469434846861836
+        ]
+      },
+      "mean_latency_ms": {
+        "mean": 67.14999999999999,
+        "std": 2.2242077241121163
+      }
+    },
+    {
+      "scale": "D4",
+      "fraction": 100,
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "missing_seeds": [],
+      "runs": 3,
+      "parameter_count": 16297344,
+      "rows_total": 6000,
+      "strict": {
+        "mean": 0.49466666666666664,
+        "std": 0.006788470618138773,
+        "pooled_successes": 2968,
+        "pooled_ci95": [
+          0.48202333313194196,
+          0.5073168250919277
+        ]
+      },
+      "coarse": {
+        "mean": 0.8765000000000001,
+        "std": 0.008261355820929133,
+        "pooled_successes": 5259,
+        "pooled_ci95": [
+          0.8679333254344249,
+          0.8845848799492743
+        ]
+      },
+      "mean_latency_ms": {
+        "mean": 117.00999999999999,
+        "std": 4.109647186803268
+      }
+    },
+    {
+      "scale": "D6",
+      "fraction": 100,
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "missing_seeds": [],
+      "runs": 3,
+      "parameter_count": 19837824,
+      "rows_total": 6000,
+      "strict": {
+        "mean": 0.4855,
+        "std": 0.01455163221085526,
+        "pooled_successes": 2913,
+        "pooled_ci95": [
+          0.47286712851871837,
+          0.4981514266524272
+        ]
+      },
+      "coarse": {
+        "mean": 0.8468333333333334,
+        "std": 0.03758102358017056,
+        "pooled_successes": 5081,
+        "pooled_ci95": [
+          0.8374987947665814,
+          0.855724040737393
+        ]
+      },
+      "mean_latency_ms": {
+        "mean": 163.08666666666667,
+        "std": 2.7644589585185373
+      }
+    },
+    {
+      "scale": "D8",
+      "fraction": 100,
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "missing_seeds": [],
+      "runs": 3,
+      "parameter_count": 23378304,
+      "rows_total": 6000,
+      "strict": {
+        "mean": 0.49333333333333335,
+        "std": 0.0023629078131263063,
+        "pooled_successes": 2960,
+        "pooled_ci95": [
+          0.48069125739931934,
+          0.5059839403805177
+        ]
+      },
+      "coarse": {
+        "mean": 0.8493333333333334,
+        "std": 0.006788470618138799,
+        "pooled_successes": 5096,
+        "pooled_ci95": [
+          0.8400584628381591,
+          0.8581611734983765
+        ]
+      },
+      "mean_latency_ms": {
+        "mean": 216.21,
+        "std": 6.040024834386027
+      }
+    }
+  ],
+  "prediction_1_decision_rule": {
+    "support": "8M->23M improvement < 3.5%p and 23M->60M improvement < 3.5%p",
+    "reject_or_reduce": "23M->60M improvement >= 3.5%p with statistical support",
+    "lower_plateau": "3M->8M improves substantially but later increments are < 3.5%p"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "metadata": {
+    "train_jsonl": "backend/models/compact_llm/datasets/keff_series/K240/train_100.jsonl",
+    "train_jsonl_sha256": "17cfbdd1a7be41b60a2b3d2e95fbfb5614a4423f9eca411396780173fc7c338b",
+    "val_jsonl": "backend/models/compact_llm/datasets/keff_series/K240/val.jsonl",
+    "val_jsonl_sha256": "301667e40fe03f4e327d6b4892cbc8c9c92911fb322e8fadbb32b3955078458c",
+    "pretrained_checkpoint": "backend/models/compact_llm/scale_grid_runs_vocab_natural/V4k/V4k/seed_42/pretrain/compactlm_pretrain_best.pt",
+    "pretrained_checkpoint_sha256": "3200c3ecd1af026830bcc3a76721ae8a72eeb967bf8ce60aa2fbfefa53b43ace",
+    "tokenizer_path": "backend/models/compact_llm/tokenizer_vocab_series_natural/V4k/tokenizer.json",
+    "tokenizer_sha256": "df8988a4252714b6248fa01af1a4012bb1c17bb472afbfe180330eb347050f5e",
+    "output_dir": "backend/models/compact_llm/scale_grid_runs_vocab_natural/V4k/V4k/seed_42/f100/sft",
+    "epochs": 4,
+    "batch_size": 64,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.05,
+    "max_seq_len": 256,
+    "seed": 42,
+    "devices": "0",
+    "freq_alpha": 0.0,
+    "freq_max_ratio": 50.0,
+    "freq_table": {
+      "path": null,
+      "sha256": null,
+      "tuples": 0
+    },
+    "train_rows": 49093,
+    "val_rows": 2724
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.31635778177515,
+      "val_loss": 0.003576100069866633,
+      "val_ppl": 1.0035825019446951,
+      "learning_rate": 8.944136388594906e-05,
+      "global_step": 768
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.003920108341958749,
+      "val_loss": 0.0018065913348044667,
+      "val_ppl": 1.001808224204091,
+      "learning_rate": 5.411203155366181e-05,
+      "global_step": 1536
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.001762836482730261,
+      "val_loss": 0.0013194302071125792,
+      "val_ppl": 1.0013203010381064,
+      "learning_rate": 1.612967063699476e-05,
+      "global_step": 2304
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.0012465167649596523,
+      "val_loss": 0.0012604718349450584,
+      "val_ppl": 1.0012612665634444,
+      "learning_rate": 1e-05,
+      "global_step": 3072
+    }
+  ],
+  "best_val_loss": 0.0012604718349450584,
+  "best_checkpoint": "backend/models/compact_llm/scale_grid_runs_vocab_natural/V4k/V4k/seed_42/f100/sft/compactlm_from_scratch_best.pt",
+  "last_checkpoint": "backend/models/compact_llm/scale_grid_runs_vocab_natural/V4k/V4k/seed_42/f100/sft/compactlm_from_scratch_last.pt"
+}

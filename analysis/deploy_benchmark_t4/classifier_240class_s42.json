@@ -1,0 +1,26 @@
+{
+ "label": "CompactLM backbone + 240-class head",
+ "checkpoint": "backend/reports/baselines_nongenerative/classifier_instrumented/checkpoints/clf_s42.pt",
+ "checkpoint_mb": 63.197567,
+ "device": "cpu",
+ "torch_threads": 4,
+ "cpu": "x86_64",
+ "output_formulation": "240-class head (single forward pass)",
+ "seeds_in_this_measurement": 1,
+ "load_time_s": 0.10713711916469038,
+ "rss_before_load_mb": 507.69140625,
+ "rss_after_load_mb": 637.5,
+ "peak_rss_mb": 647.12109375,
+ "n_timed": 300,
+ "latency_ms": {
+  "median": 3.41841415502131,
+  "p95": 3.81706515327096,
+  "mean": 3.4308294913110635,
+  "min": 2.8223320841789246,
+  "max": 4.596281098201871
+ },
+ "invalid_json_rate": 0.0,
+ "invalid_note": "a 240-class head cannot emit an out-of-schema output",
+ "exact_rate": 0.8633333333333333,
+ "protocol": "identical to tools/deploy_benchmark.py: same dataset, every-k-th subset, 20 warm-up + 300 timed, one model per process"
+}

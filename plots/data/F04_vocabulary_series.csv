@@ -1,0 +1,5 @@
+vocab,V2_exact_mean,V2_exact_sd,V2_n_seeds,V1_exact_mean,V2_test_tokens_lt100_pct,production24k_exact_mean,production24k_lt100_pct
+4000,86.54,1.81,5,53.33,0.09,,
+8000,82.13,4.1,3,52.83,3.49,,
+16000,70.88,2.03,3,46.12,10.68,,
+24000,68.17,7.48,3,58.47,17.63,80.75,10.14

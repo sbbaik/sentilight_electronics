@@ -1,0 +1,50 @@
+{
+  "runs_loaded": 3,
+  "expected_seeds": [
+    42,
+    43,
+    44
+  ],
+  "summaries": [
+    {
+      "scale": "B4k",
+      "fraction": 100,
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "missing_seeds": [],
+      "runs": 3,
+      "parameter_count": 15698304,
+      "rows_total": 6000,
+      "strict": {
+        "mean": 0.5026666666666667,
+        "std": 0.008948929172439208,
+        "pooled_successes": 3016,
+        "pooled_ci95": [
+          0.49001767516497174,
+          0.5153122457230935
+        ]
+      },
+      "coarse": {
+        "mean": 0.8988333333333333,
+        "std": 0.012770408502993724,
+        "pooled_successes": 5393,
+        "pooled_ci95": [
+          0.8909462107909082,
+          0.9062100820303368
+        ]
+      },
+      "mean_latency_ms": {
+        "mean": 203.27,
+        "std": 9.695468013458656
+      }
+    }
+  ],
+  "prediction_1_decision_rule": {
+    "support": "8M->23M improvement < 3.5%p and 23M->60M improvement < 3.5%p",
+    "reject_or_reduce": "23M->60M improvement >= 3.5%p with statistical support",
+    "lower_plateau": "3M->8M improves substantially but later increments are < 3.5%p"
+  }
+}

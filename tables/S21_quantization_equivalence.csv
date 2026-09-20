@@ -1,0 +1,3 @@
+comparison,seeds,file,mean Δ exact and interval,TOST ±3 pp
+selected model,5,17.1 MB mixed-bit file,"-0.19 pp, 90 % CI [-0.52, +0.14]",TOST ±3 pp: pass
+d384 L4 V4k,5,12.3 MB mixed-bit file,"-0.42 pp, 90 % CI [-1.20, +0.36]",TOST ±3 pp: pass
