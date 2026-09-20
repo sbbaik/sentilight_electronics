@@ -2,7 +2,6 @@
 
 Seongbok Baik (ORCID 0009-0009-4420-4084), Intelligent IoT Department, Daejeon University, Daejeon 34520, Republic of Korea.
 Yong-Geun Hong (ORCID 0000-0003-2974-3820), School of AI Software, Daejeon University, Daejeon 34520, Republic of Korea.
-Corresponding author: Yong-Geun Hong (yghong@dju.ac.kr).
 
 This record accompanies the manuscript submitted to *Electronics* (MDPI). It contains what is needed to re-derive
 every number, table and figure in the paper from the released evaluation outputs, and to re-run the training
