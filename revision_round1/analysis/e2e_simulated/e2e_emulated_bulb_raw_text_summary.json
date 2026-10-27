@@ -1,0 +1,49 @@
+{
+ "measured_at_utc": "2026-10-22T02:54:19+00:00",
+ "client": "Linux-7.0.0-34-generic-x86_64-with-glibc2.39",
+ "python": "3.10.20",
+ "server": "http://127.0.0.1:8100",
+ "model": "compact_llm_q4",
+ "bulb": "127.0.0.1:8081",
+ "dry_run": false,
+ "form": "all",
+ "n": 235,
+ "warmup": 5,
+ "readback": true,
+ "t_service_ms": {
+  "n": 235,
+  "median_ms": 106.6,
+  "p95_ms": 112.3,
+  "mean_ms": 107.0,
+  "min_ms": 97.5,
+  "max_ms": 185.9
+ },
+ "service_internal_latency_ms": {
+  "n": 235,
+  "median_ms": 101.3,
+  "p95_ms": 106.6,
+  "mean_ms": 101.7,
+  "min_ms": 90.2,
+  "max_ms": 182.3
+ },
+ "t_bulb_ms": {
+  "n": 208,
+  "median_ms": 3.5,
+  "p95_ms": 5.0,
+  "mean_ms": 3.2,
+  "min_ms": 1.1,
+  "max_ms": 5.3
+ },
+ "t_total_ms": {
+  "n": 208,
+  "median_ms": 110.0,
+  "p95_ms": 116.7,
+  "mean_ms": 110.3,
+  "min_ms": 99.3,
+  "max_ms": 187.4
+ },
+ "service_ok_rate": 88.5,
+ "bulb_ok_rate": 100,
+ "exact_vs_gold_pct": 28.5,
+ "readback_match_rate": 100
+}

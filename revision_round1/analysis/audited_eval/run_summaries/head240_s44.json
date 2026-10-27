@@ -1,0 +1,13 @@
+{
+ "model_id": "head240_s44",
+ "checkpoint": "models/head/clf_s44.pt",
+ "rows": 240,
+ "strict": 28,
+ "strict_pct": 11.67,
+ "coarse": 70,
+ "coarse_pct": 29.17,
+ "classes": 240,
+ "max_len": 64,
+ "tokenizer": "models/tokenizers/natural_corpus_V2/V4k/tokenizer.json",
+ "note": "batched forward pass; per-row latency not a deployment measurement"
+}

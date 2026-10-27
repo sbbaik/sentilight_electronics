@@ -1,0 +1,122 @@
+{
+ "fixed steps|d256": [
+  {
+   "policy": "K48",
+   "keff": 48,
+   "exact": 82.9,
+   "sd": 5.4,
+   "seeds": 3
+  },
+  {
+   "policy": "K240",
+   "keff": 240,
+   "exact": 76.7,
+   "sd": 6.6,
+   "seeds": 5
+  },
+  {
+   "policy": "K480",
+   "keff": 480,
+   "exact": 63.5,
+   "sd": 5.0,
+   "seeds": 5
+  },
+  {
+   "policy": "K960",
+   "keff": 960,
+   "exact": 49.5,
+   "sd": 14.6,
+   "seeds": 5
+  }
+ ],
+ "fixed steps|d384": [
+  {
+   "policy": "K48",
+   "keff": 48,
+   "exact": 89.0,
+   "sd": 2.1,
+   "seeds": 3
+  },
+  {
+   "policy": "K240",
+   "keff": 240,
+   "exact": 81.9,
+   "sd": 5.7,
+   "seeds": 5
+  },
+  {
+   "policy": "K480",
+   "keff": 480,
+   "exact": 79.8,
+   "sd": 4.1,
+   "seeds": 3
+  },
+  {
+   "policy": "K960",
+   "keff": 960,
+   "exact": 70.5,
+   "sd": 12.5,
+   "seeds": 5
+  }
+ ],
+ "fixed epochs|d256": [
+  {
+   "policy": "K48",
+   "keff": 48,
+   "exact": 68.1,
+   "sd": 6.1,
+   "seeds": 3
+  },
+  {
+   "policy": "K240",
+   "keff": 240,
+   "exact": 76.7,
+   "sd": 6.6,
+   "seeds": 5
+  },
+  {
+   "policy": "K480",
+   "keff": 480,
+   "exact": 72.7,
+   "sd": 1.6,
+   "seeds": 3
+  },
+  {
+   "policy": "K960",
+   "keff": 960,
+   "exact": 76.0,
+   "sd": 5.5,
+   "seeds": 3
+  }
+ ],
+ "fixed epochs|d384": [
+  {
+   "policy": "K48",
+   "keff": 48,
+   "exact": 85.5,
+   "sd": 1.5,
+   "seeds": 3
+  },
+  {
+   "policy": "K240",
+   "keff": 240,
+   "exact": 81.9,
+   "sd": 5.7,
+   "seeds": 5
+  },
+  {
+   "policy": "K480",
+   "keff": 480,
+   "exact": 81.7,
+   "sd": 3.5,
+   "seeds": 5
+  },
+  {
+   "policy": "K960",
+   "keff": 960,
+   "exact": 80.7,
+   "sd": 7.3,
+   "seeds": 5
+  }
+ ]
+}

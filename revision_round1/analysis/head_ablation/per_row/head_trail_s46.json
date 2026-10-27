@@ -1,0 +1,13 @@
+{
+ "model_id": "head_trail_s46",
+ "checkpoint": "/home/sbbaik/Sentilight_Paper_2/MDPI_Electronics_review_1st_round/models/head/clf_s46.pt",
+ "rows": 2000,
+ "strict": 1603,
+ "strict_pct": 80.15,
+ "coarse": 1645,
+ "coarse_pct": 82.25,
+ "classes": 240,
+ "max_len": 64,
+ "tokenizer": "/home/sbbaik/Sentilight_Paper_2/MDPI_Electronics_review_1st_round/models/tokenizers/natural_corpus_V2/V4k/tokenizer.json",
+ "note": "batched forward pass; per-row latency not a deployment measurement"
+}

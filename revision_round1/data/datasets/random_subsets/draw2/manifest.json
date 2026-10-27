@@ -1,0 +1,159 @@
+{
+ "draw": 2,
+ "seed": 20261027,
+ "source": "data/datasets/K240_keff",
+ "policies": {
+  "K48r": {
+   "cells": 48,
+   "train_100": {
+    "rows": 10093,
+    "sha256": "9963eed46562b3e900a275c25683d6bece9b6085fbb5cc2ec31f550e0ccd89b2"
+   },
+   "val": {
+    "rows": 551,
+    "sha256": "4b00bad6cc60980e220be247fa810ab9c507bd997c79609981d0eafd321a3a4d"
+   },
+   "test_rule": {
+    "rows": 417,
+    "sha256": "12a7e79e53a449ec1a12191b36530ab3d4bb07c424ec4616b71a94d7753dbd22"
+   },
+   "composition": {
+    "colours": [
+     "blue",
+     "green",
+     "none",
+     "orange",
+     "purple",
+     "red",
+     "white",
+     "yellow"
+    ],
+    "emotions": [
+     "anger",
+     "anxiety",
+     "calm",
+     "happiness",
+     "none",
+     "sadness"
+    ],
+    "intensities": [
+     "bright",
+     "dark",
+     "neutral",
+     "soft",
+     "strong"
+    ]
+   },
+   "train_rows_per_cell": {
+    "min": 40,
+    "median": 236,
+    "max": 294
+   },
+   "test_rows_per_cell_min": 2,
+   "cells_missing_in_test": 0
+  },
+  "K96r": {
+   "cells": 96,
+   "train_100": {
+    "rows": 20037,
+    "sha256": "7ba10a9293d6fd40727ec8a38c7475484ddd21ce598a2d5570fb7312d644aba7"
+   },
+   "val": {
+    "rows": 1124,
+    "sha256": "20d0190457b39d85be179d5e503077d6d744dcc80ffbeeaa4008cbf77fe7da0c"
+   },
+   "test_rule": {
+    "rows": 796,
+    "sha256": "859528ec67ba62547eed4c70218c7424e87bbad46e45765b12dbde0c58218385"
+   },
+   "composition": {
+    "colours": [
+     "blue",
+     "green",
+     "none",
+     "orange",
+     "purple",
+     "red",
+     "white",
+     "yellow"
+    ],
+    "emotions": [
+     "anger",
+     "anxiety",
+     "calm",
+     "happiness",
+     "none",
+     "sadness"
+    ],
+    "intensities": [
+     "bright",
+     "dark",
+     "neutral",
+     "soft",
+     "strong"
+    ]
+   },
+   "train_rows_per_cell": {
+    "min": 40,
+    "median": 234,
+    "max": 307
+   },
+   "test_rows_per_cell_min": 2,
+   "cells_missing_in_test": 0
+  },
+  "K144r": {
+   "cells": 144,
+   "train_100": {
+    "rows": 29851,
+    "sha256": "cda925eb632c1f9418204ab4b7a978e71479ac6985842f8bff3b8b8aaaa77554"
+   },
+   "val": {
+    "rows": 1674,
+    "sha256": "6d979db2c67bb3ec42ec9541ef47ddba420c47e165124632efc0f6c10f4cd8c2"
+   },
+   "test_rule": {
+    "rows": 1175,
+    "sha256": "ef7ab332b1bee00f5d77e81641e31d5eaee648a90f8c2d50f2d974f898808266"
+   },
+   "composition": {
+    "colours": [
+     "blue",
+     "green",
+     "none",
+     "orange",
+     "purple",
+     "red",
+     "white",
+     "yellow"
+    ],
+    "emotions": [
+     "anger",
+     "anxiety",
+     "calm",
+     "happiness",
+     "none",
+     "sadness"
+    ],
+    "intensities": [
+     "bright",
+     "dark",
+     "neutral",
+     "soft",
+     "strong"
+    ]
+   },
+   "train_rows_per_cell": {
+    "min": 27,
+    "median": 234,
+    "max": 340
+   },
+   "test_rows_per_cell_min": 2,
+   "cells_missing_in_test": 0
+  }
+ },
+ "common_test": {
+  "file": "data/datasets/random_subsets/draw2/common_test_K48r.jsonl",
+  "rows": 417,
+  "sha256": "12a7e79e53a449ec1a12191b36530ab3d4bb07c424ec4616b71a94d7753dbd22"
+ }
+}

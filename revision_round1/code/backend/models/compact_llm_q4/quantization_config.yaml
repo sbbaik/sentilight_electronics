@@ -1,0 +1,19 @@
+format: sentilight_compactlm_mixed4_weightonly_v1
+method: mixed4_weightonly_loadtime_dequant
+source_model_id: compact_llm
+target_model_id: compact_llm_q4
+display_name: CompactLM Q4
+group_size: 64
+packing:
+  4bit: packed_nibbles_uint8
+  6bit: uint8_codes
+  8bit: uint8_codes
+weight_qscheme: per_output_channel_group_symmetric
+default_weight_bits: 4
+sensitive_weight_policy:
+  embedding_and_lm_head: fp16_checkpoint_fp32_runtime
+  norms: fp32
+  first_and_last_transformer_blocks: 8
+  ffn_down_proj: 8
+  attention_o_proj: 6
+runtime_note: The runtime dequantizes the mixed-bit checkpoint before loading the existing PyTorch inference graph; no bitsandbytes or torchao dependency is required.

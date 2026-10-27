@@ -1,0 +1,191 @@
+{
+ "region": [
+  256,
+  384
+ ],
+ "series": [
+  {
+   "series": "24k production tokenizer (W series, L = 8)",
+   "grid_widths": [
+    128,
+    192,
+    224,
+    256,
+    320,
+    384,
+    512
+   ],
+   "grid_runs": 33,
+   "region_widths": [
+    256,
+    320,
+    384
+   ],
+   "region_runs": 13,
+   "runs_saved_if_confined": 20,
+   "best_point_estimate_full_grid": {
+    "d": 320,
+    "exact": 81.9,
+    "seeds": 3
+   },
+   "best_point_estimate_five_seed_cells": {
+    "d": 512,
+    "exact": 81.6
+   },
+   "best_point_estimate_inside_region": {
+    "d": 320,
+    "exact": 81.9,
+    "seeds": 3
+   },
+   "selected_d": 384,
+   "selected_inside_region": true,
+   "cells": [
+    {
+     "d": 128,
+     "seeds": 5,
+     "exact": 49.5,
+     "sd": 4.8,
+     "params": 4679808
+    },
+    {
+     "d": 192,
+     "seeds": 5,
+     "exact": 70.6,
+     "sd": 5.4,
+     "params": 8150208
+    },
+    {
+     "d": 224,
+     "seeds": 5,
+     "exact": 70.6,
+     "sd": 6.8,
+     "params": 10254048
+    },
+    {
+     "d": 256,
+     "seeds": 5,
+     "exact": 78.0,
+     "sd": 4.0,
+     "params": 12374272
+    },
+    {
+     "d": 320,
+     "seeds": 3,
+     "exact": 81.9,
+     "sd": 1.9,
+     "params": 17597760
+    },
+    {
+     "d": 384,
+     "seeds": 5,
+     "exact": 80.8,
+     "sd": 3.6,
+     "params": 23378304
+    },
+    {
+     "d": 512,
+     "seeds": 5,
+     "exact": 81.6,
+     "sd": 5.3,
+     "params": 37593600
+    }
+   ],
+   "step_384_to_512": {
+    "delta_pp": 0.8,
+    "note": "the paper's adoption rule (Holm-corrected row-level p < 0.05 and all seeds agreeing in sign) was not met for this step; width above 384 was not adopted"
+   }
+  },
+  {
+   "series": "4k natural tokenizer (X series, L = 8)",
+   "grid_widths": [
+    224,
+    256,
+    320,
+    384
+   ],
+   "grid_runs": 20,
+   "region_widths": [
+    256,
+    320,
+    384
+   ],
+   "region_runs": 15,
+   "runs_saved_if_confined": 5,
+   "best_point_estimate_full_grid": {
+    "d": 384,
+    "exact": 86.5,
+    "seeds": 5
+   },
+   "best_point_estimate_five_seed_cells": {
+    "d": 384,
+    "exact": 86.5
+   },
+   "best_point_estimate_inside_region": {
+    "d": 384,
+    "exact": 86.5,
+    "seeds": 5
+   },
+   "selected_d": 384,
+   "selected_inside_region": true,
+   "cells": [
+    {
+     "d": 224,
+     "seeds": 5,
+     "exact": 79.0,
+     "sd": 3.1,
+     "params": 5774048,
+     "per_seed": [
+      78.2,
+      74.6,
+      79.8,
+      79.3,
+      83.2
+     ]
+    },
+    {
+     "d": 256,
+     "seeds": 5,
+     "exact": 76.0,
+     "sd": 4.9,
+     "params": 7254272,
+     "per_seed": [
+      72.0,
+      72.8,
+      83.5,
+      78.3,
+      73.2
+     ]
+    },
+    {
+     "d": 320,
+     "seeds": 5,
+     "exact": 83.8,
+     "sd": 3.4,
+     "params": 11197760,
+     "per_seed": [
+      89.6,
+      83.2,
+      81.8,
+      81.0,
+      83.2
+     ]
+    },
+    {
+     "d": 384,
+     "seeds": 5,
+     "exact": 86.5,
+     "sd": 1.8,
+     "params": 15698304,
+     "per_seed": [
+      85.2,
+      86.7,
+      88.6,
+      84.3,
+      87.9
+     ]
+    }
+   ]
+  }
+ ],
+ "reading": "Under the 24k tokenizer the full grid (7 widths, 33 runs) and the region-confined grid (3 widths, 13 runs) lead to the same adopted width: the only reliable gain lies between d = 224 and 256, inside the region, and the step to 512 was not adopted under the prospective rule. Under the 4k tokenizer the selected d = 384 is the argmax of both the full grid (4 widths, 20 runs) and the confined grid (3 widths, 15 runs). In both series the enumeration-informed region contained the width that was eventually chosen, and confining the search to it would have cost 20 fewer runs in one series and 5 in the other. This is a reading of a grid whose outcome was already known: it shows the region was not misleading, not that a practitioner could have known in advance to trust it, and the wider sweep is what established that the region was right under one tokenizer and too low under the other."
+}

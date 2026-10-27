@@ -1,0 +1,20 @@
+# Service configuration for the end-to-end latency measurement: only the selected 15.7 M checkpoint
+# (d = 384, L = 8, 4k natural tokenizer, mixed 4/6/8-bit export, seed 42) behind the production q4 adapter and gate.
+runtime:
+  host: 127.0.0.1
+  port: 8100
+  request_timeout_seconds: 60
+
+models:
+  - id: compact_llm_q4
+    name: CompactLM selected 15.7M mixed-bit (seed 42)
+    enabled: true
+    mode: local_adapter
+    adapter: custom_pytorch
+    model_dir: models/compact_llm_q4
+    checkpoint: /home/sbbaik/Sentilight_Paper_2/MDPI_Electronics_review_1st_round/models/doi_release/selected_d384_L8_V4k/mixed4_6_8bit_seed42.pt
+    tokenizer_dir: /home/sbbaik/Sentilight_Paper_2/MDPI_Electronics_review_1st_round/models/tokenizers/natural_corpus_V2/V4k
+    options:
+      device: cpu
+      max_new_tokens: 96
+      input_mode: raw_text

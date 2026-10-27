@@ -1,0 +1,77 @@
+{
+  "dataset": "/home/sbbaik/Sentilight_Paper_2/MDPI_Electronics_review_1st_round/data/datasets/random_subsets/draw2/K48r/test_rule.jsonl",
+  "segment": "rule",
+  "rows": 417,
+  "checkpoint": "/home/sbbaik/Sentilight_Paper_2/MDPI_Electronics_review_1st_round/analysis/random_subsets/draw2/runs/K48r_matched_W384_s44/compactlm_from_scratch_best.pt",
+  "model_dir": "/home/sbbaik/Sentilight_Paper_2/MDPI_Electronics_review_1st_round/code/backend/models/compact_llm_q4",
+  "model_id": "K48r_matched_W384_s44_own",
+  "display_name": "K48r_matched_W384_s44_own",
+  "device": "cpu",
+  "parameter_count": 23378304,
+  "model_config": {
+    "model_name": "Sentilight-CompactLM-v0.1",
+    "vocab_size": 24000,
+    "block_size": 256,
+    "n_layer": 8,
+    "n_head": 6,
+    "d_model": 384,
+    "d_ff": 1024,
+    "dropout": 0.1,
+    "rope_base": 10000.0,
+    "init_std": 0.02
+  },
+  "per_row_jsonl": "/home/sbbaik/Sentilight_Paper_2/MDPI_Electronics_review_1st_round/analysis/random_subsets/draw2/per_row/K48r_matched_W384_s44_own.jsonl",
+  "coarse_dimensions": [
+    "H",
+    "S",
+    "B",
+    "CT",
+    "Dimmer"
+  ],
+  "metrics": {
+    "model_id": "K48r_matched_W384_s44_own",
+    "display_name": "K48r_matched_W384_s44_own",
+    "adapter": "custom_pytorch_mixed4",
+    "mode": "direct_checkpoint",
+    "successes": 417,
+    "errors": 0,
+    "success_rate": 1.0,
+    "semantic_passes": 169,
+    "semantic_pass_rate": 0.4053,
+    "strict_semantic_passes": 169,
+    "strict_semantic_pass_rate": 0.4053,
+    "coarse_3bin_passes": 394,
+    "coarse_3bin_pass_rate": 0.9448,
+    "coarse_pass_delta": 225,
+    "latency": {
+      "mean_ms": 248.1,
+      "p50_ms": 249.98,
+      "p95_ms": 259.65,
+      "max_ms": 643.33
+    },
+    "mae": {
+      "H": 2.02,
+      "S": 1.02,
+      "B": 1.38,
+      "Dimmer": 1.43,
+      "CT": 2.86
+    },
+    "coarse_match_rates": {
+      "H": 0.988,
+      "S": 0.9832,
+      "B": 0.9616,
+      "CT": 0.9904,
+      "Dimmer": 0.9688
+    },
+    "all_5_coarse_match_rate": 0.9448,
+    "coarse_failure_breakdown": {
+      "H": 5,
+      "S": 7,
+      "B": 16,
+      "CT": 4,
+      "Dimmer": 13
+    },
+    "top_coarse_failure_dimension": "B",
+    "error_samples": []
+  }
+}

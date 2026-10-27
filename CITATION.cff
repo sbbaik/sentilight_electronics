@@ -2,6 +2,7 @@ cff-version: 1.2.0
 title: "Action-Set-Informed Design and System Implementation of a Compact Language Model for Smart-Lighting Control — data and code"
 message: "If you use this record, please cite the accompanying article."
 type: dataset
+version: "1.1.0"
 authors:
   - family-names: Baik
     given-names: Seongbok
@@ -11,7 +12,7 @@ authors:
   - family-names: Hong
     given-names: Yong-Geun
     affiliation: "School of AI Software, Daejeon University, Daejeon 34520, Republic of Korea"
-    email: yghong@dju.ac.kr
+    email: yghong@dju.kr
     orcid: "https://orcid.org/0000-0003-2974-3820"
 license: MIT
 keywords:

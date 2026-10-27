@@ -1,0 +1,44 @@
+[
+ {
+  "quantity": "Stored file (MB)",
+  "fp32": 62.8,
+  "mixed": 17.1,
+  "effect": "changes",
+  "note": "3.7\u00d7 smaller: download, OTA update and flash footprint"
+ },
+ {
+  "quantity": "Load time (s)",
+  "fp32": 0.17,
+  "mixed": 0.1,
+  "effect": "changes",
+  "note": "weights read from disk once; dequantised on load"
+ },
+ {
+  "quantity": "Peak resident memory (MB)",
+  "fp32": 788.0,
+  "mixed": 665.0,
+  "effect": "unchanged in kind",
+  "note": "the model runs at fp32 after load, so RAM is not reduced"
+ },
+ {
+  "quantity": "Median latency (ms, 4 threads)",
+  "fp32": 98.0,
+  "mixed": 95.0,
+  "effect": "unchanged",
+  "note": "same arithmetic at run time"
+ },
+ {
+  "quantity": "p95 latency (ms)",
+  "fp32": 113.0,
+  "mixed": 105.0,
+  "effect": "unchanged",
+  "note": ""
+ },
+ {
+  "quantity": "Exact match, 300-prompt subset (%)",
+  "fp32": 85.3,
+  "mixed": 86.0,
+  "effect": "within margin",
+  "note": "five-seed \u0394 -0.19 pp, 90 % CI [-0.52, +0.14], TOST \u00b13 pp pass (S21)"
+ }
+]

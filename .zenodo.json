@@ -1,7 +1,7 @@
 {
   "title": "Action-Set-Informed Design and System Implementation of a Compact Language Model for Smart-Lighting Control — data and code",
   "upload_type": "dataset",
-  "description": "Data, code, evaluation outputs, frozen policy catalogue, catalogue-gate implementation and selected compact language model accompanying the Electronics submission.",
+  "description": "Data, code, evaluation outputs, frozen policy catalogue, catalogue-gate implementation and selected compact language model accompanying the Electronics article. Version 1.1.0 adds the first-round revision in revision_round1/: the audited request set and its evaluations, the random-subset series over three draws, the per-action exposure, depth Pareto, search-counterfactual and quantization-boundary analyses, the retrained deployed architecture, the 240-class heads and the end-to-end software-path measurement.",
   "creators": [
     {
       "name": "Baik, Seongbok",
@@ -22,5 +22,6 @@
     "effective action set",
     "capacity search",
     "training exposure"
-  ]
+  ],
+  "version": "1.1.0"
 }

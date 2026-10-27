@@ -1,0 +1,3606 @@
+{
+ "seed": 20261021,
+ "n": 240,
+ "rows": [
+  {
+   "cell_id": "K240-054",
+   "row": 1,
+   "colour": "red",
+   "emotion": "calm",
+   "intensity": "bright",
+   "variation": "어순변형",
+   "tup": [
+    4,
+    74,
+    82,
+    80,
+    292
+   ]
+  },
+  {
+   "cell_id": "K240-093",
+   "row": 2,
+   "colour": "blue",
+   "emotion": "none",
+   "intensity": "strong",
+   "variation": "부정형",
+   "tup": [
+    222,
+    88,
+    72,
+    70,
+    400
+   ]
+  },
+  {
+   "cell_id": "K240-034",
+   "row": 3,
+   "colour": "red",
+   "emotion": "none",
+   "intensity": "bright",
+   "variation": "일반",
+   "tup": [
+    1,
+    96,
+    90,
+    88,
+    247
+   ]
+  },
+  {
+   "cell_id": "K240-160",
+   "row": 4,
+   "colour": "purple",
+   "emotion": "sadness",
+   "intensity": "dark",
+   "variation": "일반",
+   "tup": [
+    279,
+    40,
+    0,
+    0,
+    468
+   ]
+  },
+  {
+   "cell_id": "K240-037",
+   "row": 5,
+   "colour": "red",
+   "emotion": "sadness",
+   "intensity": "soft",
+   "variation": "일반",
+   "tup": [
+    353,
+    40,
+    30,
+    22,
+    363
+   ]
+  },
+  {
+   "cell_id": "K240-213",
+   "row": 6,
+   "colour": "white",
+   "emotion": "none",
+   "intensity": "strong",
+   "variation": "일반",
+   "tup": [
+    47,
+    16,
+    92,
+    92,
+    275
+   ]
+  },
+  {
+   "cell_id": "K240-181",
+   "row": 7,
+   "colour": "orange",
+   "emotion": "none",
+   "intensity": "neutral",
+   "variation": "일반",
+   "tup": [
+    28,
+    90,
+    78,
+    76,
+    250
+   ]
+  },
+  {
+   "cell_id": "K240-184",
+   "row": 8,
+   "colour": "orange",
+   "emotion": "none",
+   "intensity": "bright",
+   "variation": "맥락추가",
+   "tup": [
+    29,
+    94,
+    94,
+    92,
+    242
+   ]
+  },
+  {
+   "cell_id": "K240-170",
+   "row": 9,
+   "colour": "purple",
+   "emotion": "anger",
+   "intensity": "dark",
+   "variation": "어순변형",
+   "tup": [
+    283,
+    80,
+    42,
+    40,
+    358
+   ]
+  },
+  {
+   "cell_id": "K240-240",
+   "row": 10,
+   "colour": "white",
+   "emotion": "anxiety",
+   "intensity": "dark",
+   "variation": "어순변형",
+   "tup": [
+    41,
+    0,
+    24,
+    20,
+    388
+   ]
+  },
+  {
+   "cell_id": "K240-193",
+   "row": 11,
+   "colour": "orange",
+   "emotion": "happiness",
+   "intensity": "strong",
+   "variation": "일반",
+   "tup": [
+    32,
+    100,
+    100,
+    98,
+    215
+   ]
+  },
+  {
+   "cell_id": "K240-215",
+   "row": 12,
+   "colour": "white",
+   "emotion": "none",
+   "intensity": "dark",
+   "variation": "맥락추가",
+   "tup": [
+    43,
+    0,
+    54,
+    52,
+    323
+   ]
+  },
+  {
+   "cell_id": "K240-119",
+   "row": 13,
+   "colour": "blue",
+   "emotion": "anxiety",
+   "intensity": "bright",
+   "variation": "일반",
+   "tup": [
+    219,
+    52,
+    50,
+    46,
+    467
+   ]
+  },
+  {
+   "cell_id": "K240-101",
+   "row": 14,
+   "colour": "blue",
+   "emotion": "happiness",
+   "intensity": "neutral",
+   "variation": "어순변형",
+   "tup": [
+    222,
+    84,
+    78,
+    76,
+    385
+   ]
+  },
+  {
+   "cell_id": "K240-157",
+   "row": 15,
+   "colour": "purple",
+   "emotion": "sadness",
+   "intensity": "soft",
+   "variation": "맥락추가",
+   "tup": [
+    278,
+    24,
+    18,
+    10,
+    448
+   ]
+  },
+  {
+   "cell_id": "K240-074",
+   "row": 16,
+   "colour": "yellow",
+   "emotion": "happiness",
+   "intensity": "bright",
+   "variation": "어순변형",
+   "tup": [
+    58,
+    98,
+    100,
+    100,
+    207
+   ]
+  },
+  {
+   "cell_id": "K240-025",
+   "row": 17,
+   "colour": "none",
+   "emotion": "calm",
+   "intensity": "dark",
+   "variation": "일반",
+   "tup": [
+    183,
+    34,
+    28,
+    28,
+    353
+   ]
+  },
+  {
+   "cell_id": "K240-059",
+   "row": 18,
+   "colour": "red",
+   "emotion": "anxiety",
+   "intensity": "bright",
+   "variation": "일반",
+   "tup": [
+    359,
+    66,
+    60,
+    56,
+    312
+   ]
+  },
+  {
+   "cell_id": "K240-055",
+   "row": 19,
+   "colour": "red",
+   "emotion": "calm",
+   "intensity": "dark",
+   "variation": "부정형",
+   "tup": [
+    1,
+    62,
+    36,
+    32,
+    338
+   ]
+  },
+  {
+   "cell_id": "K240-041",
+   "row": 20,
+   "colour": "red",
+   "emotion": "happiness",
+   "intensity": "neutral",
+   "variation": "일반",
+   "tup": [
+    2,
+    98,
+    88,
+    86,
+    230
+   ]
+  },
+  {
+   "cell_id": "K240-188",
+   "row": 21,
+   "colour": "orange",
+   "emotion": "sadness",
+   "intensity": "strong",
+   "variation": "어순변형",
+   "tup": [
+    26,
+    72,
+    50,
+    46,
+    330
+   ]
+  },
+  {
+   "cell_id": "K240-166",
+   "row": 22,
+   "colour": "purple",
+   "emotion": "anger",
+   "intensity": "neutral",
+   "variation": "일반",
+   "tup": [
+    285,
+    88,
+    72,
+    72,
+    320
+   ]
+  },
+  {
+   "cell_id": "K240-177",
+   "row": 23,
+   "colour": "purple",
+   "emotion": "anxiety",
+   "intensity": "soft",
+   "variation": "부정형",
+   "tup": [
+    280,
+    22,
+    24,
+    16,
+    423
+   ]
+  },
+  {
+   "cell_id": "K240-168",
+   "row": 24,
+   "colour": "purple",
+   "emotion": "anger",
+   "intensity": "strong",
+   "variation": "일반",
+   "tup": [
+    287,
+    98,
+    80,
+    80,
+    310
+   ]
+  },
+  {
+   "cell_id": "K240-202",
+   "row": 25,
+   "colour": "orange",
+   "emotion": "calm",
+   "intensity": "soft",
+   "variation": "일반",
+   "tup": [
+    28,
+    44,
+    62,
+    56,
+    313
+   ]
+  },
+  {
+   "cell_id": "K240-140",
+   "row": 26,
+   "colour": "green",
+   "emotion": "anger",
+   "intensity": "dark",
+   "variation": "일반",
+   "tup": [
+    118,
+    78,
+    48,
+    46,
+    338
+   ]
+  },
+  {
+   "cell_id": "K240-053",
+   "row": 27,
+   "colour": "red",
+   "emotion": "calm",
+   "intensity": "strong",
+   "variation": "일반",
+   "tup": [
+    5,
+    80,
+    74,
+    72,
+    290
+   ]
+  },
+  {
+   "cell_id": "K240-178",
+   "row": 28,
+   "colour": "purple",
+   "emotion": "anxiety",
+   "intensity": "strong",
+   "variation": "일반",
+   "tup": [
+    285,
+    56,
+    40,
+    36,
+    395
+   ]
+  },
+  {
+   "cell_id": "K240-145",
+   "row": 29,
+   "colour": "green",
+   "emotion": "calm",
+   "intensity": "dark",
+   "variation": "일반",
+   "tup": [
+    121,
+    44,
+    30,
+    26,
+    403
+   ]
+  },
+  {
+   "cell_id": "K240-221",
+   "row": 30,
+   "colour": "white",
+   "emotion": "happiness",
+   "intensity": "neutral",
+   "variation": "어순변형",
+   "tup": [
+    47,
+    12,
+    98,
+    98,
+    260
+   ]
+  },
+  {
+   "cell_id": "K240-027",
+   "row": 31,
+   "colour": "none",
+   "emotion": "anxiety",
+   "intensity": "soft",
+   "variation": "일반",
+   "tup": [
+    207,
+    6,
+    22,
+    16,
+    413
+   ]
+  },
+  {
+   "cell_id": "K240-227",
+   "row": 32,
+   "colour": "white",
+   "emotion": "anger",
+   "intensity": "soft",
+   "variation": "부정형",
+   "tup": [
+    42,
+    0,
+    86,
+    84,
+    283
+   ]
+  },
+  {
+   "cell_id": "K240-158",
+   "row": 33,
+   "colour": "purple",
+   "emotion": "sadness",
+   "intensity": "strong",
+   "variation": "일반",
+   "tup": [
+    283,
+    58,
+    34,
+    30,
+    420
+   ]
+  },
+  {
+   "cell_id": "K240-080",
+   "row": 34,
+   "colour": "yellow",
+   "emotion": "anger",
+   "intensity": "dark",
+   "variation": "일반",
+   "tup": [
+    53,
+    92,
+    62,
+    60,
+    258
+   ]
+  },
+  {
+   "cell_id": "K240-065",
+   "row": 35,
+   "colour": "yellow",
+   "emotion": "none",
+   "intensity": "dark",
+   "variation": "일반",
+   "tup": [
+    53,
+    80,
+    52,
+    48,
+    278
+   ]
+  },
+  {
+   "cell_id": "K240-097",
+   "row": 36,
+   "colour": "blue",
+   "emotion": "sadness",
+   "intensity": "soft",
+   "variation": "어순변형",
+   "tup": [
+    213,
+    26,
+    20,
+    12,
+    500
+   ]
+  },
+  {
+   "cell_id": "K240-051",
+   "row": 37,
+   "colour": "red",
+   "emotion": "calm",
+   "intensity": "neutral",
+   "variation": "어순변형",
+   "tup": [
+    3,
+    70,
+    66,
+    64,
+    300
+   ]
+  },
+  {
+   "cell_id": "K240-179",
+   "row": 38,
+   "colour": "purple",
+   "emotion": "anxiety",
+   "intensity": "bright",
+   "variation": "부정형",
+   "tup": [
+    284,
+    50,
+    48,
+    44,
+    397
+   ]
+  },
+  {
+   "cell_id": "K240-018",
+   "row": 39,
+   "colour": "none",
+   "emotion": "anger",
+   "intensity": "strong",
+   "variation": "일반",
+   "tup": [
+    14,
+    100,
+    80,
+    84,
+    245
+   ]
+  },
+  {
+   "cell_id": "K240-161",
+   "row": 40,
+   "colour": "purple",
+   "emotion": "happiness",
+   "intensity": "neutral",
+   "variation": "맥락추가",
+   "tup": [
+    287,
+    82,
+    76,
+    74,
+    315
+   ]
+  },
+  {
+   "cell_id": "K240-134",
+   "row": 41,
+   "colour": "green",
+   "emotion": "happiness",
+   "intensity": "bright",
+   "variation": "어순변형",
+   "tup": [
+    123,
+    84,
+    98,
+    96,
+    287
+   ]
+  },
+  {
+   "cell_id": "K240-099",
+   "row": 42,
+   "colour": "blue",
+   "emotion": "sadness",
+   "intensity": "bright",
+   "variation": "일반",
+   "tup": [
+    217,
+    54,
+    44,
+    40,
+    492
+   ]
+  },
+  {
+   "cell_id": "K240-201",
+   "row": 43,
+   "colour": "orange",
+   "emotion": "calm",
+   "intensity": "neutral",
+   "variation": "어순변형",
+   "tup": [
+    31,
+    68,
+    70,
+    68,
+    295
+   ]
+  },
+  {
+   "cell_id": "K240-066",
+   "row": 44,
+   "colour": "yellow",
+   "emotion": "sadness",
+   "intensity": "neutral",
+   "variation": "일반",
+   "tup": [
+    51,
+    60,
+    46,
+    42,
+    330
+   ]
+  },
+  {
+   "cell_id": "K240-220",
+   "row": 45,
+   "colour": "white",
+   "emotion": "sadness",
+   "intensity": "dark",
+   "variation": "일반",
+   "tup": [
+    39,
+    0,
+    18,
+    14,
+    413
+   ]
+  },
+  {
+   "cell_id": "K240-109",
+   "row": 46,
+   "colour": "blue",
+   "emotion": "anger",
+   "intensity": "bright",
+   "variation": "일반",
+   "tup": [
+    221,
+    94,
+    90,
+    90,
+    382
+   ]
+  },
+  {
+   "cell_id": "K240-094",
+   "row": 47,
+   "colour": "blue",
+   "emotion": "none",
+   "intensity": "bright",
+   "variation": "일반",
+   "tup": [
+    221,
+    82,
+    80,
+    78,
+    402
+   ]
+  },
+  {
+   "cell_id": "K240-122",
+   "row": 48,
+   "colour": "green",
+   "emotion": "none",
+   "intensity": "soft",
+   "variation": "맥락추가",
+   "tup": [
+    117,
+    50,
+    60,
+    54,
+    338
+   ]
+  },
+  {
+   "cell_id": "K240-164",
+   "row": 49,
+   "colour": "purple",
+   "emotion": "happiness",
+   "intensity": "bright",
+   "variation": "일반",
+   "tup": [
+    288,
+    86,
+    92,
+    90,
+    307
+   ]
+  },
+  {
+   "cell_id": "K240-217",
+   "row": 50,
+   "colour": "white",
+   "emotion": "sadness",
+   "intensity": "soft",
+   "variation": "일반",
+   "tup": [
+    38,
+    0,
+    40,
+    34,
+    393
+   ]
+  },
+  {
+   "cell_id": "K240-146",
+   "row": 51,
+   "colour": "green",
+   "emotion": "anxiety",
+   "intensity": "neutral",
+   "variation": "일반",
+   "tup": [
+    118,
+    44,
+    38,
+    34,
+    385
+   ]
+  },
+  {
+   "cell_id": "K240-035",
+   "row": 52,
+   "colour": "red",
+   "emotion": "none",
+   "intensity": "dark",
+   "variation": "부정형",
+   "tup": [
+    358,
+    84,
+    44,
+    40,
+    293
+   ]
+  },
+  {
+   "cell_id": "K240-192",
+   "row": 53,
+   "colour": "orange",
+   "emotion": "happiness",
+   "intensity": "soft",
+   "variation": "일반",
+   "tup": [
+    27,
+    72,
+    84,
+    78,
+    243
+   ]
+  },
+  {
+   "cell_id": "K240-114",
+   "row": 54,
+   "colour": "blue",
+   "emotion": "calm",
+   "intensity": "bright",
+   "variation": "맥락추가",
+   "tup": [
+    224,
+    60,
+    72,
+    70,
+    447
+   ]
+  },
+  {
+   "cell_id": "K240-206",
+   "row": 55,
+   "colour": "orange",
+   "emotion": "anxiety",
+   "intensity": "neutral",
+   "variation": "어순변형",
+   "tup": [
+    26,
+    60,
+    48,
+    44,
+    315
+   ]
+  },
+  {
+   "cell_id": "K240-003",
+   "row": 56,
+   "colour": "none",
+   "emotion": "none",
+   "intensity": "strong",
+   "variation": "일반",
+   "tup": [
+    47,
+    30,
+    64,
+    64,
+    290
+   ]
+  },
+  {
+   "cell_id": "K240-203",
+   "row": 57,
+   "colour": "orange",
+   "emotion": "calm",
+   "intensity": "strong",
+   "variation": "부정형",
+   "tup": [
+    33,
+    78,
+    78,
+    76,
+    285
+   ]
+  },
+  {
+   "cell_id": "K240-095",
+   "row": 58,
+   "colour": "blue",
+   "emotion": "none",
+   "intensity": "dark",
+   "variation": "맥락추가",
+   "tup": [
+    218,
+    70,
+    34,
+    30,
+    448
+   ]
+  },
+  {
+   "cell_id": "K240-228",
+   "row": 59,
+   "colour": "white",
+   "emotion": "anger",
+   "intensity": "strong",
+   "variation": "부정형",
+   "tup": [
+    47,
+    28,
+    100,
+    100,
+    255
+   ]
+  },
+  {
+   "cell_id": "K240-127",
+   "row": 60,
+   "colour": "green",
+   "emotion": "sadness",
+   "intensity": "soft",
+   "variation": "부정형",
+   "tup": [
+    113,
+    22,
+    24,
+    16,
+    428
+   ]
+  },
+  {
+   "cell_id": "K240-180",
+   "row": 61,
+   "colour": "purple",
+   "emotion": "anxiety",
+   "intensity": "dark",
+   "variation": "부정형",
+   "tup": [
+    281,
+    38,
+    2,
+    0,
+    443
+   ]
+  },
+  {
+   "cell_id": "K240-162",
+   "row": 62,
+   "colour": "purple",
+   "emotion": "happiness",
+   "intensity": "soft",
+   "variation": "일반",
+   "tup": [
+    284,
+    58,
+    68,
+    62,
+    333
+   ]
+  },
+  {
+   "cell_id": "K240-133",
+   "row": 63,
+   "colour": "green",
+   "emotion": "happiness",
+   "intensity": "strong",
+   "variation": "일반",
+   "tup": [
+    124,
+    90,
+    90,
+    88,
+    285
+   ]
+  },
+  {
+   "cell_id": "K240-199",
+   "row": 64,
+   "colour": "orange",
+   "emotion": "anger",
+   "intensity": "bright",
+   "variation": "부정형",
+   "tup": [
+    29,
+    100,
+    100,
+    100,
+    222
+   ]
+  },
+  {
+   "cell_id": "K240-138",
+   "row": 65,
+   "colour": "green",
+   "emotion": "anger",
+   "intensity": "strong",
+   "variation": "어순변형",
+   "tup": [
+    122,
+    96,
+    86,
+    86,
+    290
+   ]
+  },
+  {
+   "cell_id": "K240-198",
+   "row": 66,
+   "colour": "orange",
+   "emotion": "anger",
+   "intensity": "strong",
+   "variation": "부정형",
+   "tup": [
+    30,
+    100,
+    96,
+    96,
+    220
+   ]
+  },
+  {
+   "cell_id": "K240-079",
+   "row": 67,
+   "colour": "yellow",
+   "emotion": "anger",
+   "intensity": "bright",
+   "variation": "일반",
+   "tup": [
+    56,
+    100,
+    100,
+    100,
+    212
+   ]
+  },
+  {
+   "cell_id": "K240-002",
+   "row": 68,
+   "colour": "none",
+   "emotion": "none",
+   "intensity": "soft",
+   "variation": "일반",
+   "tup": [
+    42,
+    0,
+    48,
+    44,
+    318
+   ]
+  },
+  {
+   "cell_id": "K240-106",
+   "row": 69,
+   "colour": "blue",
+   "emotion": "anger",
+   "intensity": "neutral",
+   "variation": "일반",
+   "tup": [
+    220,
+    90,
+    74,
+    74,
+    390
+   ]
+  },
+  {
+   "cell_id": "K240-236",
+   "row": 70,
+   "colour": "white",
+   "emotion": "anxiety",
+   "intensity": "neutral",
+   "variation": "어순변형",
+   "tup": [
+    43,
+    0,
+    54,
+    52,
+    350
+   ]
+  },
+  {
+   "cell_id": "K240-123",
+   "row": 71,
+   "colour": "green",
+   "emotion": "none",
+   "intensity": "strong",
+   "variation": "부정형",
+   "tup": [
+    122,
+    84,
+    76,
+    74,
+    310
+   ]
+  },
+  {
+   "cell_id": "K240-089",
+   "row": 72,
+   "colour": "yellow",
+   "emotion": "anxiety",
+   "intensity": "bright",
+   "variation": "일반",
+   "tup": [
+    54,
+    62,
+    68,
+    64,
+    297
+   ]
+  },
+  {
+   "cell_id": "K240-165",
+   "row": 73,
+   "colour": "purple",
+   "emotion": "happiness",
+   "intensity": "dark",
+   "variation": "일반",
+   "tup": [
+    285,
+    74,
+    46,
+    42,
+    353
+   ]
+  },
+  {
+   "cell_id": "K240-013",
+   "row": 74,
+   "colour": "none",
+   "emotion": "happiness",
+   "intensity": "strong",
+   "variation": "일반",
+   "tup": [
+    40,
+    88,
+    96,
+    94,
+    225
+   ]
+  },
+  {
+   "cell_id": "K240-239",
+   "row": 75,
+   "colour": "white",
+   "emotion": "anxiety",
+   "intensity": "bright",
+   "variation": "일반",
+   "tup": [
+    44,
+    0,
+    70,
+    68,
+    342
+   ]
+  },
+  {
+   "cell_id": "K240-016",
+   "row": 76,
+   "colour": "none",
+   "emotion": "anger",
+   "intensity": "neutral",
+   "variation": "일반",
+   "tup": [
+    12,
+    92,
+    72,
+    76,
+    255
+   ]
+  },
+  {
+   "cell_id": "K240-050",
+   "row": 77,
+   "colour": "red",
+   "emotion": "anger",
+   "intensity": "dark",
+   "variation": "맥락추가",
+   "tup": [
+    358,
+    96,
+    54,
+    52,
+    273
+   ]
+  },
+  {
+   "cell_id": "K240-187",
+   "row": 78,
+   "colour": "orange",
+   "emotion": "sadness",
+   "intensity": "soft",
+   "variation": "맥락추가",
+   "tup": [
+    21,
+    38,
+    34,
+    26,
+    358
+   ]
+  },
+  {
+   "cell_id": "K240-126",
+   "row": 79,
+   "colour": "green",
+   "emotion": "sadness",
+   "intensity": "neutral",
+   "variation": "일반",
+   "tup": [
+    116,
+    46,
+    32,
+    28,
+    410
+   ]
+  },
+  {
+   "cell_id": "K240-004",
+   "row": 80,
+   "colour": "none",
+   "emotion": "none",
+   "intensity": "bright",
+   "variation": "일반",
+   "tup": [
+    46,
+    24,
+    72,
+    72,
+    292
+   ]
+  },
+  {
+   "cell_id": "K240-022",
+   "row": 81,
+   "colour": "none",
+   "emotion": "calm",
+   "intensity": "soft",
+   "variation": "일반",
+   "tup": [
+    182,
+    18,
+    50,
+    48,
+    333
+   ]
+  },
+  {
+   "cell_id": "K240-169",
+   "row": 82,
+   "colour": "purple",
+   "emotion": "anger",
+   "intensity": "bright",
+   "variation": "부정형",
+   "tup": [
+    286,
+    92,
+    88,
+    88,
+    312
+   ]
+  },
+  {
+   "cell_id": "K240-207",
+   "row": 83,
+   "colour": "orange",
+   "emotion": "anxiety",
+   "intensity": "soft",
+   "variation": "일반",
+   "tup": [
+    23,
+    36,
+    40,
+    32,
+    333
+   ]
+  },
+  {
+   "cell_id": "K240-088",
+   "row": 84,
+   "colour": "yellow",
+   "emotion": "anxiety",
+   "intensity": "strong",
+   "variation": "어순변형",
+   "tup": [
+    55,
+    68,
+    60,
+    56,
+    295
+   ]
+  },
+  {
+   "cell_id": "K240-009",
+   "row": 85,
+   "colour": "none",
+   "emotion": "sadness",
+   "intensity": "bright",
+   "variation": "어순변형",
+   "tup": [
+    221,
+    40,
+    40,
+    38,
+    402
+   ]
+  },
+  {
+   "cell_id": "K240-131",
+   "row": 86,
+   "colour": "green",
+   "emotion": "happiness",
+   "intensity": "neutral",
+   "variation": "일반",
+   "tup": [
+    122,
+    80,
+    82,
+    80,
+    295
+   ]
+  },
+  {
+   "cell_id": "K240-062",
+   "row": 87,
+   "colour": "yellow",
+   "emotion": "none",
+   "intensity": "soft",
+   "variation": "일반",
+   "tup": [
+    52,
+    64,
+    74,
+    68,
+    258
+   ]
+  },
+  {
+   "cell_id": "K240-229",
+   "row": 88,
+   "colour": "white",
+   "emotion": "anger",
+   "intensity": "bright",
+   "variation": "부정형",
+   "tup": [
+    46,
+    22,
+    100,
+    100,
+    257
+   ]
+  },
+  {
+   "cell_id": "K240-010",
+   "row": 89,
+   "colour": "none",
+   "emotion": "sadness",
+   "intensity": "dark",
+   "variation": "부정형",
+   "tup": [
+    218,
+    28,
+    0,
+    0,
+    448
+   ]
+  },
+  {
+   "cell_id": "K240-046",
+   "row": 90,
+   "colour": "red",
+   "emotion": "anger",
+   "intensity": "neutral",
+   "variation": "일반",
+   "tup": [
+    0,
+    100,
+    84,
+    84,
+    235
+   ]
+  },
+  {
+   "cell_id": "K240-214",
+   "row": 91,
+   "colour": "white",
+   "emotion": "none",
+   "intensity": "bright",
+   "variation": "부정형",
+   "tup": [
+    46,
+    10,
+    100,
+    100,
+    277
+   ]
+  },
+  {
+   "cell_id": "K240-225",
+   "row": 92,
+   "colour": "white",
+   "emotion": "happiness",
+   "intensity": "dark",
+   "variation": "부정형",
+   "tup": [
+    45,
+    4,
+    68,
+    66,
+    298
+   ]
+  },
+  {
+   "cell_id": "K240-108",
+   "row": 93,
+   "colour": "blue",
+   "emotion": "anger",
+   "intensity": "strong",
+   "variation": "일반",
+   "tup": [
+    222,
+    100,
+    82,
+    82,
+    380
+   ]
+  },
+  {
+   "cell_id": "K240-176",
+   "row": 94,
+   "colour": "purple",
+   "emotion": "anxiety",
+   "intensity": "neutral",
+   "variation": "어순변형",
+   "tup": [
+    283,
+    46,
+    32,
+    28,
+    405
+   ]
+  },
+  {
+   "cell_id": "K240-060",
+   "row": 95,
+   "colour": "red",
+   "emotion": "anxiety",
+   "intensity": "dark",
+   "variation": "일반",
+   "tup": [
+    356,
+    54,
+    14,
+    8,
+    358
+   ]
+  },
+  {
+   "cell_id": "K240-191",
+   "row": 96,
+   "colour": "orange",
+   "emotion": "happiness",
+   "intensity": "neutral",
+   "variation": "일반",
+   "tup": [
+    30,
+    96,
+    92,
+    90,
+    225
+   ]
+  },
+  {
+   "cell_id": "K240-194",
+   "row": 97,
+   "colour": "orange",
+   "emotion": "happiness",
+   "intensity": "bright",
+   "variation": "부정형",
+   "tup": [
+    31,
+    100,
+    100,
+    100,
+    217
+   ]
+  },
+  {
+   "cell_id": "K240-195",
+   "row": 98,
+   "colour": "orange",
+   "emotion": "happiness",
+   "intensity": "dark",
+   "variation": "부정형",
+   "tup": [
+    28,
+    88,
+    62,
+    58,
+    263
+   ]
+  },
+  {
+   "cell_id": "K240-105",
+   "row": 99,
+   "colour": "blue",
+   "emotion": "happiness",
+   "intensity": "dark",
+   "variation": "일반",
+   "tup": [
+    220,
+    76,
+    48,
+    44,
+    423
+   ]
+  },
+  {
+   "cell_id": "K240-078",
+   "row": 100,
+   "colour": "yellow",
+   "emotion": "anger",
+   "intensity": "strong",
+   "variation": "일반",
+   "tup": [
+    57,
+    100,
+    100,
+    100,
+    210
+   ]
+  },
+  {
+   "cell_id": "K240-172",
+   "row": 101,
+   "colour": "purple",
+   "emotion": "calm",
+   "intensity": "soft",
+   "variation": "부정형",
+   "tup": [
+    285,
+    30,
+    46,
+    40,
+    403
+   ]
+  },
+  {
+   "cell_id": "K240-090",
+   "row": 102,
+   "colour": "yellow",
+   "emotion": "anxiety",
+   "intensity": "dark",
+   "variation": "맥락추가",
+   "tup": [
+    51,
+    50,
+    22,
+    16,
+    343
+   ]
+  },
+  {
+   "cell_id": "K240-086",
+   "row": 103,
+   "colour": "yellow",
+   "emotion": "anxiety",
+   "intensity": "neutral",
+   "variation": "맥락추가",
+   "tup": [
+    53,
+    58,
+    52,
+    48,
+    305
+   ]
+  },
+  {
+   "cell_id": "K240-237",
+   "row": 104,
+   "colour": "white",
+   "emotion": "anxiety",
+   "intensity": "soft",
+   "variation": "맥락추가",
+   "tup": [
+    40,
+    0,
+    46,
+    40,
+    368
+   ]
+  },
+  {
+   "cell_id": "K240-052",
+   "row": 105,
+   "colour": "red",
+   "emotion": "calm",
+   "intensity": "soft",
+   "variation": "부정형",
+   "tup": [
+    0,
+    46,
+    58,
+    52,
+    318
+   ]
+  },
+  {
+   "cell_id": "K240-033",
+   "row": 106,
+   "colour": "red",
+   "emotion": "none",
+   "intensity": "strong",
+   "variation": "맥락추가",
+   "tup": [
+    2,
+    100,
+    82,
+    80,
+    245
+   ]
+  },
+  {
+   "cell_id": "K240-141",
+   "row": 107,
+   "colour": "green",
+   "emotion": "calm",
+   "intensity": "neutral",
+   "variation": "일반",
+   "tup": [
+    123,
+    52,
+    60,
+    58,
+    365
+   ]
+  },
+  {
+   "cell_id": "K240-028",
+   "row": 108,
+   "colour": "none",
+   "emotion": "anxiety",
+   "intensity": "strong",
+   "variation": "일반",
+   "tup": [
+    212,
+    40,
+    38,
+    36,
+    385
+   ]
+  },
+  {
+   "cell_id": "K240-098",
+   "row": 109,
+   "colour": "blue",
+   "emotion": "sadness",
+   "intensity": "strong",
+   "variation": "일반",
+   "tup": [
+    218,
+    60,
+    36,
+    32,
+    490
+   ]
+  },
+  {
+   "cell_id": "K240-116",
+   "row": 110,
+   "colour": "blue",
+   "emotion": "anxiety",
+   "intensity": "neutral",
+   "variation": "맥락추가",
+   "tup": [
+    218,
+    48,
+    34,
+    30,
+    475
+   ]
+  },
+  {
+   "cell_id": "K240-061",
+   "row": 111,
+   "colour": "yellow",
+   "emotion": "none",
+   "intensity": "neutral",
+   "variation": "어순변형",
+   "tup": [
+    55,
+    88,
+    82,
+    80,
+    240
+   ]
+  },
+  {
+   "cell_id": "K240-084",
+   "row": 112,
+   "colour": "yellow",
+   "emotion": "calm",
+   "intensity": "bright",
+   "variation": "일반",
+   "tup": [
+    59,
+    70,
+    90,
+    88,
+    277
+   ]
+  },
+  {
+   "cell_id": "K240-124",
+   "row": 113,
+   "colour": "green",
+   "emotion": "none",
+   "intensity": "bright",
+   "variation": "일반",
+   "tup": [
+    121,
+    78,
+    84,
+    82,
+    312
+   ]
+  },
+  {
+   "cell_id": "K240-222",
+   "row": 114,
+   "colour": "white",
+   "emotion": "happiness",
+   "intensity": "soft",
+   "variation": "어순변형",
+   "tup": [
+    44,
+    0,
+    90,
+    86,
+    278
+   ]
+  },
+  {
+   "cell_id": "K240-226",
+   "row": 115,
+   "colour": "white",
+   "emotion": "anger",
+   "intensity": "neutral",
+   "variation": "맥락추가",
+   "tup": [
+    45,
+    18,
+    94,
+    96,
+    265
+   ]
+  },
+  {
+   "cell_id": "K240-209",
+   "row": 116,
+   "colour": "orange",
+   "emotion": "anxiety",
+   "intensity": "bright",
+   "variation": "맥락추가",
+   "tup": [
+    27,
+    64,
+    64,
+    60,
+    307
+   ]
+  },
+  {
+   "cell_id": "K240-185",
+   "row": 117,
+   "colour": "orange",
+   "emotion": "none",
+   "intensity": "dark",
+   "variation": "일반",
+   "tup": [
+    26,
+    82,
+    48,
+    44,
+    288
+   ]
+  },
+  {
+   "cell_id": "K240-043",
+   "row": 118,
+   "colour": "red",
+   "emotion": "happiness",
+   "intensity": "strong",
+   "variation": "어순변형",
+   "tup": [
+    4,
+    100,
+    96,
+    94,
+    220
+   ]
+  },
+  {
+   "cell_id": "K240-044",
+   "row": 119,
+   "colour": "red",
+   "emotion": "happiness",
+   "intensity": "bright",
+   "variation": "일반",
+   "tup": [
+    3,
+    100,
+    100,
+    100,
+    222
+   ]
+  },
+  {
+   "cell_id": "K240-017",
+   "row": 120,
+   "colour": "none",
+   "emotion": "anger",
+   "intensity": "soft",
+   "variation": "어순변형",
+   "tup": [
+    9,
+    68,
+    64,
+    64,
+    273
+   ]
+  },
+  {
+   "cell_id": "K240-014",
+   "row": 121,
+   "colour": "none",
+   "emotion": "happiness",
+   "intensity": "bright",
+   "variation": "일반",
+   "tup": [
+    39,
+    82,
+    100,
+    100,
+    227
+   ]
+  },
+  {
+   "cell_id": "K240-153",
+   "row": 122,
+   "colour": "purple",
+   "emotion": "none",
+   "intensity": "strong",
+   "variation": "맥락추가",
+   "tup": [
+    287,
+    86,
+    70,
+    68,
+    330
+   ]
+  },
+  {
+   "cell_id": "K240-121",
+   "row": 123,
+   "colour": "green",
+   "emotion": "none",
+   "intensity": "neutral",
+   "variation": "일반",
+   "tup": [
+    120,
+    74,
+    68,
+    66,
+    320
+   ]
+  },
+  {
+   "cell_id": "K240-137",
+   "row": 124,
+   "colour": "green",
+   "emotion": "anger",
+   "intensity": "soft",
+   "variation": "일반",
+   "tup": [
+    117,
+    62,
+    70,
+    66,
+    318
+   ]
+  },
+  {
+   "cell_id": "K240-045",
+   "row": 125,
+   "colour": "red",
+   "emotion": "happiness",
+   "intensity": "dark",
+   "variation": "일반",
+   "tup": [
+    0,
+    90,
+    58,
+    54,
+    268
+   ]
+  },
+  {
+   "cell_id": "K240-049",
+   "row": 126,
+   "colour": "red",
+   "emotion": "anger",
+   "intensity": "bright",
+   "variation": "어순변형",
+   "tup": [
+    1,
+    100,
+    100,
+    100,
+    227
+   ]
+  },
+  {
+   "cell_id": "K240-120",
+   "row": 127,
+   "colour": "blue",
+   "emotion": "anxiety",
+   "intensity": "dark",
+   "variation": "일반",
+   "tup": [
+    216,
+    40,
+    4,
+    0,
+    500
+   ]
+  },
+  {
+   "cell_id": "K240-077",
+   "row": 128,
+   "colour": "yellow",
+   "emotion": "anger",
+   "intensity": "soft",
+   "variation": "맥락추가",
+   "tup": [
+    52,
+    76,
+    84,
+    80,
+    238
+   ]
+  },
+  {
+   "cell_id": "K240-118",
+   "row": 129,
+   "colour": "blue",
+   "emotion": "anxiety",
+   "intensity": "strong",
+   "variation": "맥락추가",
+   "tup": [
+    220,
+    58,
+    42,
+    38,
+    465
+   ]
+  },
+  {
+   "cell_id": "K240-081",
+   "row": 130,
+   "colour": "yellow",
+   "emotion": "calm",
+   "intensity": "neutral",
+   "variation": "일반",
+   "tup": [
+    58,
+    66,
+    74,
+    72,
+    285
+   ]
+  },
+  {
+   "cell_id": "K240-011",
+   "row": 131,
+   "colour": "none",
+   "emotion": "happiness",
+   "intensity": "neutral",
+   "variation": "어순변형",
+   "tup": [
+    38,
+    78,
+    88,
+    86,
+    235
+   ]
+  },
+  {
+   "cell_id": "K240-023",
+   "row": 132,
+   "colour": "none",
+   "emotion": "calm",
+   "intensity": "strong",
+   "variation": "부정형",
+   "tup": [
+    187,
+    52,
+    66,
+    68,
+    305
+   ]
+  },
+  {
+   "cell_id": "K240-190",
+   "row": 133,
+   "colour": "orange",
+   "emotion": "sadness",
+   "intensity": "dark",
+   "variation": "일반",
+   "tup": [
+    22,
+    54,
+    12,
+    6,
+    378
+   ]
+  },
+  {
+   "cell_id": "K240-047",
+   "row": 134,
+   "colour": "red",
+   "emotion": "anger",
+   "intensity": "soft",
+   "variation": "일반",
+   "tup": [
+    357,
+    80,
+    76,
+    72,
+    253
+   ]
+  },
+  {
+   "cell_id": "K240-001",
+   "row": 135,
+   "colour": "none",
+   "emotion": "none",
+   "intensity": "neutral",
+   "variation": "일반",
+   "tup": [
+    45,
+    20,
+    56,
+    56,
+    300
+   ]
+  },
+  {
+   "cell_id": "K240-219",
+   "row": 136,
+   "colour": "white",
+   "emotion": "sadness",
+   "intensity": "bright",
+   "variation": "일반",
+   "tup": [
+    42,
+    0,
+    64,
+    62,
+    367
+   ]
+  },
+  {
+   "cell_id": "K240-063",
+   "row": 137,
+   "colour": "yellow",
+   "emotion": "none",
+   "intensity": "strong",
+   "variation": "부정형",
+   "tup": [
+    57,
+    98,
+    90,
+    88,
+    230
+   ]
+  },
+  {
+   "cell_id": "K240-006",
+   "row": 138,
+   "colour": "none",
+   "emotion": "sadness",
+   "intensity": "neutral",
+   "variation": "어순변형",
+   "tup": [
+    220,
+    36,
+    24,
+    22,
+    410
+   ]
+  },
+  {
+   "cell_id": "K240-200",
+   "row": 139,
+   "colour": "orange",
+   "emotion": "anger",
+   "intensity": "dark",
+   "variation": "일반",
+   "tup": [
+    26,
+    94,
+    58,
+    56,
+    268
+   ]
+  },
+  {
+   "cell_id": "K240-038",
+   "row": 140,
+   "colour": "red",
+   "emotion": "sadness",
+   "intensity": "strong",
+   "variation": "맥락추가",
+   "tup": [
+    358,
+    74,
+    46,
+    42,
+    335
+   ]
+  },
+  {
+   "cell_id": "K240-125",
+   "row": 141,
+   "colour": "green",
+   "emotion": "none",
+   "intensity": "dark",
+   "variation": "부정형",
+   "tup": [
+    118,
+    66,
+    38,
+    34,
+    358
+   ]
+  },
+  {
+   "cell_id": "K240-067",
+   "row": 142,
+   "colour": "yellow",
+   "emotion": "sadness",
+   "intensity": "soft",
+   "variation": "일반",
+   "tup": [
+    48,
+    36,
+    38,
+    30,
+    348
+   ]
+  },
+  {
+   "cell_id": "K240-085",
+   "row": 143,
+   "colour": "yellow",
+   "emotion": "calm",
+   "intensity": "dark",
+   "variation": "일반",
+   "tup": [
+    56,
+    58,
+    44,
+    40,
+    323
+   ]
+  },
+  {
+   "cell_id": "K240-216",
+   "row": 144,
+   "colour": "white",
+   "emotion": "sadness",
+   "intensity": "neutral",
+   "variation": "일반",
+   "tup": [
+    41,
+    0,
+    48,
+    46,
+    375
+   ]
+  },
+  {
+   "cell_id": "K240-005",
+   "row": 145,
+   "colour": "none",
+   "emotion": "none",
+   "intensity": "dark",
+   "variation": "일반",
+   "tup": [
+    43,
+    12,
+    26,
+    24,
+    338
+   ]
+  },
+  {
+   "cell_id": "K240-113",
+   "row": 146,
+   "colour": "blue",
+   "emotion": "calm",
+   "intensity": "strong",
+   "variation": "부정형",
+   "tup": [
+    225,
+    66,
+    64,
+    62,
+    445
+   ]
+  },
+  {
+   "cell_id": "K240-102",
+   "row": 147,
+   "colour": "blue",
+   "emotion": "happiness",
+   "intensity": "soft",
+   "variation": "일반",
+   "tup": [
+    219,
+    60,
+    70,
+    64,
+    403
+   ]
+  },
+  {
+   "cell_id": "K240-154",
+   "row": 148,
+   "colour": "purple",
+   "emotion": "none",
+   "intensity": "bright",
+   "variation": "일반",
+   "tup": [
+    286,
+    80,
+    78,
+    76,
+    332
+   ]
+  },
+  {
+   "cell_id": "K240-238",
+   "row": 149,
+   "colour": "white",
+   "emotion": "anxiety",
+   "intensity": "strong",
+   "variation": "맥락추가",
+   "tup": [
+    45,
+    0,
+    62,
+    60,
+    340
+   ]
+  },
+  {
+   "cell_id": "K240-091",
+   "row": 150,
+   "colour": "blue",
+   "emotion": "none",
+   "intensity": "neutral",
+   "variation": "맥락추가",
+   "tup": [
+    220,
+    78,
+    64,
+    62,
+    410
+   ]
+  },
+  {
+   "cell_id": "K240-218",
+   "row": 151,
+   "colour": "white",
+   "emotion": "sadness",
+   "intensity": "strong",
+   "variation": "맥락추가",
+   "tup": [
+    43,
+    0,
+    56,
+    54,
+    365
+   ]
+  },
+  {
+   "cell_id": "K240-015",
+   "row": 152,
+   "colour": "none",
+   "emotion": "happiness",
+   "intensity": "dark",
+   "variation": "일반",
+   "tup": [
+    36,
+    70,
+    58,
+    54,
+    273
+   ]
+  },
+  {
+   "cell_id": "K240-152",
+   "row": 153,
+   "colour": "purple",
+   "emotion": "none",
+   "intensity": "soft",
+   "variation": "부정형",
+   "tup": [
+    282,
+    52,
+    54,
+    48,
+    358
+   ]
+  },
+  {
+   "cell_id": "K240-082",
+   "row": 154,
+   "colour": "yellow",
+   "emotion": "calm",
+   "intensity": "soft",
+   "variation": "맥락추가",
+   "tup": [
+    55,
+    42,
+    66,
+    60,
+    303
+   ]
+  },
+  {
+   "cell_id": "K240-042",
+   "row": 155,
+   "colour": "red",
+   "emotion": "happiness",
+   "intensity": "soft",
+   "variation": "맥락추가",
+   "tup": [
+    359,
+    74,
+    80,
+    74,
+    248
+   ]
+  },
+  {
+   "cell_id": "K240-026",
+   "row": 156,
+   "colour": "none",
+   "emotion": "anxiety",
+   "intensity": "neutral",
+   "variation": "일반",
+   "tup": [
+    210,
+    30,
+    30,
+    28,
+    395
+   ]
+  },
+  {
+   "cell_id": "K240-186",
+   "row": 157,
+   "colour": "orange",
+   "emotion": "sadness",
+   "intensity": "neutral",
+   "variation": "맥락추가",
+   "tup": [
+    24,
+    62,
+    42,
+    38,
+    340
+   ]
+  },
+  {
+   "cell_id": "K240-021",
+   "row": 158,
+   "colour": "none",
+   "emotion": "calm",
+   "intensity": "neutral",
+   "variation": "어순변형",
+   "tup": [
+    185,
+    42,
+    58,
+    60,
+    315
+   ]
+  },
+  {
+   "cell_id": "K240-204",
+   "row": 159,
+   "colour": "orange",
+   "emotion": "calm",
+   "intensity": "bright",
+   "variation": "어순변형",
+   "tup": [
+    32,
+    72,
+    86,
+    84,
+    287
+   ]
+  },
+  {
+   "cell_id": "K240-107",
+   "row": 160,
+   "colour": "blue",
+   "emotion": "anger",
+   "intensity": "soft",
+   "variation": "어순변형",
+   "tup": [
+    217,
+    66,
+    66,
+    62,
+    408
+   ]
+  },
+  {
+   "cell_id": "K240-149",
+   "row": 161,
+   "colour": "green",
+   "emotion": "anxiety",
+   "intensity": "bright",
+   "variation": "일반",
+   "tup": [
+    119,
+    48,
+    54,
+    50,
+    377
+   ]
+  },
+  {
+   "cell_id": "K240-072",
+   "row": 162,
+   "colour": "yellow",
+   "emotion": "happiness",
+   "intensity": "soft",
+   "variation": "일반",
+   "tup": [
+    54,
+    70,
+    88,
+    82,
+    233
+   ]
+  },
+  {
+   "cell_id": "K240-048",
+   "row": 163,
+   "colour": "red",
+   "emotion": "anger",
+   "intensity": "strong",
+   "variation": "맥락추가",
+   "tup": [
+    2,
+    100,
+    92,
+    92,
+    225
+   ]
+  },
+  {
+   "cell_id": "K240-104",
+   "row": 164,
+   "colour": "blue",
+   "emotion": "happiness",
+   "intensity": "bright",
+   "variation": "일반",
+   "tup": [
+    223,
+    88,
+    94,
+    92,
+    377
+   ]
+  },
+  {
+   "cell_id": "K240-130",
+   "row": 165,
+   "colour": "green",
+   "emotion": "sadness",
+   "intensity": "dark",
+   "variation": "부정형",
+   "tup": [
+    114,
+    38,
+    2,
+    0,
+    448
+   ]
+  },
+  {
+   "cell_id": "K240-182",
+   "row": 166,
+   "colour": "orange",
+   "emotion": "none",
+   "intensity": "soft",
+   "variation": "어순변형",
+   "tup": [
+    25,
+    66,
+    70,
+    64,
+    268
+   ]
+  },
+  {
+   "cell_id": "K240-197",
+   "row": 167,
+   "colour": "orange",
+   "emotion": "anger",
+   "intensity": "soft",
+   "variation": "일반",
+   "tup": [
+    25,
+    78,
+    80,
+    76,
+    248
+   ]
+  },
+  {
+   "cell_id": "K240-156",
+   "row": 168,
+   "colour": "purple",
+   "emotion": "sadness",
+   "intensity": "neutral",
+   "variation": "맥락추가",
+   "tup": [
+    281,
+    48,
+    26,
+    22,
+    430
+   ]
+  },
+  {
+   "cell_id": "K240-115",
+   "row": 169,
+   "colour": "blue",
+   "emotion": "calm",
+   "intensity": "dark",
+   "variation": "부정형",
+   "tup": [
+    221,
+    48,
+    26,
+    22,
+    493
+   ]
+  },
+  {
+   "cell_id": "K240-083",
+   "row": 170,
+   "colour": "yellow",
+   "emotion": "calm",
+   "intensity": "strong",
+   "variation": "어순변형",
+   "tup": [
+    60,
+    76,
+    82,
+    80,
+    275
+   ]
+  },
+  {
+   "cell_id": "K240-208",
+   "row": 171,
+   "colour": "orange",
+   "emotion": "anxiety",
+   "intensity": "strong",
+   "variation": "일반",
+   "tup": [
+    28,
+    70,
+    56,
+    52,
+    305
+   ]
+  },
+  {
+   "cell_id": "K240-128",
+   "row": 172,
+   "colour": "green",
+   "emotion": "sadness",
+   "intensity": "strong",
+   "variation": "어순변형",
+   "tup": [
+    118,
+    56,
+    40,
+    36,
+    400
+   ]
+  },
+  {
+   "cell_id": "K240-230",
+   "row": 173,
+   "colour": "white",
+   "emotion": "anger",
+   "intensity": "dark",
+   "variation": "부정형",
+   "tup": [
+    43,
+    10,
+    64,
+    64,
+    303
+   ]
+  },
+  {
+   "cell_id": "K240-020",
+   "row": 174,
+   "colour": "none",
+   "emotion": "anger",
+   "intensity": "dark",
+   "variation": "맥락추가",
+   "tup": [
+    10,
+    84,
+    42,
+    44,
+    293
+   ]
+  },
+  {
+   "cell_id": "K240-070",
+   "row": 175,
+   "colour": "yellow",
+   "emotion": "sadness",
+   "intensity": "dark",
+   "variation": "일반",
+   "tup": [
+    49,
+    52,
+    16,
+    10,
+    368
+   ]
+  },
+  {
+   "cell_id": "K240-075",
+   "row": 176,
+   "colour": "yellow",
+   "emotion": "happiness",
+   "intensity": "dark",
+   "variation": "어순변형",
+   "tup": [
+    55,
+    86,
+    66,
+    62,
+    253
+   ]
+  },
+  {
+   "cell_id": "K240-064",
+   "row": 177,
+   "colour": "yellow",
+   "emotion": "none",
+   "intensity": "bright",
+   "variation": "부정형",
+   "tup": [
+    56,
+    92,
+    98,
+    96,
+    232
+   ]
+  },
+  {
+   "cell_id": "K240-112",
+   "row": 178,
+   "colour": "blue",
+   "emotion": "calm",
+   "intensity": "soft",
+   "variation": "일반",
+   "tup": [
+    220,
+    32,
+    48,
+    42,
+    473
+   ]
+  },
+  {
+   "cell_id": "K240-205",
+   "row": 179,
+   "colour": "orange",
+   "emotion": "calm",
+   "intensity": "dark",
+   "variation": "일반",
+   "tup": [
+    29,
+    60,
+    40,
+    36,
+    333
+   ]
+  },
+  {
+   "cell_id": "K240-223",
+   "row": 180,
+   "colour": "white",
+   "emotion": "happiness",
+   "intensity": "strong",
+   "variation": "어순변형",
+   "tup": [
+    49,
+    22,
+    100,
+    100,
+    250
+   ]
+  },
+  {
+   "cell_id": "K240-235",
+   "row": 181,
+   "colour": "white",
+   "emotion": "calm",
+   "intensity": "dark",
+   "variation": "어순변형",
+   "tup": [
+    46,
+    0,
+    46,
+    44,
+    368
+   ]
+  },
+  {
+   "cell_id": "K240-175",
+   "row": 182,
+   "colour": "purple",
+   "emotion": "calm",
+   "intensity": "dark",
+   "variation": "일반",
+   "tup": [
+    286,
+    46,
+    24,
+    20,
+    423
+   ]
+  },
+  {
+   "cell_id": "K240-132",
+   "row": 183,
+   "colour": "green",
+   "emotion": "happiness",
+   "intensity": "soft",
+   "variation": "일반",
+   "tup": [
+    119,
+    56,
+    74,
+    68,
+    313
+   ]
+  },
+  {
+   "cell_id": "K240-231",
+   "row": 184,
+   "colour": "white",
+   "emotion": "calm",
+   "intensity": "neutral",
+   "variation": "일반",
+   "tup": [
+    48,
+    0,
+    76,
+    76,
+    330
+   ]
+  },
+  {
+   "cell_id": "K240-150",
+   "row": 185,
+   "colour": "green",
+   "emotion": "anxiety",
+   "intensity": "dark",
+   "variation": "어순변형",
+   "tup": [
+    116,
+    36,
+    8,
+    2,
+    423
+   ]
+  },
+  {
+   "cell_id": "K240-233",
+   "row": 186,
+   "colour": "white",
+   "emotion": "calm",
+   "intensity": "strong",
+   "variation": "일반",
+   "tup": [
+    50,
+    0,
+    84,
+    84,
+    320
+   ]
+  },
+  {
+   "cell_id": "K240-234",
+   "row": 187,
+   "colour": "white",
+   "emotion": "calm",
+   "intensity": "bright",
+   "variation": "일반",
+   "tup": [
+    49,
+    0,
+    92,
+    92,
+    322
+   ]
+  },
+  {
+   "cell_id": "K240-117",
+   "row": 188,
+   "colour": "blue",
+   "emotion": "anxiety",
+   "intensity": "soft",
+   "variation": "부정형",
+   "tup": [
+    215,
+    24,
+    26,
+    18,
+    493
+   ]
+  },
+  {
+   "cell_id": "K240-151",
+   "row": 189,
+   "colour": "purple",
+   "emotion": "none",
+   "intensity": "neutral",
+   "variation": "일반",
+   "tup": [
+    285,
+    76,
+    62,
+    60,
+    340
+   ]
+  },
+  {
+   "cell_id": "K240-032",
+   "row": 190,
+   "colour": "red",
+   "emotion": "none",
+   "intensity": "soft",
+   "variation": "맥락추가",
+   "tup": [
+    357,
+    68,
+    66,
+    60,
+    273
+   ]
+  },
+  {
+   "cell_id": "K240-096",
+   "row": 191,
+   "colour": "blue",
+   "emotion": "sadness",
+   "intensity": "neutral",
+   "variation": "일반",
+   "tup": [
+    216,
+    50,
+    28,
+    24,
+    500
+   ]
+  },
+  {
+   "cell_id": "K240-103",
+   "row": 192,
+   "colour": "blue",
+   "emotion": "happiness",
+   "intensity": "strong",
+   "variation": "일반",
+   "tup": [
+    224,
+    94,
+    86,
+    84,
+    375
+   ]
+  },
+  {
+   "cell_id": "K240-007",
+   "row": 193,
+   "colour": "none",
+   "emotion": "sadness",
+   "intensity": "soft",
+   "variation": "맥락추가",
+   "tup": [
+    217,
+    12,
+    16,
+    10,
+    428
+   ]
+  },
+  {
+   "cell_id": "K240-069",
+   "row": 194,
+   "colour": "yellow",
+   "emotion": "sadness",
+   "intensity": "bright",
+   "variation": "일반",
+   "tup": [
+    52,
+    64,
+    62,
+    58,
+    322
+   ]
+  },
+  {
+   "cell_id": "K240-036",
+   "row": 195,
+   "colour": "red",
+   "emotion": "sadness",
+   "intensity": "neutral",
+   "variation": "맥락추가",
+   "tup": [
+    356,
+    64,
+    38,
+    34,
+    345
+   ]
+  },
+  {
+   "cell_id": "K240-232",
+   "row": 196,
+   "colour": "white",
+   "emotion": "calm",
+   "intensity": "soft",
+   "variation": "일반",
+   "tup": [
+    45,
+    0,
+    68,
+    64,
+    348
+   ]
+  },
+  {
+   "cell_id": "K240-163",
+   "row": 197,
+   "colour": "purple",
+   "emotion": "happiness",
+   "intensity": "strong",
+   "variation": "부정형",
+   "tup": [
+    289,
+    92,
+    84,
+    82,
+    305
+   ]
+  },
+  {
+   "cell_id": "K240-030",
+   "row": 198,
+   "colour": "none",
+   "emotion": "anxiety",
+   "intensity": "dark",
+   "variation": "일반",
+   "tup": [
+    208,
+    22,
+    0,
+    0,
+    433
+   ]
+  },
+  {
+   "cell_id": "K240-008",
+   "row": 199,
+   "colour": "none",
+   "emotion": "sadness",
+   "intensity": "strong",
+   "variation": "일반",
+   "tup": [
+    222,
+    46,
+    32,
+    30,
+    400
+   ]
+  },
+  {
+   "cell_id": "K240-212",
+   "row": 200,
+   "colour": "white",
+   "emotion": "none",
+   "intensity": "soft",
+   "variation": "부정형",
+   "tup": [
+    42,
+    0,
+    76,
+    72,
+    303
+   ]
+  },
+  {
+   "cell_id": "K240-147",
+   "row": 201,
+   "colour": "green",
+   "emotion": "anxiety",
+   "intensity": "soft",
+   "variation": "부정형",
+   "tup": [
+    115,
+    20,
+    30,
+    22,
+    403
+   ]
+  },
+  {
+   "cell_id": "K240-129",
+   "row": 202,
+   "colour": "green",
+   "emotion": "sadness",
+   "intensity": "bright",
+   "variation": "부정형",
+   "tup": [
+    117,
+    50,
+    48,
+    44,
+    402
+   ]
+  },
+  {
+   "cell_id": "K240-135",
+   "row": 203,
+   "colour": "green",
+   "emotion": "happiness",
+   "intensity": "dark",
+   "variation": "일반",
+   "tup": [
+    120,
+    72,
+    52,
+    48,
+    333
+   ]
+  },
+  {
+   "cell_id": "K240-174",
+   "row": 204,
+   "colour": "purple",
+   "emotion": "calm",
+   "intensity": "bright",
+   "variation": "어순변형",
+   "tup": [
+    289,
+    58,
+    70,
+    68,
+    377
+   ]
+  },
+  {
+   "cell_id": "K240-058",
+   "row": 205,
+   "colour": "red",
+   "emotion": "anxiety",
+   "intensity": "strong",
+   "variation": "맥락추가",
+   "tup": [
+    0,
+    72,
+    52,
+    48,
+    310
+   ]
+  },
+  {
+   "cell_id": "K240-136",
+   "row": 206,
+   "colour": "green",
+   "emotion": "anger",
+   "intensity": "neutral",
+   "variation": "일반",
+   "tup": [
+    120,
+    86,
+    78,
+    78,
+    300
+   ]
+  },
+  {
+   "cell_id": "K240-143",
+   "row": 207,
+   "colour": "green",
+   "emotion": "calm",
+   "intensity": "strong",
+   "variation": "일반",
+   "tup": [
+    125,
+    62,
+    68,
+    66,
+    355
+   ]
+  },
+  {
+   "cell_id": "K240-056",
+   "row": 208,
+   "colour": "red",
+   "emotion": "anxiety",
+   "intensity": "neutral",
+   "variation": "일반",
+   "tup": [
+    358,
+    62,
+    44,
+    40,
+    320
+   ]
+  },
+  {
+   "cell_id": "K240-024",
+   "row": 209,
+   "colour": "none",
+   "emotion": "calm",
+   "intensity": "bright",
+   "variation": "일반",
+   "tup": [
+    186,
+    46,
+    74,
+    76,
+    307
+   ]
+  },
+  {
+   "cell_id": "K240-148",
+   "row": 210,
+   "colour": "green",
+   "emotion": "anxiety",
+   "intensity": "strong",
+   "variation": "어순변형",
+   "tup": [
+    120,
+    54,
+    46,
+    42,
+    375
+   ]
+  },
+  {
+   "cell_id": "K240-211",
+   "row": 211,
+   "colour": "white",
+   "emotion": "none",
+   "intensity": "neutral",
+   "variation": "어순변형",
+   "tup": [
+    45,
+    6,
+    84,
+    84,
+    285
+   ]
+  },
+  {
+   "cell_id": "K240-142",
+   "row": 212,
+   "colour": "green",
+   "emotion": "calm",
+   "intensity": "soft",
+   "variation": "맥락추가",
+   "tup": [
+    120,
+    28,
+    52,
+    46,
+    383
+   ]
+  },
+  {
+   "cell_id": "K240-073",
+   "row": 213,
+   "colour": "yellow",
+   "emotion": "happiness",
+   "intensity": "strong",
+   "variation": "일반",
+   "tup": [
+    59,
+    100,
+    100,
+    100,
+    205
+   ]
+  },
+  {
+   "cell_id": "K240-068",
+   "row": 214,
+   "colour": "yellow",
+   "emotion": "sadness",
+   "intensity": "strong",
+   "variation": "일반",
+   "tup": [
+    53,
+    70,
+    54,
+    50,
+    320
+   ]
+  },
+  {
+   "cell_id": "K240-144",
+   "row": 215,
+   "colour": "green",
+   "emotion": "calm",
+   "intensity": "bright",
+   "variation": "어순변형",
+   "tup": [
+    124,
+    56,
+    76,
+    74,
+    357
+   ]
+  },
+  {
+   "cell_id": "K240-100",
+   "row": 216,
+   "colour": "blue",
+   "emotion": "sadness",
+   "intensity": "dark",
+   "variation": "맥락추가",
+   "tup": [
+    214,
+    42,
+    0,
+    0,
+    500
+   ]
+  },
+  {
+   "cell_id": "K240-012",
+   "row": 217,
+   "colour": "none",
+   "emotion": "happiness",
+   "intensity": "soft",
+   "variation": "일반",
+   "tup": [
+    35,
+    54,
+    80,
+    74,
+    253
+   ]
+  },
+  {
+   "cell_id": "K240-173",
+   "row": 218,
+   "colour": "purple",
+   "emotion": "calm",
+   "intensity": "strong",
+   "variation": "일반",
+   "tup": [
+    290,
+    64,
+    62,
+    60,
+    375
+   ]
+  },
+  {
+   "cell_id": "K240-040",
+   "row": 219,
+   "colour": "red",
+   "emotion": "sadness",
+   "intensity": "dark",
+   "variation": "일반",
+   "tup": [
+    354,
+    56,
+    8,
+    2,
+    383
+   ]
+  },
+  {
+   "cell_id": "K240-196",
+   "row": 220,
+   "colour": "orange",
+   "emotion": "anger",
+   "intensity": "neutral",
+   "variation": "어순변형",
+   "tup": [
+    28,
+    100,
+    88,
+    88,
+    230
+   ]
+  },
+  {
+   "cell_id": "K240-031",
+   "row": 221,
+   "colour": "red",
+   "emotion": "none",
+   "intensity": "neutral",
+   "variation": "일반",
+   "tup": [
+    0,
+    92,
+    74,
+    72,
+    255
+   ]
+  },
+  {
+   "cell_id": "K240-076",
+   "row": 222,
+   "colour": "yellow",
+   "emotion": "anger",
+   "intensity": "neutral",
+   "variation": "어순변형",
+   "tup": [
+    55,
+    100,
+    92,
+    92,
+    220
+   ]
+  },
+  {
+   "cell_id": "K240-029",
+   "row": 223,
+   "colour": "none",
+   "emotion": "anxiety",
+   "intensity": "bright",
+   "variation": "일반",
+   "tup": [
+    211,
+    34,
+    46,
+    44,
+    387
+   ]
+  },
+  {
+   "cell_id": "K240-159",
+   "row": 224,
+   "colour": "purple",
+   "emotion": "sadness",
+   "intensity": "bright",
+   "variation": "일반",
+   "tup": [
+    282,
+    52,
+    42,
+    38,
+    422
+   ]
+  },
+  {
+   "cell_id": "K240-224",
+   "row": 225,
+   "colour": "white",
+   "emotion": "happiness",
+   "intensity": "bright",
+   "variation": "부정형",
+   "tup": [
+    48,
+    16,
+    100,
+    100,
+    252
+   ]
+  },
+  {
+   "cell_id": "K240-171",
+   "row": 226,
+   "colour": "purple",
+   "emotion": "calm",
+   "intensity": "neutral",
+   "variation": "일반",
+   "tup": [
+    288,
+    54,
+    54,
+    52,
+    385
+   ]
+  },
+  {
+   "cell_id": "K240-167",
+   "row": 227,
+   "colour": "purple",
+   "emotion": "anger",
+   "intensity": "soft",
+   "variation": "일반",
+   "tup": [
+    282,
+    64,
+    64,
+    60,
+    338
+   ]
+  },
+  {
+   "cell_id": "K240-057",
+   "row": 228,
+   "colour": "red",
+   "emotion": "anxiety",
+   "intensity": "soft",
+   "variation": "일반",
+   "tup": [
+    355,
+    38,
+    36,
+    28,
+    338
+   ]
+  },
+  {
+   "cell_id": "K240-210",
+   "row": 229,
+   "colour": "orange",
+   "emotion": "anxiety",
+   "intensity": "dark",
+   "variation": "맥락추가",
+   "tup": [
+    24,
+    52,
+    18,
+    12,
+    353
+   ]
+  },
+  {
+   "cell_id": "K240-139",
+   "row": 230,
+   "colour": "green",
+   "emotion": "anger",
+   "intensity": "bright",
+   "variation": "부정형",
+   "tup": [
+    121,
+    90,
+    94,
+    94,
+    292
+   ]
+  },
+  {
+   "cell_id": "K240-087",
+   "row": 231,
+   "colour": "yellow",
+   "emotion": "anxiety",
+   "intensity": "soft",
+   "variation": "부정형",
+   "tup": [
+    50,
+    34,
+    44,
+    36,
+    323
+   ]
+  },
+  {
+   "cell_id": "K240-110",
+   "row": 232,
+   "colour": "blue",
+   "emotion": "anger",
+   "intensity": "dark",
+   "variation": "맥락추가",
+   "tup": [
+    218,
+    82,
+    44,
+    42,
+    428
+   ]
+  },
+  {
+   "cell_id": "K240-071",
+   "row": 233,
+   "colour": "yellow",
+   "emotion": "happiness",
+   "intensity": "neutral",
+   "variation": "맥락추가",
+   "tup": [
+    57,
+    94,
+    96,
+    94,
+    215
+   ]
+  },
+  {
+   "cell_id": "K240-183",
+   "row": 234,
+   "colour": "orange",
+   "emotion": "none",
+   "intensity": "strong",
+   "variation": "부정형",
+   "tup": [
+    30,
+    100,
+    86,
+    84,
+    240
+   ]
+  },
+  {
+   "cell_id": "K240-189",
+   "row": 235,
+   "colour": "orange",
+   "emotion": "sadness",
+   "intensity": "bright",
+   "variation": "일반",
+   "tup": [
+    25,
+    66,
+    58,
+    54,
+    332
+   ]
+  },
+  {
+   "cell_id": "K240-039",
+   "row": 236,
+   "colour": "red",
+   "emotion": "sadness",
+   "intensity": "bright",
+   "variation": "일반",
+   "tup": [
+    357,
+    68,
+    54,
+    50,
+    337
+   ]
+  },
+  {
+   "cell_id": "K240-019",
+   "row": 237,
+   "colour": "none",
+   "emotion": "anger",
+   "intensity": "bright",
+   "variation": "일반",
+   "tup": [
+    13,
+    96,
+    88,
+    92,
+    247
+   ]
+  },
+  {
+   "cell_id": "K240-155",
+   "row": 238,
+   "colour": "purple",
+   "emotion": "none",
+   "intensity": "dark",
+   "variation": "맥락추가",
+   "tup": [
+    283,
+    68,
+    32,
+    28,
+    378
+   ]
+  },
+  {
+   "cell_id": "K240-111",
+   "row": 239,
+   "colour": "blue",
+   "emotion": "calm",
+   "intensity": "neutral",
+   "variation": "맥락추가",
+   "tup": [
+    223,
+    56,
+    56,
+    54,
+    455
+   ]
+  },
+  {
+   "cell_id": "K240-092",
+   "row": 240,
+   "colour": "blue",
+   "emotion": "none",
+   "intensity": "soft",
+   "variation": "일반",
+   "tup": [
+    217,
+    54,
+    56,
+    50,
+    428
+   ]
+  }
+ ]
+}

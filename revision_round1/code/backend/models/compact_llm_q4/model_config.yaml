@@ -1,0 +1,3 @@
+adapter: custom_pytorch
+checkpoint: checkpoint/sentilight_compactlm_mixed4_inference.pt
+tokenizer_dir: tokenizer

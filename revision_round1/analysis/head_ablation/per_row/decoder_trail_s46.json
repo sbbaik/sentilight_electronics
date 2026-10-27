@@ -1,0 +1,77 @@
+{
+  "dataset": "/home/sbbaik/Sentilight_Paper_2/MDPI_Electronics_review_1st_round/analysis/head_ablation/datasets/dev_trail.jsonl",
+  "segment": "rule",
+  "rows": 2000,
+  "checkpoint": "/home/sbbaik/Sentilight_Paper_2/MDPI_Electronics_review_1st_round/models/doi_release/selected_d384_L8_V4k/fp32_seed46.pt",
+  "model_dir": "/home/sbbaik/Sentilight_Paper_2/MDPI_Electronics_review_1st_round/code/backend/models/compact_llm_q4",
+  "model_id": "decoder_trail_s46",
+  "display_name": "x",
+  "device": "cpu",
+  "parameter_count": 15698304,
+  "model_config": {
+    "model_name": "Sentilight-CompactLM-v0.1",
+    "vocab_size": 4000,
+    "block_size": 256,
+    "n_layer": 8,
+    "n_head": 6,
+    "d_model": 384,
+    "d_ff": 1024,
+    "dropout": 0.1,
+    "rope_base": 10000.0,
+    "init_std": 0.02
+  },
+  "per_row_jsonl": "/home/sbbaik/Sentilight_Paper_2/MDPI_Electronics_review_1st_round/analysis/head_ablation/per_row/decoder_trail_s46.jsonl",
+  "coarse_dimensions": [
+    "H",
+    "S",
+    "B",
+    "CT",
+    "Dimmer"
+  ],
+  "metrics": {
+    "model_id": "decoder_trail_s46",
+    "display_name": "x",
+    "adapter": "custom_pytorch_mixed4",
+    "mode": "direct_checkpoint",
+    "successes": 2000,
+    "errors": 0,
+    "success_rate": 1.0,
+    "semantic_passes": 164,
+    "semantic_pass_rate": 0.082,
+    "strict_semantic_passes": 164,
+    "strict_semantic_pass_rate": 0.082,
+    "coarse_3bin_passes": 402,
+    "coarse_3bin_pass_rate": 0.201,
+    "coarse_pass_delta": 238,
+    "latency": {
+      "mean_ms": 311.2,
+      "p50_ms": 257.84,
+      "p95_ms": 615.88,
+      "max_ms": 5888.84
+    },
+    "mae": {
+      "H": 57.31,
+      "S": 18.77,
+      "B": 14.11,
+      "Dimmer": 14.88,
+      "CT": 54.69
+    },
+    "coarse_match_rates": {
+      "H": 0.6255,
+      "S": 0.5775,
+      "B": 0.661,
+      "CT": 0.679,
+      "Dimmer": 0.736
+    },
+    "all_5_coarse_match_rate": 0.201,
+    "coarse_failure_breakdown": {
+      "H": 749,
+      "S": 845,
+      "B": 678,
+      "CT": 642,
+      "Dimmer": 528
+    },
+    "top_coarse_failure_dimension": "S",
+    "error_samples": []
+  }
+}

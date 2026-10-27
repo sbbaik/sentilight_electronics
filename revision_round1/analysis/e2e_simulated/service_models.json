@@ -1,0 +1,1 @@
+{"models":[{"id":"compact_llm_q4","name":"CompactLM selected 15.7M mixed-bit (seed 42)","enabled":true,"mode":"local_adapter","adapter":"custom_pytorch","ready":true,"error":null}]}

@@ -1,0 +1,134 @@
+{
+ "A=3, K_eff 240 (production)": [
+  {
+   "L": 2,
+   "params": 12756864,
+   "seeds": 5,
+   "exact": 77.3,
+   "sd": 2.3,
+   "latency_ms": 68.0,
+   "pareto": true
+  },
+  {
+   "L": 3,
+   "params": 14527104,
+   "seeds": 5,
+   "exact": 78.2,
+   "sd": 1.7,
+   "latency_ms": 91.0,
+   "pareto": true
+  },
+  {
+   "L": 4,
+   "params": 16297344,
+   "seeds": 5,
+   "exact": 81.7,
+   "sd": 4.9,
+   "latency_ms": 118.0,
+   "pareto": true
+  },
+  {
+   "L": 6,
+   "params": 19837824,
+   "seeds": 3,
+   "exact": 80.3,
+   "sd": 4.5,
+   "latency_ms": 163.0,
+   "pareto": false
+  },
+  {
+   "L": 8,
+   "params": 23378304,
+   "seeds": 3,
+   "exact": 79.1,
+   "sd": 1.6,
+   "latency_ms": 216.0,
+   "pareto": false
+  },
+  {
+   "L": 12,
+   "params": 30459264,
+   "seeds": 3,
+   "exact": 79.4,
+   "sd": 1.4,
+   "latency_ms": 314.0,
+   "pareto": false
+  },
+  {
+   "L": 16,
+   "params": 37540224,
+   "seeds": 3,
+   "exact": 73.2,
+   "sd": 9.6,
+   "latency_ms": 420.0,
+   "pareto": false
+  }
+ ],
+ "A=2, K_eff 192 (control)": [
+  {
+   "L": 2,
+   "params": 12756864,
+   "seeds": 5,
+   "exact": 72.3,
+   "sd": 9.9,
+   "latency_ms": 68.0,
+   "pareto": true
+  },
+  {
+   "L": 3,
+   "params": 14527104,
+   "seeds": 5,
+   "exact": 81.0,
+   "sd": 5.8,
+   "latency_ms": 92.0,
+   "pareto": true
+  },
+  {
+   "L": 4,
+   "params": 16297344,
+   "seeds": 5,
+   "exact": 84.9,
+   "sd": 5.4,
+   "latency_ms": 116.0,
+   "pareto": true
+  },
+  {
+   "L": 6,
+   "params": 19837824,
+   "seeds": 3,
+   "exact": 83.1,
+   "sd": 4.1,
+   "latency_ms": 165.0,
+   "pareto": false
+  },
+  {
+   "L": 8,
+   "params": 23378304,
+   "seeds": 3,
+   "exact": 86.5,
+   "sd": 2.5,
+   "latency_ms": 209.0,
+   "pareto": true
+  }
+ ],
+ "A=3, K_eff 240, 4k tokenizer (selected)": [
+  {
+   "L": 4,
+   "params": 8617344,
+   "seeds": 5,
+   "exact": 82.0,
+   "sd": 6.4,
+   "latency_ms": 107.0,
+   "pareto": true
+  },
+  {
+   "L": 8,
+   "params": 15698304,
+   "seeds": 5,
+   "exact": 86.5,
+   "sd": 1.8,
+   "latency_ms": 203.0,
+   "pareto": true
+  }
+ ]
+}

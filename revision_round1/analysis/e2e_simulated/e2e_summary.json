@@ -1,0 +1,93 @@
+{
+ "host": "evaluation workstation, service and client on the same host (loopback)",
+ "threads": 4,
+ "checkpoint": "selected d384 L8 V4k, mixed 4/6/8-bit export, seed 42",
+ "device": "Tasmota HTTP emulator on the same host, no added delay (tools/e2e/tasmota_emulator.py)",
+ "requests": "the 240 audited requests in file order; first 5 are warm-up and excluded",
+ "modes": {
+  "raw_text": {
+   "measured_at_utc": "2026-10-22T02:54:19+00:00",
+   "n_measured": 235,
+   "service_round_trip_ms": {
+    "n": 235,
+    "median_ms": 106.6,
+    "p95_ms": 112.3,
+    "max_ms": 185.9
+   },
+   "service_internal_ms": {
+    "n": 235,
+    "median_ms": 101.3,
+    "p95_ms": 106.6,
+    "max_ms": 182.3
+   },
+   "emulated_device_reply_ms": {
+    "n": 208,
+    "median_ms": 3.5,
+    "p95_ms": 5.0,
+    "max_ms": 5.3
+   },
+   "client_total_ms_admitted_requests": {
+    "n": 208,
+    "median_ms": 110.0,
+    "p95_ms": 116.7,
+    "max_ms": 187.4
+   },
+   "http_overhead_median_ms": 5.3,
+   "withheld_by_gate": 27,
+   "withheld_pct": 11.2,
+   "raw_identical_to_stored_evaluation": 240,
+   "rows": 240,
+   "exact_vs_gold_pct_all_240": 28.3,
+   "device_ok_rate_pct": 100,
+   "readback_match_rate_pct": 100,
+   "by_form_service_round_trip_median_ms": {
+    "plain": 106.6,
+    "context_clause": 107.5,
+    "word_order": 105.1,
+    "negation": 106.6
+   }
+  },
+  "wrapper": {
+   "measured_at_utc": "2026-10-22T02:53:03+00:00",
+   "n_measured": 235,
+   "service_round_trip_ms": {
+    "n": 235,
+    "median_ms": 97.2,
+    "p95_ms": 102.9,
+    "max_ms": 111.2
+   },
+   "service_internal_ms": {
+    "n": 235,
+    "median_ms": 91.8,
+    "p95_ms": 96.8,
+    "max_ms": 105.8
+   },
+   "emulated_device_reply_ms": {
+    "n": 194,
+    "median_ms": 3.5,
+    "p95_ms": 5.0,
+    "max_ms": 5.5
+   },
+   "client_total_ms_admitted_requests": {
+    "n": 194,
+    "median_ms": 100.6,
+    "p95_ms": 107.1,
+    "max_ms": 112.7
+   },
+   "http_overhead_median_ms": 5.5,
+   "withheld_by_gate": 42,
+   "withheld_pct": 17.5,
+   "raw_identical_to_stored_evaluation": 145,
+   "rows": 240,
+   "exact_vs_gold_pct_all_240": 27.5,
+   "device_ok_rate_pct": 100,
+   "readback_match_rate_pct": 100,
+   "by_form_service_round_trip_median_ms": {
+    "plain": 97.1,
+    "context_clause": 99.6,
+    "word_order": 96.4,
+    "negation": 96.1
+   }
+  }
+ }
+}

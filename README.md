@@ -12,7 +12,8 @@ seeds; seed counts are given per cell.
 
 | Directory | Contents |
 |---|---|
-| `manuscript/` | The submitted Word file, its nine figures at submission resolution, and its five tables as CSV. |
+| `manuscript/` | The nine figures of the submitted manuscript at submission resolution and its five tables as CSV. The article itself is published by the journal. |
+| `revision_round1/` | Added in version 1.1.0: everything the first-round revision introduced, with its own `README.md`, `prepare_inputs.sh` and `MANIFEST.sha256`. |
 | `config/` | Series configurations (`*_series.json`, `keff_policies.json`, seed-fill configs): the frozen grid, seeds, budgets and the prospectively specified predictions for each series. |
 | `prospective_predictions/` | SHA-256 hashes of the inputs recorded before each launch (`*.sha256`, `inputs.sha256`) and the verdict files (`prereg_verdicts.md`), including the predictions that were rejected. No external time-stamped registry was used. |
 | `evaluation_outputs/` | One `tar.gz` per series with `per_row/*.jsonl` (input, reference tuple, predicted tuple, metric flags for every row) and `run_summaries/*.json`. 243 fp32 evaluations on the policies' own test sets, 56 on the common K48 test set, 10 quantized. |

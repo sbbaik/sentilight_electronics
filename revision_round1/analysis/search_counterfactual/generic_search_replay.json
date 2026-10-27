@@ -1,0 +1,161 @@
+{
+ "region": [
+  256,
+  384
+ ],
+ "rule": "step adopted only if all common seeds agree in sign and the mean gain exceeds the seed SD of the differences",
+ "series": {
+  "24k production tokenizer": {
+   "grid": {
+    "128": {
+     "mean": 49.5,
+     "seeds": 5
+    },
+    "192": {
+     "mean": 70.6,
+     "seeds": 5
+    },
+    "224": {
+     "mean": 70.6,
+     "seeds": 5
+    },
+    "256": {
+     "mean": 78.0,
+     "seeds": 5
+    },
+    "320": {
+     "mean": 81.9,
+     "seeds": 3
+    },
+    "384": {
+     "mean": 80.8,
+     "seeds": 5
+    },
+    "512": {
+     "mean": 81.6,
+     "seeds": 5
+    }
+   },
+   "full_grid": {
+    "chosen_argmax": 320,
+    "runs": 33
+   },
+   "region": {
+    "chosen_argmax": 320,
+    "runs": 13
+   },
+   "doubling": {
+    "chosen": 192,
+    "runs": 15,
+    "path": [
+     128,
+     192,
+     224
+    ],
+    "stopped_at": 224
+   },
+   "successive_halving": {
+    "chosen": 320,
+    "runs": 10,
+    "rounds": [
+     {
+      "seeds": 1,
+      "candidates": [
+       128,
+       192,
+       224,
+       256,
+       320,
+       384,
+       512
+      ],
+      "kept": [
+       320,
+       512,
+       384
+      ]
+     },
+     {
+      "seeds": 2,
+      "candidates": [
+       320,
+       512,
+       384
+      ],
+      "kept": [
+       320
+      ]
+     }
+    ]
+   },
+   "paper_selected": 384
+  },
+  "4k natural tokenizer": {
+   "grid": {
+    "224": {
+     "mean": 79.0,
+     "seeds": 5
+    },
+    "256": {
+     "mean": 76.0,
+     "seeds": 5
+    },
+    "320": {
+     "mean": 83.8,
+     "seeds": 5
+    },
+    "384": {
+     "mean": 86.5,
+     "seeds": 5
+    }
+   },
+   "full_grid": {
+    "chosen_argmax": 384,
+    "runs": 20
+   },
+   "region": {
+    "chosen_argmax": 384,
+    "runs": 15
+   },
+   "doubling": {
+    "chosen": 224,
+    "runs": 10,
+    "path": [
+     224,
+     256
+    ],
+    "stopped_at": 256
+   },
+   "successive_halving": {
+    "chosen": 320,
+    "runs": 6,
+    "rounds": [
+     {
+      "seeds": 1,
+      "candidates": [
+       224,
+       256,
+       320,
+       384
+      ],
+      "kept": [
+       320,
+       384
+      ]
+     },
+     {
+      "seeds": 2,
+      "candidates": [
+       320,
+       384
+      ],
+      "kept": [
+       320
+      ]
+     }
+    ]
+   },
+   "paper_selected": 384
+  }
+ }
+}

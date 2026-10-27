@@ -1,0 +1,24 @@
+{
+ "set": "audited request set (K240)",
+ "rows": 240,
+ "sha256": "ce8b84279b21a23e89b67ae9b0e43911e90c20eb547dfec9a158b35f4ebb73e0",
+ "draft": {
+  "model": "chatGPT GPT-6 Astra (Extra High)",
+  "called_on": "2026-10-21",
+  "input_given": "the 240 policy cells (colour, emotion, intensity) and a variation type per cell; no training template or training row"
+ },
+ "audit": {
+  "by": "first author",
+  "scope": "every row read; sentences corrected where the draft did not express the cell or read unnaturally; notes left on judgement calls",
+  "templates_consulted": false,
+  "rows_with_notes": 16
+ },
+ "gold": "computed by the executable policy from the cell; the writer labels nothing",
+ "variation_counts": {
+  "plain": 120,
+  "negation": 40,
+  "word_order": 40,
+  "context_clause": 40
+ },
+ "credentials_in_release": false
+}

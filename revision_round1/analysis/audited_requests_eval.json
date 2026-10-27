@@ -1,0 +1,1449 @@
+{
+ "set": {
+  "rows": 240,
+  "sha256": "ce8b84279b21a23e89b67ae9b0e43911e90c20eb547dfec9a158b35f4ebb73e0",
+  "file": "data/audited_requests/audited_requests_K240.jsonl",
+  "by_variation": {
+   "word_order": 40,
+   "negation": 40,
+   "plain": 120,
+   "context_clause": 40
+  },
+  "mean_length_chars": {
+   "plain": 34.2,
+   "negation": 40.6,
+   "word_order": 36.4,
+   "context_clause": 66.4
+  },
+  "drafting": "GPT-6 Astra (OpenAI), called 21 October 2026, one sentence per cell under a fixed brief",
+  "audit": "every sentence read, corrected where needed and annotated by the first author; policy gold = catalogue tuple of the cell",
+  "interpretation": "constructed set; intervals are conditional on one draft generator and one auditor"
+ },
+ "gate_catalogue": {
+  "count": 240,
+  "sha256": "7c187ab5af2c3f8aa17a7e16f3f30048ce0ac27c9ebf7e8a0e7a0aac52eba1e1"
+ },
+ "families": {
+  "selected_fp32": {
+   "name": "Selected generative decoder, fp32 (15.7 M)",
+   "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+   ],
+   "exact": {
+    "mean": 24.92,
+    "sd": 0.54,
+    "ci90": [
+     24.4,
+     25.43
+    ],
+    "per_seed": [
+     25.83,
+     24.58,
+     24.58,
+     25.0,
+     24.58
+    ],
+    "seeds": 5
+   },
+   "coarse": {
+    "mean": 40.17,
+    "sd": 1.16,
+    "ci90": [
+     39.06,
+     41.28
+    ],
+    "per_seed": [
+     39.58,
+     40.42,
+     39.58,
+     39.17,
+     42.08
+    ],
+    "seeds": 5
+   },
+   "valid_output_pct": {
+    "mean": 100,
+    "sd": 0.0,
+    "ci90": [
+     100.0,
+     100.0
+    ],
+    "per_seed": [
+     100,
+     100,
+     100,
+     100,
+     100
+    ],
+    "seeds": 5
+   },
+   "gate": {
+    "withheld_pct": [
+     9.33,
+     4.17
+    ],
+    "correct_answers_withheld": 0,
+    "wrong_answers_withheld_pct_of_wrong": [
+     12.43,
+     5.56
+    ],
+    "wrong_answers_passed_pct_of_all": [
+     65.75,
+     4.26
+    ]
+   },
+   "by_variation": {
+    "plain": {
+     "mean": 35.33,
+     "sd": 1.83,
+     "ci90": [
+      33.59,
+      37.07
+     ],
+     "per_seed": [
+      35.0,
+      35.0,
+      33.33,
+      35.0,
+      38.33
+     ],
+     "seeds": 5
+    },
+    "negation": {
+     "mean": 14.5,
+     "sd": 5.42,
+     "ci90": [
+      9.33,
+      19.67
+     ],
+     "per_seed": [
+      22.5,
+      7.5,
+      15.0,
+      15.0,
+      12.5
+     ],
+     "seeds": 5
+    },
+    "word_order": {
+     "mean": 9.0,
+     "sd": 4.87,
+     "ci90": [
+      4.35,
+      13.65
+     ],
+     "per_seed": [
+      7.5,
+      12.5,
+      15.0,
+      7.5,
+      2.5
+     ],
+     "seeds": 5
+    },
+    "context_clause": {
+     "mean": 20.0,
+     "sd": 2.5,
+     "ci90": [
+      17.62,
+      22.38
+     ],
+     "per_seed": [
+      20.0,
+      22.5,
+      17.5,
+      22.5,
+      17.5
+     ],
+     "seeds": 5
+    }
+   }
+  },
+  "selected_mixed": {
+   "name": "Selected generative decoder, mixed 4/6/8-bit",
+   "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+   ],
+   "exact": {
+    "mean": 24.75,
+    "sd": 2.1,
+    "ci90": [
+     22.75,
+     26.75
+    ],
+    "per_seed": [
+     28.33,
+     24.58,
+     22.92,
+     24.17,
+     23.75
+    ],
+    "seeds": 5
+   },
+   "coarse": {
+    "mean": 39.25,
+    "sd": 2.29,
+    "ci90": [
+     37.07,
+     41.43
+    ],
+    "per_seed": [
+     40.83,
+     40.0,
+     37.5,
+     36.25,
+     41.67
+    ],
+    "seeds": 5
+   },
+   "valid_output_pct": {
+    "mean": 100,
+    "sd": 0.0,
+    "ci90": [
+     100.0,
+     100.0
+    ],
+    "per_seed": [
+     100,
+     100,
+     100,
+     100,
+     100
+    ],
+    "seeds": 5
+   },
+   "gate": {
+    "withheld_pct": [
+     10.5,
+     3.68
+    ],
+    "correct_answers_withheld": 0,
+    "wrong_answers_withheld_pct_of_wrong": [
+     13.99,
+     4.98
+    ],
+    "wrong_answers_passed_pct_of_all": [
+     64.75,
+     4.7
+    ]
+   },
+   "by_variation": {
+    "plain": {
+     "mean": 35.17,
+     "sd": 2.91,
+     "ci90": [
+      32.39,
+      37.94
+     ],
+     "per_seed": [
+      39.17,
+      35.0,
+      31.67,
+      33.33,
+      36.67
+     ],
+     "seeds": 5
+    },
+    "negation": {
+     "mean": 12.0,
+     "sd": 4.11,
+     "ci90": [
+      8.08,
+      15.92
+     ],
+     "per_seed": [
+      17.5,
+      7.5,
+      10.0,
+      15.0,
+      10.0
+     ],
+     "seeds": 5
+    },
+    "word_order": {
+     "mean": 9.5,
+     "sd": 4.81,
+     "ci90": [
+      4.91,
+      14.09
+     ],
+     "per_seed": [
+      10.0,
+      12.5,
+      15.0,
+      7.5,
+      2.5
+     ],
+     "seeds": 5
+    },
+    "context_clause": {
+     "mean": 21.5,
+     "sd": 2.85,
+     "ci90": [
+      18.78,
+      24.22
+     ],
+     "per_seed": [
+      25.0,
+      22.5,
+      17.5,
+      22.5,
+      20.0
+     ],
+     "seeds": 5
+    }
+   }
+  },
+  "reference_24k": {
+   "name": "Retrained deployed architecture (23.4 M, 24k tokenizer)",
+   "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+   ],
+   "exact": {
+    "mean": 17.08,
+    "sd": 0.88,
+    "ci90": [
+     16.24,
+     17.93
+    ],
+    "per_seed": [
+     15.83,
+     17.92,
+     16.67,
+     17.08,
+     17.92
+    ],
+    "seeds": 5
+   },
+   "coarse": {
+    "mean": 35.58,
+    "sd": 2.26,
+    "ci90": [
+     33.43,
+     37.73
+    ],
+    "per_seed": [
+     32.08,
+     35.42,
+     35.83,
+     38.33,
+     36.25
+    ],
+    "seeds": 5
+   },
+   "valid_output_pct": {
+    "mean": 100,
+    "sd": 0.0,
+    "ci90": [
+     100.0,
+     100.0
+    ],
+    "per_seed": [
+     100,
+     100,
+     100,
+     100,
+     100
+    ],
+    "seeds": 5
+   },
+   "gate": {
+    "withheld_pct": [
+     2.25,
+     0.76
+    ],
+    "correct_answers_withheld": 0,
+    "wrong_answers_withheld_pct_of_wrong": [
+     2.72,
+     0.94
+    ],
+    "wrong_answers_passed_pct_of_all": [
+     80.67,
+     1.6
+    ]
+   },
+   "by_variation": {
+    "plain": {
+     "mean": 24.17,
+     "sd": 2.28,
+     "ci90": [
+      21.99,
+      26.34
+     ],
+     "per_seed": [
+      20.83,
+      25.83,
+      24.17,
+      23.33,
+      26.67
+     ],
+     "seeds": 5
+    },
+    "negation": {
+     "mean": 6.5,
+     "sd": 1.37,
+     "ci90": [
+      5.19,
+      7.81
+     ],
+     "per_seed": [
+      7.5,
+      5.0,
+      5.0,
+      7.5,
+      7.5
+     ],
+     "seeds": 5
+    },
+    "word_order": {
+     "mean": 5.0,
+     "sd": 3.95,
+     "ci90": [
+      1.23,
+      8.77
+     ],
+     "per_seed": [
+      2.5,
+      10.0,
+      7.5,
+      0,
+      5.0
+     ],
+     "seeds": 5
+    },
+    "context_clause": {
+     "mean": 18.5,
+     "sd": 4.87,
+     "ci90": [
+      13.85,
+      23.15
+     ],
+     "per_seed": [
+      22.5,
+      15.0,
+      15.0,
+      25.0,
+      15.0
+     ],
+     "seeds": 5
+    }
+   }
+  },
+  "head240": {
+   "name": "Size-matched 240-class head (15.8 M)",
+   "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+   ],
+   "exact": {
+    "mean": 13.25,
+    "sd": 2.8,
+    "ci90": [
+     10.58,
+     15.92
+    ],
+    "per_seed": [
+     17.5,
+     10.0,
+     11.67,
+     13.33,
+     13.75
+    ],
+    "seeds": 5
+   },
+   "coarse": {
+    "mean": 28.75,
+    "sd": 2.3,
+    "ci90": [
+     26.56,
+     30.94
+    ],
+    "per_seed": [
+     31.25,
+     25.0,
+     29.17,
+     29.58,
+     28.75
+    ],
+    "seeds": 5
+   },
+   "valid_output_pct": {
+    "mean": 100,
+    "sd": 0.0,
+    "ci90": [
+     100.0,
+     100.0
+    ],
+    "per_seed": [
+     100,
+     100,
+     100,
+     100,
+     100
+    ],
+    "seeds": 5
+   },
+   "gate": {
+    "withheld_pct": [
+     0.0,
+     0.0
+    ],
+    "correct_answers_withheld": 0,
+    "wrong_answers_withheld_pct_of_wrong": [
+     0.0,
+     0.0
+    ],
+    "wrong_answers_passed_pct_of_all": [
+     86.75,
+     2.8
+    ]
+   },
+   "by_variation": {
+    "plain": {
+     "mean": 19.33,
+     "sd": 5.12,
+     "ci90": [
+      14.45,
+      24.21
+     ],
+     "per_seed": [
+      27.5,
+      13.33,
+      18.33,
+      19.17,
+      18.33
+     ],
+     "seeds": 5
+    },
+    "negation": {
+     "mean": 5.0,
+     "sd": 3.95,
+     "ci90": [
+      1.23,
+      8.77
+     ],
+     "per_seed": [
+      7.5,
+      2.5,
+      0,
+      10.0,
+      5.0
+     ],
+     "seeds": 5
+    },
+    "word_order": {
+     "mean": 12.5,
+     "sd": 2.5,
+     "ci90": [
+      10.12,
+      14.88
+     ],
+     "per_seed": [
+      10.0,
+      15.0,
+      12.5,
+      10.0,
+      15.0
+     ],
+     "seeds": 5
+    },
+    "context_clause": {
+     "mean": 4.0,
+     "sd": 2.24,
+     "ci90": [
+      1.87,
+      6.13
+     ],
+     "per_seed": [
+      5.0,
+      2.5,
+      2.5,
+      2.5,
+      7.5
+     ],
+     "seeds": 5
+    }
+   }
+  }
+ },
+ "paired": {
+  "head_minus_decoder": {
+   "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+   ],
+   "diff_pp": [
+    -8.33,
+    -14.58,
+    -12.91,
+    -11.67,
+    -10.83
+   ],
+   "mean": -11.66,
+   "ci90": [
+    -13.89,
+    -9.43
+   ],
+   "ci95": [
+    -14.57,
+    -8.76
+   ],
+   "seeds_positive": 0,
+   "seeds_negative": 5
+  },
+  "mixed_minus_fp32": {
+   "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+   ],
+   "diff_pp": [
+    2.5,
+    0.0,
+    -1.66,
+    -0.83,
+    -0.83
+   ],
+   "mean": -0.16,
+   "ci90": [
+    -1.69,
+    1.36
+   ],
+   "ci95": [
+    -2.15,
+    1.82
+   ],
+   "seeds_positive": 1,
+   "seeds_negative": 3
+  },
+  "selected_minus_reference": {
+   "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+   ],
+   "diff_pp": [
+    10.0,
+    6.66,
+    7.91,
+    7.92,
+    6.66
+   ],
+   "mean": 7.83,
+   "ci90": [
+    6.53,
+    9.13
+   ],
+   "ci95": [
+    6.13,
+    9.53
+   ],
+   "seeds_positive": 5,
+   "seeds_negative": 0
+  }
+ },
+ "selected_breakdown": {
+  "by_variation": {
+   "plain": {
+    "mean": 35.33,
+    "sd": 1.83,
+    "ci90": [
+     33.59,
+     37.07
+    ],
+    "per_seed": [
+     35.0,
+     35.0,
+     33.33,
+     35.0,
+     38.33
+    ],
+    "seeds": 5,
+    "rows": 120
+   },
+   "word_order": {
+    "mean": 9.0,
+    "sd": 4.87,
+    "ci90": [
+     4.35,
+     13.65
+    ],
+    "per_seed": [
+     7.5,
+     12.5,
+     15.0,
+     7.5,
+     2.5
+    ],
+    "seeds": 5,
+    "rows": 40
+   },
+   "negation": {
+    "mean": 14.5,
+    "sd": 5.42,
+    "ci90": [
+     9.33,
+     19.67
+    ],
+    "per_seed": [
+     22.5,
+     7.5,
+     15.0,
+     15.0,
+     12.5
+    ],
+    "seeds": 5,
+    "rows": 40
+   },
+   "context_clause": {
+    "mean": 20.0,
+    "sd": 2.5,
+    "ci90": [
+     17.62,
+     22.38
+    ],
+    "per_seed": [
+     20.0,
+     22.5,
+     17.5,
+     22.5,
+     17.5
+    ],
+    "seeds": 5,
+    "rows": 40
+   }
+  },
+  "colour": {
+   "named vs omitted": {
+    "named": {
+     "mean": 25.05,
+     "sd": 0.87,
+     "ci90": [
+      24.22,
+      25.87
+     ],
+     "per_seed": [
+      26.19,
+      23.81,
+      25.24,
+      25.24,
+      24.76
+     ],
+     "seeds": 5,
+     "rows": 210
+    },
+    "omitted": {
+     "mean": 24.0,
+     "sd": 3.65,
+     "ci90": [
+      20.52,
+      27.48
+     ],
+     "per_seed": [
+      23.33,
+      30.0,
+      20.0,
+      23.33,
+      23.33
+     ],
+     "seeds": 5,
+     "rows": 30
+    }
+   },
+   "by_value": {
+    "red": {
+     "mean": 28.0,
+     "sd": 3.8,
+     "ci90": [
+      24.38,
+      31.62
+     ],
+     "per_seed": [
+      26.67,
+      23.33,
+      33.33,
+      30.0,
+      26.67
+     ],
+     "seeds": 5,
+     "rows": 30
+    },
+    "blue": {
+     "mean": 31.33,
+     "sd": 6.06,
+     "ci90": [
+      25.56,
+      37.11
+     ],
+     "per_seed": [
+      30.0,
+      23.33,
+      30.0,
+      33.33,
+      40.0
+     ],
+     "seeds": 5,
+     "rows": 30
+    },
+    "purple": {
+     "mean": 30.0,
+     "sd": 7.07,
+     "ci90": [
+      23.26,
+      36.74
+     ],
+     "per_seed": [
+      36.67,
+      30.0,
+      20.0,
+      36.67,
+      26.67
+     ],
+     "seeds": 5,
+     "rows": 30
+    },
+    "white": {
+     "mean": 20.67,
+     "sd": 5.48,
+     "ci90": [
+      15.44,
+      25.89
+     ],
+     "per_seed": [
+      26.67,
+      16.67,
+      16.67,
+      26.67,
+      16.67
+     ],
+     "seeds": 5,
+     "rows": 30
+    },
+    "orange": {
+     "mean": 20.67,
+     "sd": 4.35,
+     "ci90": [
+      16.52,
+      24.81
+     ],
+     "per_seed": [
+      23.33,
+      20.0,
+      26.67,
+      16.67,
+      16.67
+     ],
+     "seeds": 5,
+     "rows": 30
+    },
+    "yellow": {
+     "mean": 28.67,
+     "sd": 5.06,
+     "ci90": [
+      23.85,
+      33.49
+     ],
+     "per_seed": [
+      26.67,
+      36.67,
+      30.0,
+      23.33,
+      26.67
+     ],
+     "seeds": 5,
+     "rows": 30
+    },
+    "none": {
+     "mean": 24.0,
+     "sd": 3.65,
+     "ci90": [
+      20.52,
+      27.48
+     ],
+     "per_seed": [
+      23.33,
+      30.0,
+      20.0,
+      23.33,
+      23.33
+     ],
+     "seeds": 5,
+     "rows": 30
+    },
+    "green": {
+     "mean": 16.0,
+     "sd": 4.35,
+     "ci90": [
+      11.86,
+      20.14
+     ],
+     "per_seed": [
+      13.33,
+      16.67,
+      20.0,
+      10.0,
+      20.0
+     ],
+     "seeds": 5,
+     "rows": 30
+    }
+   }
+  },
+  "emotion": {
+   "named vs omitted": {
+    "named": {
+     "mean": 24.2,
+     "sd": 1.35,
+     "ci90": [
+      22.91,
+      25.49
+     ],
+     "per_seed": [
+      25.5,
+      25.0,
+      22.5,
+      23.0,
+      25.0
+     ],
+     "seeds": 5,
+     "rows": 200
+    },
+    "omitted": {
+     "mean": 28.5,
+     "sd": 6.27,
+     "ci90": [
+      22.52,
+      34.48
+     ],
+     "per_seed": [
+      27.5,
+      22.5,
+      35.0,
+      35.0,
+      22.5
+     ],
+     "seeds": 5,
+     "rows": 40
+    }
+   },
+   "by_value": {
+    "calm": {
+     "mean": 22.0,
+     "sd": 6.22,
+     "ci90": [
+      16.06,
+      27.94
+     ],
+     "per_seed": [
+      27.5,
+      12.5,
+      22.5,
+      20.0,
+      27.5
+     ],
+     "seeds": 5,
+     "rows": 40
+    },
+    "none": {
+     "mean": 28.5,
+     "sd": 6.27,
+     "ci90": [
+      22.52,
+      34.48
+     ],
+     "per_seed": [
+      27.5,
+      22.5,
+      35.0,
+      35.0,
+      22.5
+     ],
+     "seeds": 5,
+     "rows": 40
+    },
+    "sadness": {
+     "mean": 29.5,
+     "sd": 5.42,
+     "ci90": [
+      24.33,
+      34.67
+     ],
+     "per_seed": [
+      27.5,
+      30.0,
+      22.5,
+      37.5,
+      30.0
+     ],
+     "seeds": 5,
+     "rows": 40
+    },
+    "anger": {
+     "mean": 31.5,
+     "sd": 4.54,
+     "ci90": [
+      27.17,
+      35.83
+     ],
+     "per_seed": [
+      35.0,
+      37.5,
+      27.5,
+      30.0,
+      27.5
+     ],
+     "seeds": 5,
+     "rows": 40
+    },
+    "anxiety": {
+     "mean": 18.5,
+     "sd": 4.87,
+     "ci90": [
+      13.85,
+      23.15
+     ],
+     "per_seed": [
+      20.0,
+      25.0,
+      15.0,
+      20.0,
+      12.5
+     ],
+     "seeds": 5,
+     "rows": 40
+    },
+    "happiness": {
+     "mean": 19.5,
+     "sd": 7.79,
+     "ci90": [
+      12.08,
+      26.92
+     ],
+     "per_seed": [
+      17.5,
+      20.0,
+      25.0,
+      7.5,
+      27.5
+     ],
+     "seeds": 5,
+     "rows": 40
+    }
+   }
+  },
+  "intensity": {
+   "by_value": {
+    "bright": {
+     "mean": 17.5,
+     "sd": 2.8,
+     "ci90": [
+      14.83,
+      20.16
+     ],
+     "per_seed": [
+      18.75,
+      14.58,
+      18.75,
+      20.83,
+      14.58
+     ],
+     "seeds": 5,
+     "rows": 48
+    },
+    "strong": {
+     "mean": 17.08,
+     "sd": 2.72,
+     "ci90": [
+      14.49,
+      19.67
+     ],
+     "per_seed": [
+      14.58,
+      18.75,
+      14.58,
+      20.83,
+      16.67
+     ],
+     "seeds": 5,
+     "rows": 48
+    },
+    "dark": {
+     "mean": 13.75,
+     "sd": 7.88,
+     "ci90": [
+      6.24,
+      21.26
+     ],
+     "per_seed": [
+      18.75,
+      6.25,
+      20.83,
+      4.17,
+      18.75
+     ],
+     "seeds": 5,
+     "rows": 48
+    },
+    "soft": {
+     "mean": 31.25,
+     "sd": 3.29,
+     "ci90": [
+      28.11,
+      34.39
+     ],
+     "per_seed": [
+      35.42,
+      29.17,
+      27.08,
+      33.33,
+      31.25
+     ],
+     "seeds": 5,
+     "rows": 48
+    },
+    "neutral": {
+     "mean": 45.0,
+     "sd": 5.43,
+     "ci90": [
+      39.82,
+      50.18
+     ],
+     "per_seed": [
+      41.67,
+      54.17,
+      41.67,
+      45.83,
+      41.67
+     ],
+     "seeds": 5,
+     "rows": 48
+    }
+   },
+   "neutral vs non-neutral": {
+    "non-neutral": {
+     "mean": 19.9,
+     "sd": 1.7,
+     "ci90": [
+      18.27,
+      21.52
+     ],
+     "per_seed": [
+      21.88,
+      17.19,
+      20.31,
+      19.79,
+      20.31
+     ],
+     "seeds": 5,
+     "rows": 192
+    },
+    "neutral": {
+     "mean": 45.0,
+     "sd": 5.43,
+     "ci90": [
+      39.82,
+      50.18
+     ],
+     "per_seed": [
+      41.67,
+      54.17,
+      41.67,
+      45.83,
+      41.67
+     ],
+     "seeds": 5,
+     "rows": 48
+    }
+   }
+  },
+  "omission": {
+   "colour and emotion named": {
+    "mean": 23.66,
+    "sd": 1.32,
+    "ci90": [
+     22.4,
+     24.91
+    ],
+    "per_seed": [
+     25.14,
+     24.0,
+     22.29,
+     22.29,
+     24.57
+    ],
+    "seeds": 5,
+    "rows": 175
+   },
+   "emotion omitted": {
+    "mean": 32.0,
+    "sd": 7.93,
+    "ci90": [
+     24.44,
+     39.56
+    ],
+    "per_seed": [
+     31.43,
+     22.86,
+     40.0,
+     40.0,
+     25.71
+    ],
+    "seeds": 5,
+    "rows": 35
+   },
+   "colour omitted": {
+    "mean": 28.0,
+    "sd": 2.83,
+    "ci90": [
+     25.3,
+     30.7
+    ],
+    "per_seed": [
+     28.0,
+     32.0,
+     24.0,
+     28.0,
+     28.0
+    ],
+    "seeds": 5,
+    "rows": 25
+   },
+   "both omitted": {
+    "mean": 4.0,
+    "sd": 8.94,
+    "ci90": [
+     -4.53,
+     12.53
+    ],
+    "per_seed": [
+     0,
+     20.0,
+     0,
+     0,
+     0
+    ],
+    "seeds": 5,
+    "rows": 5
+   }
+  },
+  "negation_vs_plain_same_intensity": {
+   "intensities_in_negation_rows": [
+    "bright",
+    "dark",
+    "soft",
+    "strong"
+   ],
+   "negation": {
+    "mean": 14.5,
+    "sd": 5.42,
+    "ci90": [
+     9.33,
+     19.67
+    ],
+    "per_seed": [
+     22.5,
+     7.5,
+     15.0,
+     15.0,
+     12.5
+    ],
+    "seeds": 5,
+    "rows": 40
+   },
+   "plain, same intensities": {
+    "mean": 29.17,
+    "sd": 2.08,
+    "ci90": [
+     27.18,
+     31.15
+    ],
+    "per_seed": [
+     30.21,
+     28.12,
+     27.08,
+     28.12,
+     32.29
+    ],
+    "seeds": 5,
+    "rows": 96
+   }
+  },
+  "word_order_vs_plain": {
+   "word_order": {
+    "mean": 9.0,
+    "sd": 4.87,
+    "ci90": [
+     4.35,
+     13.65
+    ],
+    "per_seed": [
+     7.5,
+     12.5,
+     15.0,
+     7.5,
+     2.5
+    ],
+    "seeds": 5,
+    "rows": 40
+   },
+   "plain": {
+    "mean": 35.33,
+    "sd": 1.83,
+    "ci90": [
+     33.59,
+     37.07
+    ],
+    "per_seed": [
+     35.0,
+     35.0,
+     33.33,
+     35.0,
+     38.33
+    ],
+    "seeds": 5,
+    "rows": 120
+   }
+  },
+  "context_clause_vs_plain": {
+   "context_clause": {
+    "mean": 20.0,
+    "sd": 2.5,
+    "ci90": [
+     17.62,
+     22.38
+    ],
+    "per_seed": [
+     20.0,
+     22.5,
+     17.5,
+     22.5,
+     17.5
+    ],
+    "seeds": 5,
+    "rows": 40
+   },
+   "plain": {
+    "mean": 35.33,
+    "sd": 1.83,
+    "ci90": [
+     33.59,
+     37.07
+    ],
+    "per_seed": [
+     35.0,
+     35.0,
+     33.33,
+     35.0,
+     38.33
+    ],
+    "seeds": 5,
+    "rows": 120
+   }
+  },
+  "length_tertile_chars": {
+   "cuts": [
+    33.7,
+    44.0
+   ],
+   "medium": {
+    "mean": 25.0,
+    "sd": 3.15,
+    "ci90": [
+     22.0,
+     28.0
+    ],
+    "per_seed": [
+     26.19,
+     26.19,
+     20.24,
+     23.81,
+     28.57
+    ],
+    "seeds": 5,
+    "rows": 84
+   },
+   "short": {
+    "mean": 32.25,
+    "sd": 3.47,
+    "ci90": [
+     28.94,
+     35.56
+    ],
+    "per_seed": [
+     33.75,
+     32.5,
+     35.0,
+     33.75,
+     26.25
+    ],
+    "seeds": 5,
+    "rows": 80
+   },
+   "long": {
+    "mean": 17.11,
+    "sd": 1.61,
+    "ci90": [
+     15.57,
+     18.64
+    ],
+    "per_seed": [
+     17.11,
+     14.47,
+     18.42,
+     17.11,
+     18.42
+    ],
+    "seeds": 5,
+    "rows": 76
+   }
+  },
+  "attribute_wrong_among_wrong_outputs_pct": {
+   "colour": 41.6,
+   "emotion": 50.3,
+   "intensity": 47.8,
+   "out_of_catalogue": 12.4,
+   "wrong_outputs_over_seeds": 901
+  },
+  "rows_with_audit_note": {
+   "rows": 16,
+   "exact": {
+    "mean": 31.25,
+    "sd": 4.42,
+    "ci90": [
+     27.04,
+     35.46
+    ],
+    "per_seed": [
+     31.25,
+     37.5,
+     31.25,
+     31.25,
+     25.0
+    ],
+    "seeds": 5
+   }
+  }
+ }
+}

@@ -1,0 +1,77 @@
+{
+  "dataset": "/home/sbbaik/Sentilight_Paper_2/MDPI_Electronics_review_1st_round/data/audited_requests/audited_requests_K240.jsonl",
+  "segment": "rule",
+  "rows": 240,
+  "checkpoint": "/home/sbbaik/Sentilight_Paper_2/MDPI_Electronics_review_1st_round/models/reference_W384/fp32_seed44.pt",
+  "model_dir": "/home/sbbaik/Sentilight_Paper_2/MDPI_Electronics_review_1st_round/code/backend/models/compact_llm",
+  "model_id": "deployed_W384_L8_V24k_s44",
+  "display_name": "deployed_W384_L8_V24k_s44 on audited set",
+  "device": "cpu",
+  "parameter_count": 23378304,
+  "model_config": {
+    "model_name": "Sentilight-CompactLM-v0.1",
+    "vocab_size": 24000,
+    "block_size": 256,
+    "n_layer": 8,
+    "n_head": 6,
+    "d_model": 384,
+    "d_ff": 1024,
+    "dropout": 0.1,
+    "rope_base": 10000.0,
+    "init_std": 0.02
+  },
+  "per_row_jsonl": "/home/sbbaik/Sentilight_Paper_2/MDPI_Electronics_review_1st_round/analysis/audited_eval/per_row/deployed_W384_L8_V24k_s44.jsonl",
+  "coarse_dimensions": [
+    "H",
+    "S",
+    "B",
+    "CT",
+    "Dimmer"
+  ],
+  "metrics": {
+    "model_id": "deployed_W384_L8_V24k_s44",
+    "display_name": "deployed_W384_L8_V24k_s44 on audited set",
+    "adapter": "custom_pytorch",
+    "mode": "direct_checkpoint",
+    "successes": 240,
+    "errors": 0,
+    "success_rate": 1.0,
+    "semantic_passes": 62,
+    "semantic_pass_rate": 0.2583,
+    "strict_semantic_passes": 62,
+    "strict_semantic_pass_rate": 0.2583,
+    "coarse_3bin_passes": 86,
+    "coarse_3bin_pass_rate": 0.3583,
+    "coarse_pass_delta": 24,
+    "latency": {
+      "mean_ms": 3315.08,
+      "p50_ms": 3417.88,
+      "p95_ms": 4001.4,
+      "max_ms": 4814.3
+    },
+    "mae": {
+      "H": 32.78,
+      "S": 18.44,
+      "B": 17.11,
+      "Dimmer": 17.44,
+      "CT": 37.52
+    },
+    "coarse_match_rates": {
+      "H": 0.8042,
+      "S": 0.6708,
+      "B": 0.5875,
+      "CT": 0.7583,
+      "Dimmer": 0.7167
+    },
+    "all_5_coarse_match_rate": 0.3583,
+    "coarse_failure_breakdown": {
+      "H": 47,
+      "S": 79,
+      "B": 99,
+      "CT": 58,
+      "Dimmer": 68
+    },
+    "top_coarse_failure_dimension": "B",
+    "error_samples": []
+  }
+}
